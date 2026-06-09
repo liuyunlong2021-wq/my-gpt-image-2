@@ -1,3 +1,28 @@
+const categoryNames = {
+  zh: {
+    'E-commerce': '电商',
+    'Ad Creative': '广告创意',
+    'Portrait & Photography': '人像摄影',
+    'Poster & Illustration': '海报插画',
+    'Character Design': '角色设计',
+    'UI & Social Media': 'UI 与社交媒体',
+    'Comparison & Community': '对比与社区',
+  },
+  en: {
+    'E-commerce': 'E-commerce',
+    'Ad Creative': 'Ad Creative',
+    'Portrait & Photography': 'Portrait & Photography',
+    'Poster & Illustration': 'Poster & Illustration',
+    'Character Design': 'Character Design',
+    'UI & Social Media': 'UI & Social Media',
+    'Comparison & Community': 'Comparison & Community',
+  }
+};
+
+function tCat(cat) {
+  return categoryNames[lang][cat] || cat;
+}
+
 const i18n = {
   zh: {
     siteTitle: 'GPT Image 2 提示词画廊',
@@ -156,7 +181,7 @@ function getCategories() {
 function renderCategories() {
   const cats = getCategories();
   els.categoryBar.innerHTML = cats.map(cat => 
-    `<button class="cat-btn${cat === state.activeCategory ? ' active' : ''}" data-cat="${cat}">${cat === 'All' ? t('allCategories') : cat}</button>`
+    `<button class="cat-btn${cat === state.activeCategory ? ' active' : ''}" data-cat="${cat}">${cat === 'All' ? t('allCategories') : tCat(cat)}</button>`
   ).join('');
   
   els.categoryBar.addEventListener('click', e => {
@@ -181,7 +206,8 @@ function filterCases() {
       c.title.toLowerCase().includes(q) ||
       c.prompt.toLowerCase().includes(q) ||
       c.author.toLowerCase().includes(q) ||
-      c.category.toLowerCase().includes(q)
+      c.category.toLowerCase().includes(q) ||
+      tCat(c.category).toLowerCase().includes(q)
     );
   }
   return result;
@@ -238,7 +264,7 @@ function createCard(c) {
         <img data-src="${imgUrl}" alt="${escHtml(c.title)}" loading="lazy">
       </div>
       <div class="card-body">
-        <div class="card-category">${escHtml(c.category)}</div>
+        <div class="card-category">${tCat(c.category)}</div>
         <h3>${escHtml(c.title)}</h3>
         <div class="card-author">${t('by')} <a href="${escHtml(c.authorUrl)}" target="_blank" onclick="event.stopPropagation()">${escHtml(c.author)}</a></div>
       </div>
@@ -265,7 +291,7 @@ function openModal(id) {
   els.modalContent.innerHTML = `
     ${imgUrl ? `<img class="modal-img" src="${imgUrl}" alt="${escHtml(c.title)}">` : ''}
     <div class="modal-body">
-      <div class="modal-category">${escHtml(c.category)}</div>
+      <div class="modal-category">${tCat(c.category)}</div>
       <h2>${escHtml(c.title)}</h2>
       <div class="modal-meta">
         ${t('case')} #${c.caseNum} &middot; ${t('by')} <a href="${escHtml(c.authorUrl)}" target="_blank">${escHtml(c.author)}</a>
