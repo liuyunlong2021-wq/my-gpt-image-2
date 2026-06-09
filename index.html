@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dazi Studio — GPT Image 2 Prompts & API</title>
+  <meta name="description" content="Curated collection of 763+ GPT-Image-2 prompt cases, API integration guides, and reusable visual workflows for AI image generation." />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🎨%3C/text%3E%3C/svg%3E" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<header>
+  <nav class="container">
+    <a href="/" class="logo">✦ <span>Dazi Studio</span></a>
+    <div class="nav-links">
+      <a href="#gallery-section">Gallery</a>
+      <a href="#api-section">API</a>
+      <a href="https://github.com/EvoLinkAI/awesome-gpt-image-2-API-and-Prompts" target="_blank">GitHub →</a>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container">
+      <h1>GPT Image 2 <span>Prompt Gallery</span></h1>
+      <p>Curated collection of production-ready GPT-Image-2 prompts, API usage patterns, and reusable visual workflows for AI image generation.</p>
+      <div class="hero-stats">
+        <div class="stat">
+          <div class="stat-num" id="heroStatPrompts">--</div>
+          <div class="stat-label">Curated Prompts</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num" id="heroStatCategories">--</div>
+          <div class="stat-label">Categories</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num" id="heroStatImages">--</div>
+          <div class="stat-label">Output Images</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section id="gallery-section" class="container">
+    <div class="search-wrap">
+      <span class="search-icon">🔍</span>
+      <input id="searchInput" type="text" placeholder="Search prompts, categories, authors..." autocomplete="off" />
+    </div>
+    <div id="categoryBar" class="category-bar"></div>
+    <div class="gallery-header">
+      <span class="result-count" id="resultCount"></span>
+    </div>
+    <div id="gallery" class="gallery"></div>
+    <div style="text-align:center;margin-top:24px;">
+      <button id="loadMore" class="cat-btn" style="display:none;padding:10px 32px;">Load More</button>
+    </div>
+  </section>
+
+  <!-- API Section -->
+  <section id="api-section" class="section">
+    <div class="container">
+      <h2 class="section-title">🔌 Use GPT Image 2 API</h2>
+      <p class="section-sub">One API call for both generation and editing — works with OpenAI's standard format.</p>
+      <div class="api-cards">
+        <div class="api-card">
+          <h3><span class="icon">⚡</span>Quick Start</h3>
+          <p>Generate an image with a single curl command using the GPT Image 2 API.</p>
+          <code>curl --request POST \
+  --url https://api.evolink.ai/v1/images/generations \
+  --header 'Authorization: Bearer YOUR_API_KEY' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "model": "gpt-image-2",
+  "prompt": "A beautiful sunset over the ocean, photorealistic, 8K"
+}'</code>
+        </div>
+        <div class="api-card">
+          <h3><span class="icon">🔧</span>Install the Skill</h3>
+          <p>One-line install of the GPT-Image-2 Gen Skill for seamless integration.</p>
+          <code>npx evolink-gpt-image -y</code>
+          <p style="margin-top:12px;font-size:13px;">
+            <a href="https://github.com/EvoLinkAI/gpt-image-2-gen-skill" target="_blank">View on GitHub →</a>
+          </p>
+        </div>
+        <div class="api-card">
+          <h3><span class="icon">📚</span>Key Capabilities</h3>
+          <p style="margin-bottom:8px;">✦ Text-to-image generation<br />
+          ✦ Image editing (inpainting, outpainting, style transfer)<br />
+          ✦ Multi-turn iterative refinement<br />
+          ✦ High fidelity text rendering<br />
+          ✦ Consistent character generation<br />
+          ✦ Native aspect ratio & transparency support</p>
+          <p style="font-size:13px;">
+            <a href="https://evolink.ai/gpt-image-2-prompts" target="_blank">Try on Evolink →</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container">
+    <p>
+      Based on <a href="https://github.com/EvoLinkAI/awesome-gpt-image-2-API-and-Prompts" target="_blank">awesome-gpt-image-2-API-and-Prompts</a> by EvoLinkAI &bull;
+      Forked and curated by <a href="https://dazi.studio" target="_blank">Dazi Studio</a>
+    </p>
+  </div>
+</footer>
+
+<!-- Modal -->
+<div id="modalOverlay" class="modal-overlay">
+  <div class="modal">
+    <button id="closeModal" class="modal-close">✕</button>
+    <div id="modalContent"></div>
+  </div>
+</div>
+
+<script src="js/app.js"></script>
+</body>
+</html>
