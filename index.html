@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title data-i18n="siteTitle">GPT Image 2 提示词画廊</title>
+  <meta name="description" content="精心整理的 GPT-Image-2 生产级提示词、API 使用模式和可复用视觉工作流集合。" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🎨%3C/text%3E%3C/svg%3E" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<header>
+  <nav class="container">
+    <a href="/" class="logo">✦ <span>Dazi Studio</span></a>
+    <div class="nav-links">
+      <a href="#gallery-section" data-i18n="navGallery">画廊</a>
+      <a href="#api-section" data-i18n="navApi">API</a>
+      <a href="https://github.com/EvoLinkAI/awesome-gpt-image-2-API-and-Prompts" target="_blank" data-i18n="navGithub">GitHub</a>
+      <div class="lang-switch">
+        <button class="lang-btn active" data-lang="zh" onclick="setLang('zh')">中文</button>
+        <button class="lang-btn" data-lang="en" onclick="setLang('en')">EN</button>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container">
+      <h1>GPT Image 2 <span data-i18n="heroSubtitle">提示词画廊</span></h1>
+      <p data-i18n="heroDesc">精心整理的 GPT-Image-2 生产级提示词、API 使用模式和可复用视觉工作流集合。</p>
+      <div class="hero-stats">
+        <div class="stat">
+          <div class="stat-num" id="heroStatPrompts">--</div>
+          <div class="stat-label" data-i18n="statPrompts">精选提示词</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num" id="heroStatCategories">--</div>
+          <div class="stat-label" data-i18n="statCategories">分类</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num" id="heroStatImages">--</div>
+          <div class="stat-label" data-i18n="statImages">输出图片</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section id="gallery-section" class="container">
+    <div class="search-wrap">
+      <span class="search-icon">🔍</span>
+      <input id="searchInput" type="text" data-i18n-placeholder="searchPlaceholder" placeholder="搜索提示词、分类、作者..." autocomplete="off" />
+    </div>
+    <div id="categoryBar" class="category-bar"></div>
+    <div class="gallery-header">
+      <span class="result-count" id="resultCount"></span>
+    </div>
+    <div id="gallery" class="gallery"></div>
+    <div style="text-align:center;margin-top:24px;">
+      <button id="loadMore" class="cat-btn" style="display:none;padding:10px 32px;" data-i18n="loadMore">加载更多</button>
+    </div>
+  </section>
+
+  <!-- API Section -->
+  <section id="api-section" class="section">
+    <div class="container">
+      <h2 class="section-title" data-i18n="apiSectionTitle">🔌 使用 GPT Image 2 API</h2>
+      <p class="section-sub" data-i18n="apiSectionSub">一次 API 调用即可完成生成和编辑 — 兼容 OpenAI 标准格式。</p>
+      <div class="api-cards">
+        <div class="api-card">
+          <h3><span class="icon">⚡</span><span data-i18n="apiQuickStart">快速开始</span></h3>
+          <p data-i18n="apiQuickStartDesc">使用单条 curl 命令通过 GPT Image 2 API 生成图片。</p>
+          <code>curl --request POST \
+  --url https://api.evolink.ai/v1/images/generations \
+  --header 'Authorization: Bearer YOUR_API_KEY' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "model": "gpt-image-2",
+  "prompt": "A beautiful sunset over the ocean, photorealistic, 8K"
+}'</code>
+        </div>
+        <div class="api-card">
+          <h3><span class="icon">🔧</span><span data-i18n="apiInstallSkill">安装 Skill</span></h3>
+          <p data-i18n="apiInstallSkillDesc">一行命令安装 GPT-Image-2 Gen Skill，无缝集成。</p>
+          <code>npx evolink-gpt-image -y</code>
+          <p style="margin-top:12px;font-size:13px;">
+            <a href="https://github.com/EvoLinkAI/gpt-image-2-gen-skill" target="_blank" data-i18n="viewOnGithub">查看 GitHub →</a>
+          </p>
+        </div>
+        <div class="api-card">
+          <h3><span class="icon">📚</span><span data-i18n="apiCapabilities">核心功能</span></h3>
+          <p data-i18n="apiCapabilitiesDesc" style="margin-bottom:8px;">✦ 文生图<br />
+          ✦ 图片编辑（内补、外补、风格迁移）<br />
+          ✦ 多轮迭代优化<br />
+          ✦ 高保真文字渲染<br />
+          ✦ 角色一致性生成<br />
+          ✦ 原生比例和透明度支持</p>
+          <p style="font-size:13px;">
+            <a href="https://evolink.ai/gpt-image-2-prompts" target="_blank" data-i18n="tryOnEvolink">在 Evolink 上体验 →</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container">
+    <p data-i18n="footer">
+      基于 EvoLinkAI 的 awesome-gpt-image-2-API-and-Prompts · 由 Dazi Studio 整理制作
+    </p>
+  </div>
+</footer>
+
+<!-- Modal -->
+<div id="modalOverlay" class="modal-overlay">
+  <div class="modal">
+    <button id="closeModal" class="modal-close">✕</button>
+    <div id="modalContent"></div>
+  </div>
+</div>
+
+<script src="js/app.js"></script>
+</body>
+</html>
