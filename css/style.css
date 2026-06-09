@@ -66,12 +66,13 @@ nav {
   font-weight: 700;
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 10px;
   color: var(--text);
 }
 .logo span { background: linear-gradient(135deg, var(--accent), var(--accent2));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent; }
+.logo svg { flex-shrink: 0; }
 
 .nav-links { display: flex; gap: 8px; align-items: center; }
 .nav-links a {
