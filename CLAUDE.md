@@ -25,79 +25,89 @@
 
 ---
 
-## 2. 当前实现（main 基线，未改版前）
+## 2. 当前实现（2026-06-19，阶段 B/C 已完成）
 
 ```
 dazi-studio/
-├── index.html          # 单页：Hero + 画廊 + API 区（将删除）+ Footer
-├── css/style.css       # 暗色主题，#7c5cff 主色
-├── js/app.js           # 全部交互逻辑（~370 行）
-├── data.json           # 763 条 GPT Image 2 提示词（单文件）
+├── index.html              # 单页：Hero + 模型 Tab + 画廊 + Footer
+├── css/style.css           # 暗色主题，#7c5cff 主色
+├── js/app.js               # 全部交互逻辑（~500 行）
+├── data/                   # 构建产物（由 scripts/sync.py 生成）
+│   ├── index.json          # 模型索引 + 总数
+│   ├── gpt-image-2.json    # ~1,016 条
+│   ├── nano-banana.json    # ~129 条
+│   ├── seedream.json       # 0 条（待补充）
+│   ├── seedance.json       # ~106 条（视频）
+│   └── grok-imagine.json   # ~103 条
+├── scripts/
+│   └── sync.py             # 数据同步脚本（EvoLink + YouMind README + 去重）
+├── .github/workflows/
+│   └── sync-prompts.yml    # 每周一自动同步
 ├── LICENSE
-└── mockup.html         # UI 示意（docs 分支，非生产）
+├── mockup.html             # UI 示意（长期保留）
+├── CLAUDE.md
+└── docs/SDD.md
 ```
 
 ### 数据流（现版）
 
 ```
-fetch('data.json') → state.cases → 搜索/分类筛选 → 卡片网格 → Modal 复制 prompt
+fetch('data/index.json') → 按需 fetch('data/{model}.json') → 缓存 → 搜索/筛选 → 卡片网格 → Modal 复制 prompt
 ```
 
-### `data.json` 单条 schema（现版）
+- **多模型**：5 个 Tab（GPT Image 2 / Nano Banana / Seedream / Seedance / Grok Imagine）
+- **懒加载**：仅首屏加载 index + 当前模型 JSON，切换 Tab 时按需 fetch + 缓存
+- **媒体**：支持图片 + 视频卡片，Modal 内 `<video>` 播放
+- **去重**：按 Twitter status ID 去重（EvoLink + YouMind README 交叉数据）
+
+### `data/*.json` 单条 schema（v2）
 
 ```json
 {
-  "id": "e-commerce_113",
-  "caseNum": 113,
+  "id": "gpt-image-2_2047689647967609037",
+  "model": "gpt-image-2",
+  "mediaType": "image",
   "title": "E-commerce Main Image - Luxury Amber Perfume Ad",
+  "prompt": "...",
+  "thumbnail": "https://raw.githubusercontent.com/.../output.jpg",
+  "videoUrl": null,
   "category": "E-commerce",
-  "sourceUrl": "https://x.com/...",
   "author": "@Polanco_IA",
   "authorUrl": "https://x.com/Polanco_IA",
-  "imageUrls": ["https://raw.githubusercontent.com/EvoLinkAI/.../output.jpg"],
-  "prompt": "..."
+  "sourceUrl": "https://x.com/Polanco_IA/status/2047689647967609037",
+  "imageUrls": ["https://..."],
+  "syncedAt": "2026-06-19T11:00:32Z"
 }
 ```
 
 ### `app.js` 要点
 
 - **i18n**：中英文，`localStorage` 键 `dazi-lang`，默认 `zh`
-- **分类**：7 类 EvoLink 分类，`categoryNames` 中英文映射
+- **分类**：7 类 EvoLink 分类，`categoryNames` 中英文映射（仅当前模型有分类时显示）
 - **分页**：`perPage: 24`，加载更多
 - **懒加载**：`IntersectionObserver` 加载卡片图
-- **Modal**：仅图片，复制 prompt 到剪贴板
-- **无**模型维度、无视频、无多文件数据
+- **Modal**：图片 / 视频；复制 prompt +「去韭菜盒子创作」CTA
+- **模型缓存**：`state.modelData = {}`，切换 Tab 复用
 
-### `index.html` 要点
+## 3. 改版完成情况
 
-- Logo 已链 `https://jiucaihezi.studio/`
-- Nav：画廊 / API / GitHub
-- Hero 统计数字由 `app.js` 从数据计算
-
----
-
-## 3. 计划中的改版（见 docs/SDD.md，尚未实现）
-
-代号：**搭子提示词库（Prompt Hub）**
-
-| 维度 | 现版 | 目标 |
+| 阶段 | 状态 | 内容 |
 |------|------|------|
-| 数据量 | 763 条 | 免费方案约 **1,500–2,000** 条（公开源去重后） |
-| 模型 | 仅 GPT Image 2 | GPT Image 2、Nano Banana、Seedream、Seedance、Grok Imagine |
-| 媒体 | 仅图片 | 图片 + 视频（缩略图 + 播放） |
-| 数据文件 | 单 `data.json` | `data/index.json` + `data/{model}.json` |
-| API 区 | 有 | **删除** |
-| 引流 | 弱 | Modal 双按钮：复制 + 去韭菜盒子创作 |
+| **A** | ✅ 已完成 | UI 改版（删 API 区、Hero CTA、Modal 引流、模型 Tab） |
+| **B** | ✅ 已完成 | `scripts/sync.py` + `data/` 分模型文件 + 前端多模型加载 |
+| **C** | ✅ 已完成 | `.github/workflows/sync-prompts.yml` 每周一自动同步 |
+| **D** | ⏳ 可选 | 分类映射优化、UTM 参数、Seedream 数据补充 |
 
-### 免费数据同步（计划 `scripts/sync.py`）
+### 同步覆盖
 
-| 源 | 方式 | 约条数 |
-|----|------|--------|
-| EvoLink `cases/*.md` | 解析 Markdown | ~895 |
-| YouMind sitemap + 详情页 JSON-LD | 爬公开 SEO 页 | ~1,443 |
-| YouMind README ×4 | 解析增量 | ~460（与上重叠） |
+| 源 | 方式 | 状态 |
+|----|------|------|
+| EvoLink `cases/*.md` | 解析 Markdown（7 类） | ✅ ~895 条 |
+| YouMind README ×4 | 解析 `#### 📝 Prompt` 块 | ✅ ~464 条 |
+| YouMind sitemap + 详情页 | 爬公开 SEO 页 JSON-LD | ⚠️ sitemap URL 已获取，详情爬取待运行 |
+| 去重/分模型输出 | `sync.py` 自动处理 | ✅ |
 
-**重要限制**：YouMind 画廊声称 3 万+，但全量在私有 CMS；**不付费、无 API Key 时无法拿到 3 万+**。公开爬取上限约两千条级别。
+**总数据量**：~1,354 条（4/5 模型有数据，Seedream 待补充）
 
 ### 目标数据 schema（计划）
 
@@ -186,8 +196,10 @@ python3 -m http.server 8080
 |------|-----------|
 | 改文案/结构 | `index.html`, `js/app.js`（`i18n`） |
 | 改样式 | `css/style.css` |
-| 加提示词（临时） | `data.json` 或未来 `data/{model}.json` |
-| 批量更新数据 | 未来 `scripts/sync.py` → 生成 `data/` |
+| 加提示词（临时） | `data/{model}.json` |
+| 批量更新数据 | `python3 scripts/sync.py` → 生成 `data/` |
+| 加模型 Tab | `index.html`, `app.js`, `style.css` |
+| 视频 Modal | `app.js`, `style.css` |
 | 加模型 Tab | `index.html`, `app.js`, `style.css` |
 | 视频 Modal | `app.js`, `style.css` |
 

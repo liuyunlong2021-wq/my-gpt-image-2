@@ -1,0 +1,52 @@
+name: Sync Prompts
+
+on:
+  schedule:
+    - cron: '0 3 * * 1'   # 每周一 03:00 UTC（北京时间 11:00）
+  workflow_dispatch:        # 支持手动触发
+
+permissions:
+  contents: write           # 允许 git push
+
+concurrency:
+  group: sync-prompts       # 防止并发运行
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Run sync
+        id: sync
+        run: |
+          python scripts/sync.py --skip-youmind-detail 2>&1 | tee sync.log
+          echo "total=$(python -c "import json; d=json.load(open('data/index.json')); print(d.get('total',0))")" >> "$GITHUB_OUTPUT"
+
+      - name: Configure Git
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email 'github-actions[bot]@users.noreply.github.com'
+
+      - name: Commit & Push
+        run: |
+          git add data/
+          if git diff --staged --quiet; then
+            echo "📭 数据无变化，跳过 commit"
+          else
+            git commit -m "chore: sync prompts — ${{ steps.sync.outputs.total }} 条"
+            git push
+            echo "✅ 已推送 ${{ steps.sync.outputs.total }} 条提示词"
+          fi

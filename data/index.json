@@ -1,0 +1,62 @@
+{
+  "version": 2,
+  "syncedAt": "2026-06-19T12:13:00Z",
+  "models": [
+    {
+      "id": "gpt-image-2",
+      "label": {
+        "zh": "GPT Image 2",
+        "en": "GPT Image 2"
+      },
+      "file": "gpt-image-2.json",
+      "count": 991,
+      "mediaType": "image",
+      "color": "#7c5cff"
+    },
+    {
+      "id": "nano-banana",
+      "label": {
+        "zh": "Nano Banana Pro",
+        "en": "Nano Banana Pro"
+      },
+      "file": "nano-banana.json",
+      "count": 129,
+      "mediaType": "image",
+      "color": "#f5c542"
+    },
+    {
+      "id": "seedream",
+      "label": {
+        "zh": "Seedream 4.5",
+        "en": "Seedream 4.5"
+      },
+      "file": "seedream.json",
+      "count": 111,
+      "mediaType": "image",
+      "color": "#5ccc7c"
+    },
+    {
+      "id": "seedance",
+      "label": {
+        "zh": "Seedance 2.0",
+        "en": "Seedance 2.0"
+      },
+      "file": "seedance.json",
+      "count": 106,
+      "mediaType": "video",
+      "color": "#4a9fff"
+    },
+    {
+      "id": "grok-imagine",
+      "label": {
+        "zh": "Grok Imagine",
+        "en": "Grok Imagine"
+      },
+      "file": "grok-imagine.json",
+      "count": 103,
+      "mediaType": "video",
+      "color": "#ff5c9e"
+    }
+  ],
+  "total": 1440
+}

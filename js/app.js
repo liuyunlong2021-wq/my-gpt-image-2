@@ -147,6 +147,8 @@ function translateUI() {
 }
 
 const state = {
+  indexData: null,
+  modelData: {},
   cases: [],
   filtered: [],
   activeModel: 'gpt-image-2',
@@ -169,6 +171,7 @@ const els = {
   modalContent: document.getElementById('modalContent'),
   closeModal: document.getElementById('closeModal'),
   heroStatPrompts: document.getElementById('heroStatPrompts'),
+  heroStatModels: document.getElementById('heroStatModels'),
   heroStatMedia: document.getElementById('heroStatMedia'),
   loadMore: document.getElementById('loadMore')
 };
@@ -186,11 +189,53 @@ function normalizeCase(c) {
 
 async function loadData() {
   try {
-    const res = await fetch('data.json');
-    state.cases = (await res.json()).map(normalizeCase);
+    const idxRes = await fetch('data/index.json');
+    state.indexData = await idxRes.json();
+
+    if (state.indexData.models) {
+      state.indexData.models.forEach(im => {
+        const m = MODELS.find(x => x.id === im.id);
+        if (m) {
+          if (im.label) {
+            m.name.zh = im.label.zh || m.name.zh;
+            m.name.en = im.label.en || m.name.en;
+          }
+          if (im.color) m.color = im.color;
+        }
+      });
+    }
+
+    await loadModelData(state.activeModel);
     init();
   } catch (err) {
+    console.error(err);
     els.gallery.innerHTML = `<div class="empty-state"><div class="icon">⚠️</div><p>${t('failedToLoad')}</p></div>`;
+  }
+}
+
+async function loadModelData(modelId) {
+  if (state.modelData[modelId]) {
+    state.cases = state.modelData[modelId];
+    return;
+  }
+
+  const im = state.indexData && state.indexData.models
+    ? state.indexData.models.find(m => m.id === modelId)
+    : null;
+  const file = im ? im.file : `${modelId}.json`;
+
+  try {
+    showSkeleton();
+    const res = await fetch(`data/${file}`);
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    const data = await res.json();
+    const normalized = data.map(normalizeCase);
+    state.modelData[modelId] = normalized;
+    state.cases = normalized;
+  } catch (err) {
+    console.error(`Failed to load model ${modelId}:`, err);
+    state.modelData[modelId] = [];
+    state.cases = [];
   }
 }
 
@@ -204,8 +249,15 @@ function init() {
 function getModelCounts() {
   const counts = {};
   MODELS.forEach(m => { counts[m.id] = 0; });
-  state.cases.forEach(c => {
-    if (counts[c.model] !== undefined) counts[c.model]++;
+  if (state.indexData && state.indexData.models) {
+    state.indexData.models.forEach(im => {
+      if (counts[im.id] !== undefined) counts[im.id] = im.count || 0;
+    });
+  }
+  Object.entries(state.modelData).forEach(([mid, records]) => {
+    if (counts[mid] !== undefined && records.length > 0) {
+      counts[mid] = records.length;
+    }
   });
   return counts;
 }
@@ -224,7 +276,7 @@ function renderModelBar() {
 
 function getCategories() {
   const pool = state.cases.filter(c => c.model === state.activeModel);
-  const cats = new Set(pool.map(c => c.category));
+  const cats = new Set(pool.map(c => c.category).filter(Boolean));
   return ['All', ...cats];
 }
 
@@ -239,8 +291,6 @@ function renderCategories() {
 }
 
 function filterCases() {
-  if (state.activeModel !== 'gpt-image-2') return [];
-
   let result = state.cases.filter(c => c.model === state.activeModel);
 
   if (state.activeMediaType === 'image') {
@@ -258,8 +308,8 @@ function filterCases() {
     result = result.filter(c =>
       c.title.toLowerCase().includes(q) ||
       c.prompt.toLowerCase().includes(q) ||
-      c.author.toLowerCase().includes(q) ||
-      c.category.toLowerCase().includes(q) ||
+      (c.author || '').toLowerCase().includes(q) ||
+      (c.category || '').toLowerCase().includes(q) ||
       tCat(c.category).toLowerCase().includes(q)
     );
   }
@@ -271,7 +321,9 @@ function filterAndRender() {
   state.currentPage = 1;
   renderGallery();
   updateResultCount();
-  els.categoryBar.style.display = state.activeModel === 'gpt-image-2' ? '' : 'none';
+  // 只有当前模型有分类数据时才显示分类栏
+  const cats = getCategories();
+  els.categoryBar.style.display = cats.length > 1 ? '' : 'none';
 }
 
 function getDisplayCases() {
@@ -279,7 +331,8 @@ function getDisplayCases() {
 }
 
 function emptyMessage() {
-  if (state.activeModel !== 'gpt-image-2') return t('modelComingSoon');
+  const cached = state.modelData[state.activeModel];
+  if (cached && cached.length === 0) return t('modelComingSoon');
   if (state.activeMediaType === 'video') return t('noVideosYet');
   return t('noResults');
 }
@@ -287,7 +340,7 @@ function emptyMessage() {
 function renderGallery() {
   const display = getDisplayCases();
   if (display.length === 0) {
-    els.gallery.innerHTML = `<div class="empty-state"><div class="icon">${state.activeModel !== 'gpt-image-2' ? '🚀' : '🔍'}</div><p>${emptyMessage()}</p></div>`;
+    els.gallery.innerHTML = `<div class="empty-state"><div class="icon">${state.cases.length === 0 && state.modelData[state.activeModel] ? '🚀' : '🔍'}</div><p>${emptyMessage()}</p></div>`;
     els.loadMore.style.display = 'none';
     return;
   }
@@ -344,16 +397,30 @@ function updateResultCount() {
 }
 
 function updateHeroStats() {
-  els.heroStatPrompts.textContent = state.cases.length;
-  const mediaCount = state.cases.reduce((sum, c) => {
-    if (c.mediaType === 'video') return sum + 1;
-    return sum + (c.imageUrls ? c.imageUrls.length : 0);
-  }, 0);
-  els.heroStatMedia.textContent = mediaCount;
+  if (state.indexData) {
+    els.heroStatPrompts.textContent = state.indexData.total || 0;
+  } else {
+    els.heroStatPrompts.textContent = state.cases.length;
+  }
+  els.heroStatModels.textContent = MODELS.length;
+  let mediaCount = 0;
+  Object.values(state.modelData).forEach(records => {
+    records.forEach(c => {
+      if (c.mediaType === 'video') mediaCount++;
+      else mediaCount += (c.imageUrls ? c.imageUrls.length : 0);
+    });
+  });
+  els.heroStatMedia.textContent = mediaCount || '--';
 }
 
 function openModal(id) {
-  const c = state.cases.find(x => x.id === id);
+  let c = state.cases.find(x => x.id === id);
+  if (!c) {
+    for (const records of Object.values(state.modelData)) {
+      c = records.find(x => x.id === id);
+      if (c) break;
+    }
+  }
   if (!c) return;
   const imgUrl = c.thumbnail || (c.imageUrls && c.imageUrls[0]) || '';
   const isVideo = c.mediaType === 'video' && c.videoUrl;
@@ -416,14 +483,27 @@ document.addEventListener('keydown', e => {
   if (e.key === 'Escape') closeModalFn();
 });
 
-els.modelBar.addEventListener('click', e => {
+els.modelBar.addEventListener('click', async e => {
   const btn = e.target.closest('.model-btn');
   if (!btn) return;
-  state.activeModel = btn.dataset.model;
+  const modelId = btn.dataset.model;
+  state.activeModel = modelId;
   state.activeCategory = 'All';
+  state.activeMediaType = 'all';
   state.currentPage = 1;
+  state.searchQuery = '';
+  els.searchInput.value = '';
+
   document.querySelectorAll('.model-btn').forEach(b => b.classList.remove('active'));
   btn.classList.add('active');
+  document.querySelectorAll('.type-btn').forEach(b => b.classList.toggle('active', b.dataset.type === 'all'));
+
+  if (!state.modelData[modelId]) {
+    await loadModelData(modelId);
+  } else {
+    state.cases = state.modelData[modelId];
+  }
+
   renderCategories();
   filterAndRender();
 });
