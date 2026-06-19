@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UI 示意 · 搭子提示词库</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --bg: #0a0a0f;
+      --bg-card: #12121a;
+      --bg-elevated: #1a1a28;
+      --border: #2a2a3a;
+      --text: #e8e8f0;
+      --text-dim: #8888a0;
+      --accent: #7c5cff;
+      --accent-glow: #7c5cff33;
+      --accent2: #ff5c9e;
+      --green: #5ccc7c;
+      --orange: #ff9f4a;
+      --blue: #4a9fff;
+      --radius: 12px;
+      --font: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    }
+    body { font-family: var(--font); background: var(--bg); color: var(--text); line-height: 1.5; }
+    a { color: var(--accent); text-decoration: none; }
+    .container { max-width: 1280px; margin: 0 auto; padding: 0 24px; }
+    .mockup-badge {
+      position: fixed; top: 12px; right: 12px; z-index: 999;
+      background: var(--orange); color: #000; font-size: 11px; font-weight: 700;
+      padding: 6px 12px; border-radius: 999px; letter-spacing: 0.5px;
+    }
+
+    /* Header */
+    header {
+      position: sticky; top: 0; z-index: 100;
+      background: rgba(10,10,15,0.9); backdrop-filter: blur(20px);
+      border-bottom: 1px solid var(--border);
+    }
+    nav { display: flex; align-items: center; justify-content: space-between; height: 64px; }
+    .logo { display: flex; align-items: center; gap: 10px; color: var(--text); font-weight: 700; font-size: 18px; }
+    .logo span { background: linear-gradient(135deg, var(--accent), var(--accent2)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    .nav-links { display: flex; gap: 8px; align-items: center; font-size: 14px; }
+    .nav-links a { color: var(--text-dim); padding: 8px 14px; border-radius: 8px; }
+    .nav-links a:hover { background: var(--bg-elevated); color: var(--text); }
+
+    /* Hero */
+    .hero { padding: 56px 0 40px; text-align: center; }
+    .hero h1 { font-size: 40px; font-weight: 800; margin-bottom: 12px; }
+    .hero h1 em { font-style: normal; background: linear-gradient(135deg, var(--accent), var(--accent2)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    .hero p { color: var(--text-dim); font-size: 17px; max-width: 520px; margin: 0 auto 28px; }
+    .hero-cta {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: linear-gradient(135deg, var(--accent), #9b7fff);
+      color: #fff; font-weight: 600; font-size: 14px;
+      padding: 12px 24px; border-radius: 999px; border: none; cursor: pointer;
+    }
+    .hero-stats { display: flex; justify-content: center; gap: 40px; margin-top: 32px; }
+    .stat-num { font-size: 28px; font-weight: 700; }
+    .stat-label { font-size: 12px; color: var(--text-dim); }
+
+    /* Model tabs */
+    .model-bar { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 16px; }
+    .model-btn {
+      display: flex; align-items: center; gap: 8px;
+      padding: 10px 18px; border-radius: 999px; border: 1px solid var(--border);
+      background: transparent; color: var(--text-dim); font-size: 13px; font-weight: 600;
+      cursor: pointer; transition: all 0.2s;
+    }
+    .model-btn.active { border-color: var(--accent); background: var(--accent-glow); color: var(--text); }
+    .model-btn .dot { width: 8px; height: 8px; border-radius: 50%; }
+    .model-btn .count { font-size: 11px; opacity: 0.7; margin-left: 2px; }
+    .type-bar { display: flex; gap: 6px; margin-bottom: 20px; }
+    .type-btn {
+      padding: 6px 14px; border-radius: 8px; border: none; background: var(--bg-elevated);
+      color: var(--text-dim); font-size: 12px; cursor: pointer;
+    }
+    .type-btn.active { background: var(--accent); color: #fff; }
+
+    /* Search */
+    .search-wrap {
+      position: relative; margin-bottom: 24px;
+    }
+    .search-wrap input {
+      width: 100%; padding: 14px 16px 14px 44px;
+      background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius);
+      color: var(--text); font-size: 15px; outline: none;
+    }
+    .search-wrap input:focus { border-color: var(--accent); }
+    .search-icon { position: absolute; left: 16px; top: 50%; transform: translateY(-50%); opacity: 0.5; }
+
+    /* Gallery */
+    .gallery-header { display: flex; justify-content: space-between; margin-bottom: 16px; font-size: 14px; color: var(--text-dim); }
+    .gallery { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 18px; padding-bottom: 60px; }
+    .card {
+      background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius);
+      overflow: hidden; cursor: pointer; transition: all 0.25s;
+    }
+    .card:hover { border-color: var(--accent); transform: translateY(-2px); box-shadow: 0 8px 32px rgba(124,92,255,0.12); }
+    .card-img { aspect-ratio: 1; background: var(--bg-elevated); position: relative; overflow: hidden; }
+    .card-img img { width: 100%; height: 100%; object-fit: cover; }
+    .card-img .play {
+      position: absolute; inset: 0; display: flex; align-items: center; justify-content: center;
+      background: rgba(0,0,0,0.35); font-size: 36px;
+    }
+    .card-body { padding: 14px; }
+    .card-tags { display: flex; gap: 6px; margin-bottom: 8px; flex-wrap: wrap; }
+    .tag { font-size: 10px; font-weight: 700; padding: 2px 8px; border-radius: 999px; text-transform: uppercase; letter-spacing: 0.3px; }
+    .tag-model { background: var(--accent-glow); color: var(--accent); }
+    .tag-video { background: rgba(74,159,255,0.2); color: var(--blue); }
+    .card h3 { font-size: 13px; font-weight: 600; line-height: 1.4; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+
+    /* Modal */
+    .overlay {
+      position: fixed; inset: 0; background: rgba(0,0,0,0.75); backdrop-filter: blur(8px);
+      z-index: 200; display: none; align-items: center; justify-content: center; padding: 20px;
+    }
+    .overlay.open { display: flex; }
+    .modal {
+      background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius);
+      max-width: 720px; width: 100%; max-height: 90vh; overflow: auto; position: relative;
+    }
+    .modal-close {
+      position: absolute; top: 12px; right: 12px; width: 32px; height: 32px;
+      border-radius: 50%; border: none; background: rgba(0,0,0,0.6); color: #fff; cursor: pointer; z-index: 2;
+    }
+    .modal-media { width: 100%; aspect-ratio: 16/10; background: #000; object-fit: contain; }
+    .modal-body { padding: 20px; }
+    .modal-prompt {
+      background: var(--bg-elevated); border: 1px solid var(--border); border-radius: 8px;
+      padding: 14px; font-size: 13px; line-height: 1.6; color: var(--text-dim);
+      max-height: 160px; overflow: auto; margin: 12px 0 16px; font-family: var(--font);
+    }
+    .modal-actions { display: flex; gap: 10px; flex-wrap: wrap; }
+    .btn-primary {
+      flex: 1; min-width: 140px; padding: 12px 20px; border: none; border-radius: 8px;
+      background: var(--accent); color: #fff; font-weight: 600; font-size: 14px; cursor: pointer;
+    }
+    .btn-secondary {
+      flex: 1; min-width: 140px; padding: 12px 20px; border: 1px solid var(--accent); border-radius: 8px;
+      background: transparent; color: var(--accent); font-weight: 600; font-size: 14px; cursor: pointer;
+    }
+
+    footer { border-top: 1px solid var(--border); padding: 24px 0; text-align: center; font-size: 13px; color: var(--text-dim); }
+
+    /* Annotations */
+    .anno-section { position: relative; }
+    .anno {
+      position: absolute; right: -8px; top: 0;
+      background: var(--orange); color: #000; font-size: 10px; font-weight: 700;
+      padding: 4px 8px; border-radius: 4px; white-space: nowrap;
+      transform: translateX(100%); display: none;
+    }
+    @media (min-width: 1400px) { .anno { display: block; } }
+  </style>
+</head>
+<body>
+  <div class="mockup-badge">UI 示意 · 非正式代码</div>
+
+  <header>
+    <nav class="container">
+      <a href="https://jiucaihezi.studio/" class="logo" title="回主站">
+        <svg width="28" height="28" viewBox="0 0 100 60" fill="none"><path d="M10 50C10 50 10 10 50 10C90 10 90 50 90 50" stroke="#7c5cff" stroke-width="6" stroke-linecap="round"/><path d="M10 50C12 47 15 47 17 50C19 53 22 53 24 50" stroke="#7c5cff" stroke-width="6" stroke-linecap="round"/></svg>
+        <span>提示词</span>
+      </a>
+      <div class="nav-links">
+        <a href="#gallery">画廊</a>
+        <span style="color:var(--text-dim);font-size:13px;">中文 · EN</span>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container anno-section">
+        <span class="anno">① 引流定位</span>
+        <h1>搭子 <em>提示词库</em></h1>
+        <p>参考图 / 参考视频 + 提示词，一站浏览、一键复制，去韭菜盒子创作</p>
+        <a class="hero-cta" href="https://jiucaihezi.studio/">去韭菜盒子创作 →</a>
+        <div class="hero-stats">
+          <div><div class="stat-num">1,847</div><div class="stat-label">提示词</div></div>
+          <div><div class="stat-num">5</div><div class="stat-label">模型</div></div>
+          <div><div class="stat-num">1,203</div><div class="stat-label">参考图/视频</div></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery" class="container">
+      <div class="anno-section" style="position:relative;margin-bottom:8px;">
+        <span class="anno" style="top:8px;">② 模型切换</span>
+        <div class="model-bar" id="modelBar">
+          <button class="model-btn active" data-model="gpt"><span class="dot" style="background:#7c5cff"></span>GPT Image 2 <span class="count">612</span></button>
+          <button class="model-btn" data-model="nano"><span class="dot" style="background:#f5c542"></span>Nano Banana <span class="count">398</span></button>
+          <button class="model-btn" data-model="seedream"><span class="dot" style="background:#5ccc7c"></span>Seedream 4.5 <span class="count">201</span></button>
+          <button class="model-btn" data-model="seedance"><span class="dot" style="background:#4a9fff"></span>Seedance 2.0 <span class="count">412</span></button>
+          <button class="model-btn" data-model="grok"><span class="dot" style="background:#ff5c9e"></span>Grok Imagine <span class="count">224</span></button>
+        </div>
+        <div class="type-bar">
+          <button class="type-btn active">全部</button>
+          <button class="type-btn">🖼 图片</button>
+          <button class="type-btn">🎬 视频</button>
+        </div>
+      </div>
+
+      <div class="search-wrap">
+        <span class="search-icon">🔍</span>
+        <input type="text" placeholder="搜索提示词、分类、作者..." />
+      </div>
+
+      <div class="gallery-header">
+        <span>612 个提示词</span>
+        <span style="font-size:12px;opacity:0.7;">数据每周自动同步</span>
+      </div>
+
+      <div class="gallery" id="gallery">
+        <div class="card" onclick="openModal('image')">
+          <div class="card-img"><img src="https://cms-assets.youmind.com/media/1776658772018_lukyfw_HGSUfldbIAEiMWZ.jpg" alt="" /></div>
+          <div class="card-body">
+            <div class="card-tags"><span class="tag tag-model">GPT Image 2</span></div>
+            <h3>VR Headset Exploded View Poster</h3>
+          </div>
+        </div>
+        <div class="card" onclick="openModal('image')">
+          <div class="card-img"><img src="https://cms-assets.youmind.com/media/1781774847009_gpa5ct_HLBU4FQawAAUk6P.jpg" alt="" /></div>
+          <div class="card-body">
+            <div class="card-tags"><span class="tag tag-model">GPT Image 2</span></div>
+            <h3>E-commerce Main Image - Luxury Perfume Ad</h3>
+          </div>
+        </div>
+        <div class="card" onclick="openModal('video')">
+          <div class="card-img">
+            <img src="https://customer-qs6wnyfuv0gcybzj.cloudflarestream.com/7f63ad253175a9ad1dac53de490efac8/thumbnails/thumbnail.jpg" alt="" />
+            <div class="play">▶</div>
+          </div>
+          <div class="card-body">
+            <div class="card-tags"><span class="tag tag-model">Seedance</span><span class="tag tag-video">视频</span></div>
+            <h3>15-Second Cinematic Japanese Romance Short Film</h3>
+          </div>
+        </div>
+        <div class="card" onclick="openModal('image')">
+          <div class="card-img"><img src="https://raw.githubusercontent.com/EvoLinkAI/awesome-gpt-image-2-API-and-Prompts/main/images/poster_case113/output.jpg" alt="" /></div>
+          <div class="card-body">
+            <div class="card-tags"><span class="tag tag-model">GPT Image 2</span></div>
+            <h3>Luxury Amber Perfume Ad (EvoLink)</h3>
+          </div>
+        </div>
+        <div class="card" onclick="openModal('video')">
+          <div class="card-img">
+            <img src="https://customer-qs6wnyfuv0gcybzj.cloudflarestream.com/0b7ecd10a9fc05aceaca76e28b6ad745/thumbnails/thumbnail.jpg" alt="" />
+            <div class="play">▶</div>
+          </div>
+          <div class="card-body">
+            <div class="card-tags"><span class="tag tag-model">Grok</span><span class="tag tag-video">视频</span></div>
+            <h3>Elon Musk Explaining SpaceX Engine</h3>
+          </div>
+        </div>
+        <div class="card" onclick="openModal('image')">
+          <div class="card-img" style="background:linear-gradient(135deg,#1a1a28,#2a2040);display:flex;align-items:center;justify-content:center;color:var(--text-dim);font-size:13px;">更多卡片…</div>
+          <div class="card-body">
+            <div class="card-tags"><span class="tag tag-model">Nano Banana</span></div>
+            <h3>…</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="container">
+    由搭子工作室聚合整理 · 数据来自社区贡献 · <a href="https://jiucaihezi.studio/">韭菜盒子</a> 创作主站
+    <br><span style="font-size:11px;margin-top:6px;display:inline-block;opacity:0.6;">已移除 API 区 · 无生成能力 · 仅展示 + 复制引流</span>
+  </footer>
+
+  <!-- Modal 示意 -->
+  <div class="overlay" id="overlay" onclick="if(event.target===this)closeModal()">
+    <div class="modal">
+      <button class="modal-close" onclick="closeModal()">✕</button>
+      <img id="modalImg" class="modal-media" src="https://cms-assets.youmind.com/media/1776658772018_lukyfw_HGSUfldbIAEiMWZ.jpg" alt="" />
+      <video id="modalVideo" class="modal-media" style="display:none" controls poster="https://customer-qs6wnyfuv0gcybzj.cloudflarestream.com/7f63ad253175a9ad1dac53de490efac8/thumbnails/thumbnail.jpg">
+        <source src="#" type="video/mp4" />
+      </video>
+      <div class="modal-body anno-section">
+        <span class="anno" style="top:20px;">③ 复制 + 引流主站</span>
+        <div class="card-tags"><span class="tag tag-model">GPT Image 2</span></div>
+        <h2 style="font-size:18px;margin:8px 0;">VR Headset Exploded View Poster</h2>
+        <div style="font-size:12px;color:var(--text-dim);margin-bottom:8px;">作者 @wory37303852</div>
+        <div style="font-size:12px;font-weight:600;color:var(--text);margin-bottom:6px;">提示词</div>
+        <div class="modal-prompt">A high-tech exploded view diagram of a VR headset with detailed component callouts and promotional text. Clean 3D render, studio lighting, purple-blue gradient background…</div>
+        <div class="modal-actions">
+          <button class="btn-primary" onclick="alert('已复制提示词！')">📋 复制提示词</button>
+          <a class="btn-secondary" href="https://jiucaihezi.studio/" style="text-align:center;line-height:1.2;display:flex;align-items:center;justify-content:center;">去韭菜盒子创作 →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    document.querySelectorAll('.model-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.model-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+      });
+    });
+    document.querySelectorAll('.type-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.type-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+      });
+    });
+    function openModal(type) {
+      document.getElementById('overlay').classList.add('open');
+      document.getElementById('modalImg').style.display = type === 'image' ? 'block' : 'none';
+      document.getElementById('modalVideo').style.display = type === 'video' ? 'block' : 'none';
+    }
+    function closeModal() {
+      document.getElementById('overlay').classList.remove('open');
+    }
+    openModal('image');
+  </script>
+</body>
+</html>

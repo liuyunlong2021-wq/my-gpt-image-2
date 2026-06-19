@@ -1,2 +1,14 @@
 node_modules/
 .DS_Store
+
+# Local sync research artifacts (do not commit)
+.ps*.xml
+.sitemap.xml
+.api.js
+.cat.html
+.page2.html
+.prompt-page.html
+.video-prompt.html
+.tmp-ym.html
+.ym-*.html
+.ym-*.txt
