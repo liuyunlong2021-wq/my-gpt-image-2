@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "syncedAt": "2026-06-29T05:15:47Z",
+  "syncedAt": "2026-06-29T07:17:54Z",
   "models": [
     {
       "id": "gpt-image-2",
@@ -9,7 +9,7 @@
         "en": "GPT Image 2"
       },
       "file": "gpt-image-2.json",
-      "count": 1735,
+      "count": 126,
       "mediaType": "image",
       "color": "#7c5cff"
     },
@@ -58,5 +58,5 @@
       "color": "#ff5c9e"
     }
   ],
-  "total": 2184
+  "total": 575
 }
