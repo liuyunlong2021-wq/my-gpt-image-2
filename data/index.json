@@ -9,7 +9,7 @@
         "en": "GPT Image 2"
       },
       "file": "gpt-image-2.json",
-      "count": 126,
+      "count": 177,
       "mediaType": "image",
       "color": "#7c5cff"
     },
@@ -58,5 +58,5 @@
       "color": "#ff5c9e"
     }
   ],
-  "total": 575
+  "total": 626
 }

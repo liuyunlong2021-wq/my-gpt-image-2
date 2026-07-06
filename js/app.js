@@ -232,6 +232,15 @@ async function loadGalleryData() {
 }
 
 async function loadModelData(modelId) {
+  if (modelId === 'gpt-image-2') {
+    if (state.galleryData.length === 0) {
+      await loadGalleryData();
+    }
+    state.cases = state.galleryData;
+    state.modelData[modelId] = state.galleryData;
+    return;
+  }
+
   if (state.modelData[modelId]) {
     state.cases = state.modelData[modelId];
     return;
@@ -260,7 +269,6 @@ async function loadModelData(modelId) {
 function init() {
   renderModelBar();
   renderCategories();
-  renderSubCategories();
   updateHeroStats();
   filterAndRender();
 }
@@ -294,7 +302,9 @@ function renderModelBar() {
 }
 
 function getCategories() {
-  const pool = state.cases.filter(c => c.model === state.activeModel);
+  const pool = state.activeModel === 'gpt-image-2'
+    ? state.galleryData
+    : state.cases.filter(c => c.model === state.activeModel);
   const cats = new Set(pool.map(c => c.category).filter(Boolean));
   return ['All', ...cats];
 }
@@ -310,21 +320,16 @@ function renderCategories() {
 }
 
 function filterCases() {
-  const useGallery = state.activeSubCat !== 'All' && state.activeModel === 'gpt-image-2' && state.activeMediaType === 'image';
-  let result = useGallery
-    ? state.galleryData.filter(c => c.category === state.activeSubCat)
-    : state.cases.filter(c => c.model === state.activeModel);
+  let result = state.cases.filter(c => c.model === state.activeModel);
 
-  if (!useGallery) {
-    if (state.activeMediaType === 'image') {
-      result = result.filter(c => c.mediaType === 'image');
-    } else if (state.activeMediaType === 'video') {
-      result = result.filter(c => c.mediaType === 'video');
-    }
+  if (state.activeMediaType === 'image') {
+    result = result.filter(c => c.mediaType === 'image');
+  } else if (state.activeMediaType === 'video') {
+    result = result.filter(c => c.mediaType === 'video');
+  }
 
-    if (state.activeCategory !== 'All') {
-      result = result.filter(c => c.category === state.activeCategory);
-    }
+  if (state.activeCategory !== 'All') {
+    result = result.filter(c => c.category === state.activeCategory);
   }
 
   if (state.searchQuery) {
@@ -351,33 +356,7 @@ function filterAndRender() {
 }
 
 function getDisplayCases() {
-  const cases = state.filtered;
-  if (state.activeSubCat !== 'All' && state.activeModel === 'gpt-image-2' && state.activeMediaType === 'image') {
-    return cases.slice(0, state.currentPage * state.perPage);
-  }
-  return cases.slice(0, state.currentPage * state.perPage);
-}
-
-function getSubCategories() {
-  if (state.activeModel !== 'gpt-image-2' || state.activeMediaType !== 'image') return [];
-  const cats = new Set(state.galleryData.map(c => c.category).filter(Boolean));
-  return ['All', ...cats];
-}
-
-function renderSubCategories() {
-  const subCats = getSubCategories();
-  if (subCats.length <= 1) {
-    if (els.subCatBar) els.subCatBar.style.display = 'none';
-    return;
-  }
-  if (state.activeSubCat !== 'All' && !subCats.includes(state.activeSubCat)) {
-    state.activeSubCat = 'All';
-  }
-  if (!els.subCatBar) return;
-  els.subCatBar.style.display = '';
-  els.subCatBar.innerHTML = subCats.map(cat =>
-    `<button class="cat-btn sub-cat-btn${cat === state.activeSubCat ? ' active' : ''}" data-subcat="${cat}">${cat === 'All' ? '🎨 全部图库' : cat}</button>`
-  ).join('');
+  return state.filtered.slice(0, state.currentPage * state.perPage);
 }
 
 function emptyMessage() {
@@ -586,18 +565,6 @@ els.searchInput.addEventListener('input', e => {
   state.currentPage = 1;
   filterAndRender();
 });
-
-if (els.subCatBar) {
-  els.subCatBar.addEventListener('click', e => {
-    const btn = e.target.closest('.sub-cat-btn');
-    if (!btn) return;
-    state.activeSubCat = btn.dataset.subcat;
-    state.currentPage = 1;
-    filterAndRender();
-    document.querySelectorAll('.sub-cat-btn').forEach(b => b.classList.remove('active'));
-    btn.classList.add('active');
-  });
-}
 
 els.loadMore.addEventListener('click', () => {
   state.currentPage++;
