@@ -1,12 +1,14 @@
 const JIUCAIHEZI_URL = 'https://jiucaihezi.studio/';
 
 const MODELS = [
-  { id: 'gpt-image-2', color: '#7c5cff', name: { zh: 'GPT Image 2', en: 'GPT Image 2' } },
+  { id: 'gpt-image-2', color: '#7c5cff', name: { zh: 'GPT Image 2', en: 'GPT Image 2' }, hasGallery: true },
   { id: 'nano-banana', color: '#f5c542', name: { zh: 'Nano Banana', en: 'Nano Banana' } },
   { id: 'seedream', color: '#5ccc7c', name: { zh: 'Seedream 4.5', en: 'Seedream 4.5' } },
   { id: 'seedance', color: '#4a9fff', name: { zh: 'Seedance 2.0', en: 'Seedance 2.0' } },
   { id: 'grok-imagine', color: '#ff5c9e', name: { zh: 'Grok Imagine', en: 'Grok Imagine' } },
 ];
+
+const GALLERY_FILE = 'data/jc-gpt2-gallery.json';
 
 const categoryNames = {
   zh: {
@@ -34,6 +36,7 @@ function tCat(cat) {
 }
 
 function tModel(modelId) {
+  if (modelId === 'jc-gpt2-gallery') return lang === 'zh' ? 'JC 精选图库' : 'JC Gallery';
   const m = MODELS.find(x => x.id === modelId);
   return m ? m.name[lang] : modelId;
 }
@@ -149,11 +152,13 @@ function translateUI() {
 const state = {
   indexData: null,
   modelData: {},
+  galleryData: [],
   cases: [],
   filtered: [],
   activeModel: 'gpt-image-2',
   activeMediaType: 'all',
   activeCategory: 'All',
+  activeSubCat: 'All',
   searchQuery: '',
   currentPage: 1,
   perPage: 24,
@@ -173,7 +178,8 @@ const els = {
   heroStatPrompts: document.getElementById('heroStatPrompts'),
   heroStatModels: document.getElementById('heroStatModels'),
   heroStatMedia: document.getElementById('heroStatMedia'),
-  loadMore: document.getElementById('loadMore')
+  loadMore: document.getElementById('loadMore'),
+  subCatBar: document.getElementById('subCatBar')
 };
 
 function normalizeCase(c) {
@@ -206,10 +212,22 @@ async function loadData() {
     }
 
     await loadModelData(state.activeModel);
+    await loadGalleryData();
     init();
   } catch (err) {
     console.error(err);
     els.gallery.innerHTML = `<div class="empty-state"><div class="icon">⚠️</div><p>${t('failedToLoad')}</p></div>`;
+  }
+}
+
+async function loadGalleryData() {
+  try {
+    const res = await fetch(GALLERY_FILE);
+    if (!res.ok) return;
+    const data = await res.json();
+    state.galleryData = data.map(normalizeCase);
+  } catch (err) {
+    console.warn('JC gallery data not available:', err.message);
   }
 }
 
@@ -242,6 +260,7 @@ async function loadModelData(modelId) {
 function init() {
   renderModelBar();
   renderCategories();
+  renderSubCategories();
   updateHeroStats();
   filterAndRender();
 }
@@ -291,16 +310,21 @@ function renderCategories() {
 }
 
 function filterCases() {
-  let result = state.cases.filter(c => c.model === state.activeModel);
+  const useGallery = state.activeSubCat !== 'All' && state.activeModel === 'gpt-image-2' && state.activeMediaType === 'image';
+  let result = useGallery
+    ? state.galleryData.filter(c => c.category === state.activeSubCat)
+    : state.cases.filter(c => c.model === state.activeModel);
 
-  if (state.activeMediaType === 'image') {
-    result = result.filter(c => c.mediaType === 'image');
-  } else if (state.activeMediaType === 'video') {
-    result = result.filter(c => c.mediaType === 'video');
-  }
+  if (!useGallery) {
+    if (state.activeMediaType === 'image') {
+      result = result.filter(c => c.mediaType === 'image');
+    } else if (state.activeMediaType === 'video') {
+      result = result.filter(c => c.mediaType === 'video');
+    }
 
-  if (state.activeCategory !== 'All') {
-    result = result.filter(c => c.category === state.activeCategory);
+    if (state.activeCategory !== 'All') {
+      result = result.filter(c => c.category === state.activeCategory);
+    }
   }
 
   if (state.searchQuery) {
@@ -310,7 +334,7 @@ function filterCases() {
       c.prompt.toLowerCase().includes(q) ||
       (c.author || '').toLowerCase().includes(q) ||
       (c.category || '').toLowerCase().includes(q) ||
-      tCat(c.category).toLowerCase().includes(q)
+      (c.category ? tCat(c.category) : '').toLowerCase().includes(q)
     );
   }
   return result;
@@ -327,7 +351,33 @@ function filterAndRender() {
 }
 
 function getDisplayCases() {
-  return state.filtered.slice(0, state.currentPage * state.perPage);
+  const cases = state.filtered;
+  if (state.activeSubCat !== 'All' && state.activeModel === 'gpt-image-2' && state.activeMediaType === 'image') {
+    return cases.slice(0, state.currentPage * state.perPage);
+  }
+  return cases.slice(0, state.currentPage * state.perPage);
+}
+
+function getSubCategories() {
+  if (state.activeModel !== 'gpt-image-2' || state.activeMediaType !== 'image') return [];
+  const cats = new Set(state.galleryData.map(c => c.category).filter(Boolean));
+  return ['All', ...cats];
+}
+
+function renderSubCategories() {
+  const subCats = getSubCategories();
+  if (subCats.length <= 1) {
+    if (els.subCatBar) els.subCatBar.style.display = 'none';
+    return;
+  }
+  if (state.activeSubCat !== 'All' && !subCats.includes(state.activeSubCat)) {
+    state.activeSubCat = 'All';
+  }
+  if (!els.subCatBar) return;
+  els.subCatBar.style.display = '';
+  els.subCatBar.innerHTML = subCats.map(cat =>
+    `<button class="cat-btn sub-cat-btn${cat === state.activeSubCat ? ' active' : ''}" data-subcat="${cat}">${cat === 'All' ? '🎨 全部图库' : cat}</button>`
+  ).join('');
 }
 
 function emptyMessage() {
@@ -426,6 +476,7 @@ function openModal(id) {
   const isVideo = c.mediaType === 'video' && c.videoUrl;
   const model = MODELS.find(m => m.id === c.model);
   const modelColor = model ? model.color : 'var(--accent)';
+  const displayPrompt = c.prompt || c.title;
 
   let mediaHtml = '';
   if (isVideo) {
@@ -447,7 +498,7 @@ function openModal(id) {
         ${c.sourceUrl ? ` · <a href="${escHtml(c.sourceUrl)}" target="_blank" rel="noopener noreferrer">${t('source')} →</a>` : ''}
       </div>
       <div class="modal-prompt-label">${t('prompt')}</div>
-      <div class="modal-prompt" id="modalPromptText">${escHtml(c.prompt)}</div>
+      <div class="modal-prompt" id="modalPromptText">${escHtml(displayPrompt)}</div>
       <div class="modal-actions">
         <button class="btn-primary" id="copyPromptBtn">${t('copy')}</button>
         <a class="btn-secondary" href="${JIUCAIHEZI_URL}" target="_blank" rel="noopener noreferrer">${t('createCta')}</a>
@@ -455,7 +506,7 @@ function openModal(id) {
     </div>
   `;
 
-  document.getElementById('copyPromptBtn').addEventListener('click', () => copyPrompt(c.prompt));
+  document.getElementById('copyPromptBtn').addEventListener('click', () => copyPrompt(displayPrompt));
   els.modalOverlay.classList.add('open');
   document.body.style.overflow = 'hidden';
 }
@@ -489,6 +540,7 @@ els.modelBar.addEventListener('click', async e => {
   const modelId = btn.dataset.model;
   state.activeModel = modelId;
   state.activeCategory = 'All';
+  state.activeSubCat = 'All';
   state.activeMediaType = 'all';
   state.currentPage = 1;
   state.searchQuery = '';
@@ -512,6 +564,7 @@ els.typeBar.addEventListener('click', e => {
   const btn = e.target.closest('.type-btn');
   if (!btn) return;
   state.activeMediaType = btn.dataset.type;
+  state.activeSubCat = 'All';
   state.currentPage = 1;
   document.querySelectorAll('.type-btn').forEach(b => b.classList.remove('active'));
   btn.classList.add('active');
@@ -533,6 +586,18 @@ els.searchInput.addEventListener('input', e => {
   state.currentPage = 1;
   filterAndRender();
 });
+
+if (els.subCatBar) {
+  els.subCatBar.addEventListener('click', e => {
+    const btn = e.target.closest('.sub-cat-btn');
+    if (!btn) return;
+    state.activeSubCat = btn.dataset.subcat;
+    state.currentPage = 1;
+    filterAndRender();
+    document.querySelectorAll('.sub-cat-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+  });
+}
 
 els.loadMore.addEventListener('click', () => {
   state.currentPage++;
