@@ -175,9 +175,7 @@ const els = {
   modalOverlay: document.getElementById('modalOverlay'),
   modalContent: document.getElementById('modalContent'),
   closeModal: document.getElementById('closeModal'),
-  heroStatPrompts: document.getElementById('heroStatPrompts'),
-  heroStatModels: document.getElementById('heroStatModels'),
-  heroStatMedia: document.getElementById('heroStatMedia'),
+
   loadMore: document.getElementById('loadMore'),
   subCatBar: document.getElementById('subCatBar')
 };
@@ -269,7 +267,6 @@ async function loadModelData(modelId) {
 function init() {
   renderModelBar();
   renderCategories();
-  updateHeroStats();
   filterAndRender();
 }
 
