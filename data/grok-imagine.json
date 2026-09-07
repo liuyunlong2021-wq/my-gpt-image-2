@@ -14,7 +14,7 @@
     "imageUrls": [
       "https://customer-qs6wnyfuv0gcybzj.cloudflarestream.com/0b7ecd10a9fc05aceaca76e28b6ad745/thumbnails/thumbnail.jpg"
     ],
-    "syncedAt": "2026-08-31T08:57:12Z"
+    "syncedAt": "2026-09-07T07:34:45Z"
   },
   {
     "id": "grok-imagine_2033111579575591089",
@@ -31,7 +31,7 @@
     "imageUrls": [
       "https://customer-qs6wnyfuv0gcybzj.cloudflarestream.com/ac101ba6d5d08e60f1cd233a1669aa96/thumbnails/thumbnail.jpg"
     ],
-    "syncedAt": "2026-08-31T08:57:12Z"
+    "syncedAt": "2026-09-07T07:34:45Z"
   },
   {
     "id": "grok-imagine_2033124612234686633",
@@ -48,14 +48,1153 @@
     "imageUrls": [
       "https://customer-qs6wnyfuv0gcybzj.cloudflarestream.com/1bd15fb0c9ad9da6113bbbac69e4259a/thumbnails/thumbnail.jpg"
     ],
-    "syncedAt": "2026-08-31T08:57:12Z"
+    "syncedAt": "2026-09-07T07:34:45Z"
+  },
+  {
+    "id": "grok-imagine_2096455852828070147",
+    "model": "grok-imagine",
+    "mediaType": "video",
+    "title": "Celestial Labyrinth Walk",
+    "prompt": "Cinematic wide shot of a person in a dark coat sitting on the wing of a crashed military transport plane on a rocky black beach, stormy grey clouds, waves crashing against the wreckage, water pouring from the fuselage, photoreal, moody atmosphere, ultra detailed, Grok Imagine.",
+    "thumbnail": "https://pbs.twimg.com/amplify_video_thumb/2096110792055934976/img/6eftuVCamPCVkQec.jpg",
+    "videoUrl": null,
+    "category": null,
+    "author": "@Kisalay_",
+    "authorUrl": "https://x.com/Kisalay_",
+    "sourceUrl": "https://x.com/Kisalay_/status/2096455852828070147",
+    "imageUrls": [
+      "https://pbs.twimg.com/amplify_video_thumb/2096110792055934976/img/6eftuVCamPCVkQec.jpg"
+    ],
+    "syncedAt": "2026-09-07T07:34:45Z"
+  },
+  {
+    "id": "grok-imagine_2096407669053489364",
+    "model": "grok-imagine",
+    "mediaType": "video",
+    "title": "Neon Rooftop Feather Gown",
+    "prompt": "A young woman walks through a series of labyrinths, beautiful and surreal and dreamy, each one a starry landscape of nebulas and galaxies building on each other",
+    "thumbnail": "https://pbs.twimg.com/amplify_video_thumb/2096407646819569666/img/MhQKM4b-WcoYN7FH.jpg",
+    "videoUrl": null,
+    "category": null,
+    "author": "@jillianspiridon",
+    "authorUrl": "https://x.com/jillianspiridon",
+    "sourceUrl": "https://x.com/jillianspiridon/status/2096407669053489364",
+    "imageUrls": [
+      "https://pbs.twimg.com/amplify_video_thumb/2096407646819569666/img/MhQKM4b-WcoYN7FH.jpg"
+    ],
+    "syncedAt": "2026-09-07T07:34:45Z"
+  },
+  {
+    "id": "grok-imagine_2096244460300480744",
+    "model": "grok-imagine",
+    "mediaType": "video",
+    "title": "Playful Kitten in Snow",
+    "prompt": "Cinematic full-body shot of a confident woman with dark curly hair in a dramatic deep pink feathered evening gown standing on a wet neon rooftop balcony at night, looking back over her shoulder, rain reflections on glass, glowing pink and cyan city skyline, anime illustration style, ultra detailed",
+    "thumbnail": "https://pbs.twimg.com/amplify_video_thumb/2096110139480907776/img/5NxLRnnUG6BheURa.jpg",
+    "videoUrl": null,
+    "category": null,
+    "author": "@Kisalay_",
+    "authorUrl": "https://x.com/Kisalay_",
+    "sourceUrl": "https://x.com/Kisalay_/status/2096244460300480744",
+    "imageUrls": [
+      "https://pbs.twimg.com/amplify_video_thumb/2096110139480907776/img/5NxLRnnUG6BheURa.jpg"
+    ],
+    "syncedAt": "2026-09-07T07:34:45Z"
+  },
+  {
+    "id": "grok-imagine_2096189455761915967",
+    "model": "grok-imagine",
+    "mediaType": "video",
+    "title": "Christmas Kitten in Snow",
+    "prompt": "The adorable orange tabby kitten playfully pounces on the snowball, then rolls and tumbles joyfully in the soft powdery snow, batting at falling snowflakes with its paws, snow flying up around it, continuous playful movements, natural cute kitten behavior",
+    "thumbnail": "https://pbs.twimg.com/amplify_video_thumb/2096189423612502016/img/kmkqEhHq_tKoDfJM.jpg",
+    "videoUrl": null,
+    "category": null,
+    "author": "@imagine_user_",
+    "authorUrl": "https://x.com/imagine_user_",
+    "sourceUrl": "https://x.com/imagine_user_/status/2096189455761915967",
+    "imageUrls": [
+      "https://pbs.twimg.com/amplify_video_thumb/2096189423612502016/img/kmkqEhHq_tKoDfJM.jpg"
+    ],
+    "syncedAt": "2026-09-07T07:34:45Z"
+  },
+  {
+    "id": "grok-imagine_2096179494814105781",
+    "model": "grok-imagine",
+    "mediaType": "video",
+    "title": "Steampunk City Castle Flyover",
+    "prompt": "Kitten playing in snow with Christmas decorations and a Christmas tree in the background, heavy snowfall falling all around",
+    "thumbnail": "https://pbs.twimg.com/amplify_video_thumb/2096179471527403520/img/zWZM-e8a_wnuWzSm.jpg",
+    "videoUrl": null,
+    "category": null,
+    "author": "@imagine_user_",
+    "authorUrl": "https://x.com/imagine_user_",
+    "sourceUrl": "https://x.com/imagine_user_/status/2096179494814105781",
+    "imageUrls": [
+      "https://pbs.twimg.com/amplify_video_thumb/2096179471527403520/img/zWZM-e8a_wnuWzSm.jpg"
+    ],
+    "syncedAt": "2026-09-07T07:34:45Z"
+  },
+  {
+    "id": "grok-imagine_2096109459420627203",
+    "model": "grok-imagine",
+    "mediaType": "video",
+    "title": "Cinematic Knighting Ceremony Scene",
+    "prompt": "Moving along the castle walls while looking down at the steampunk-style city at night.",
+    "thumbnail": "https://pbs.twimg.com/amplify_video_thumb/2096109430022791168/img/8my2JB6LqsIynvmf.jpg",
+    "videoUrl": null,
+    "category": null,
+    "author": "@norakurobike1",
+    "authorUrl": "https://x.com/norakurobike1",
+    "sourceUrl": "https://x.com/norakurobike1/status/2096109459420627203",
+    "imageUrls": [
+      "https://pbs.twimg.com/amplify_video_thumb/2096109430022791168/img/8my2JB6LqsIynvmf.jpg"
+    ],
+    "syncedAt": "2026-09-07T07:34:45Z"
+  },
+  {
+    "id": "grok-imagine_2096091158103675201",
+    "model": "grok-imagine",
+    "mediaType": "video",
+    "title": "Blue Light Circadian Rhythm Infographic",
+    "prompt": "Action movie style scene, a beautiful female heroine meets the queen in the throne room of the royal castle, a knightly knighting ceremony is taking place, a solemn and dramatic atmosphere, luxurious royal interior, vivid and noble colors.",
+    "thumbnail": "https://pbs.twimg.com/amplify_video_thumb/2096091133923450880/img/qlKX5NplHnkbEK2G.jpg",
+    "videoUrl": null,
+    "category": null,
+    "author": "@Apple0816799221",
+    "authorUrl": "https://x.com/Apple0816799221",
+    "sourceUrl": "https://x.com/Apple0816799221/status/2096091158103675201",
+    "imageUrls": [
+      "https://pbs.twimg.com/amplify_video_thumb/2096091133923450880/img/qlKX5NplHnkbEK2G.jpg"
+    ],
+    "syncedAt": "2026-09-07T07:34:45Z"
+  },
+  {
+    "id": "grok-imagine_2096064218629857637",
+    "model": "grok-imagine",
+    "mediaType": "video",
+    "title": "Elon Musk as Dr. Evil Mandarin Lesson",
+    "prompt": "Infographic on how blue light rays prevent the production of melatonin and disrupt the circadian rhythm",
+    "thumbnail": "https://pbs.twimg.com/amplify_video_thumb/2096064200057724929/img/fIEfBLYwO0rd6KX-.jpg",
+    "videoUrl": null,
+    "category": null,
+    "author": "@wordsbycallum",
+    "authorUrl": "https://x.com/wordsbycallum",
+    "sourceUrl": "https://x.com/wordsbycallum/status/2096064218629857637",
+    "imageUrls": [
+      "https://pbs.twimg.com/amplify_video_thumb/2096064200057724929/img/fIEfBLYwO0rd6KX-.jpg"
+    ],
+    "syncedAt": "2026-09-07T07:34:45Z"
+  },
+  {
+    "id": "grok-imagine_2095993407638557102",
+    "model": "grok-imagine",
+    "mediaType": "video",
+    "title": "Romantic Couple Swinging Video",
+    "prompt": "Continue the scene: Elon Musk (Chinese-looking with black hair as Dr. Evil) strokes the white cat and speaks in Mandarin Chinese to his son Lil X (Mini-Me with black hair), teaching him a fun language lesson. Elon says \"Little Mini, you complete me\"",
+    "thumbnail": "https://pbs.twimg.com/amplify_video_thumb/2095993256240922624/img/puGzL2VLwQk4d9OI.jpg",
+    "videoUrl": null,
+    "category": null,
+    "author": "@cyperpienso",
+    "authorUrl": "https://x.com/cyperpienso",
+    "sourceUrl": "https://x.com/cyperpienso/status/2095993407638557102",
+    "imageUrls": [
+      "https://pbs.twimg.com/amplify_video_thumb/2095993256240922624/img/puGzL2VLwQk4d9OI.jpg"
+    ],
+    "syncedAt": "2026-09-07T07:34:45Z"
+  },
+  {
+    "id": "grok-imagine_2095990200207904797",
+    "model": "grok-imagine",
+    "mediaType": "video",
+    "title": "Underground Cave City Sci-Fi Scene",
+    "prompt": "The two people swinging together lovingly on a swing, showing affection and love, smiling at each other romantically while swinging back and forth, keep their exact appearances, faces, clothing and features unchanged",
+    "thumbnail": "https://pbs.twimg.com/amplify_video_thumb/2095990143715074048/img/kbB92ka_fLzZtOix.jpg",
+    "videoUrl": null,
+    "category": null,
+    "author": "@maggiejuang1",
+    "authorUrl": "https://x.com/maggiejuang1",
+    "sourceUrl": "https://x.com/maggiejuang1/status/2095990200207904797",
+    "imageUrls": [
+      "https://pbs.twimg.com/amplify_video_thumb/2095990143715074048/img/kbB92ka_fLzZtOix.jpg"
+    ],
+    "syncedAt": "2026-09-07T07:34:45Z"
+  },
+  {
+    "id": "grok-imagine_2095942470551085451",
+    "model": "grok-imagine",
+    "mediaType": "video",
+    "title": "Zero-Gravity Floating Astronaut",
+    "prompt": "Cinematic wide shot of a vast underground cave city with white modular habitat pods built into rocky canyon walls, warm glowing windows, a river walking the cave floor, thin pedestrian bridges with tiny figures crossing, dramatic sunbeams pouring from a circular opening in the stone ceiling, soft mist in the air, hopeful sci-fi architecture, photoreal detail, quiet and luminous",
+    "thumbnail": "https://pbs.twimg.com/amplify_video_thumb/2095796120920510464/img/ITICRH_Sx2hZd9L-.jpg",
+    "videoUrl": null,
+    "category": null,
+    "author": "@Kisalay_",
+    "authorUrl": "https://x.com/Kisalay_",
+    "sourceUrl": "https://x.com/Kisalay_/status/2095942470551085451",
+    "imageUrls": [
+      "https://pbs.twimg.com/amplify_video_thumb/2095796120920510464/img/ITICRH_Sx2hZd9L-.jpg"
+    ],
+    "syncedAt": "2026-09-07T07:34:45Z"
+  },
+  {
+    "id": "grok-imagine_2095909309150265363",
+    "model": "grok-imagine",
+    "mediaType": "video",
+    "title": "Japanese Streamer Talking Head",
+    "prompt": "The astronaut floats gently in zero gravity, slowly rotating and looking around, stars drifting past, subtle camera movement, smooth cinematic motion",
+    "thumbnail": "https://pbs.twimg.com/amplify_video_thumb/2095909220503654401/img/hsDfmA96W5nO1B85.jpg",
+    "videoUrl": null,
+    "category": null,
+    "author": "@owenxplore",
+    "authorUrl": "https://x.com/owenxplore",
+    "sourceUrl": "https://x.com/owenxplore/status/2095909309150265363",
+    "imageUrls": [
+      "https://pbs.twimg.com/amplify_video_thumb/2095909220503654401/img/hsDfmA96W5nO1B85.jpg"
+    ],
+    "syncedAt": "2026-09-07T07:34:45Z"
+  },
+  {
+    "id": "grok-imagine_2095869011255009523",
+    "model": "grok-imagine",
+    "mediaType": "video",
+    "title": "Imperial Spaceship Arrival Scene",
+    "prompt": "Close-up talking head, young Japanese streamer, continuous natural lip movements matching speech, high tension excited delivery, mouth shapes changing clearly syllable by syllable, blinking and micro expressions, photorealistic",
+    "thumbnail": "https://pbs.twimg.com/amplify_video_thumb/2095868981404135424/img/vMCgSkV-VXeV0IRR.jpg",
+    "videoUrl": null,
+    "category": null,
+    "author": "@sahilvermaai",
+    "authorUrl": "https://x.com/sahilvermaai",
+    "sourceUrl": "https://x.com/sahilvermaai/status/2095869011255009523",
+    "imageUrls": [
+      "https://pbs.twimg.com/amplify_video_thumb/2095868981404135424/img/vMCgSkV-VXeV0IRR.jpg"
+    ],
+    "syncedAt": "2026-09-07T07:34:45Z"
+  },
+  {
+    "id": "grok-imagine_2095840673530576995",
+    "model": "grok-imagine",
+    "mediaType": "video",
+    "title": "Lone Figure on Salt Flat",
+    "prompt": "Everybody is gathering to watch the arrival of an imperial spaceship to their planet.",
+    "thumbnail": "https://pbs.twimg.com/amplify_video_thumb/2095840557440618496/img/oSgfWL5GnuUmsJ3j.jpg",
+    "videoUrl": null,
+    "category": null,
+    "author": "@ojiji2025",
+    "authorUrl": "https://x.com/ojiji2025",
+    "sourceUrl": "https://x.com/ojiji2025/status/2095840673530576995",
+    "imageUrls": [
+      "https://pbs.twimg.com/amplify_video_thumb/2095840557440618496/img/oSgfWL5GnuUmsJ3j.jpg"
+    ],
+    "syncedAt": "2026-09-07T07:34:45Z"
+  },
+  {
+    "id": "grok-imagine_2095821678131454101",
+    "model": "grok-imagine",
+    "mediaType": "video",
+    "title": "Forgotten People Pegasus Flight",
+    "prompt": "Cinematic wide shot of a lone figure in a dark coat standing on an endless cracked salt flat, facing a colossal cracked circular disc",
+    "thumbnail": "https://pbs.twimg.com/amplify_video_thumb/2095794597448585217/img/wLCJzfHCRN-lPYY5.jpg",
+    "videoUrl": null,
+    "category": null,
+    "author": "@sahilvermaai",
+    "authorUrl": "https://x.com/sahilvermaai",
+    "sourceUrl": "https://x.com/sahilvermaai/status/2095821678131454101",
+    "imageUrls": [
+      "https://pbs.twimg.com/amplify_video_thumb/2095794597448585217/img/wLCJzfHCRN-lPYY5.jpg"
+    ],
+    "syncedAt": "2026-09-07T07:34:45Z"
+  },
+  {
+    "id": "grok-imagine_2095741665533157830",
+    "model": "grok-imagine",
+    "mediaType": "video",
+    "title": "Girl in Colossal Pocket Watch",
+    "prompt": "All of the people forgotten all the poor people onto the horse Pegasus they become kings and queens, and they fly to their castle",
+    "thumbnail": "https://pbs.twimg.com/amplify_video_thumb/2095741576978821124/img/X6YrlfKx2wPlNzmI.jpg",
+    "videoUrl": null,
+    "category": null,
+    "author": "@RisingPhoenix4E",
+    "authorUrl": "https://x.com/RisingPhoenix4E",
+    "sourceUrl": "https://x.com/RisingPhoenix4E/status/2095741665533157830",
+    "imageUrls": [
+      "https://pbs.twimg.com/amplify_video_thumb/2095741576978821124/img/X6YrlfKx2wPlNzmI.jpg"
+    ],
+    "syncedAt": "2026-09-07T07:34:45Z"
+  },
+  {
+    "id": "grok-imagine_2095700878162645272",
+    "model": "grok-imagine",
+    "mediaType": "video",
+    "title": "Dog Hailing a Taxi Animation",
+    "prompt": "Cinematic shot of a small girl in worn clothes sitting inside a colossal rusted pocket watch in a cracked desert. Shattered glass face. Massive dusty gears behind her. Golden sunbeam through the broken crystal. Dry earth and dead shrubs. Painterly. Melancholic. Ultra detailed. 8k. Grok Imagine.",
+    "thumbnail": "https://pbs.twimg.com/amplify_video_thumb/2095376253172043777/img/5KanVhSOCpW6ywLG.jpg",
+    "videoUrl": null,
+    "category": null,
+    "author": "@Kisalay_",
+    "authorUrl": "https://x.com/Kisalay_",
+    "sourceUrl": "https://x.com/Kisalay_/status/2095700878162645272",
+    "imageUrls": [
+      "https://pbs.twimg.com/amplify_video_thumb/2095376253172043777/img/5KanVhSOCpW6ywLG.jpg"
+    ],
+    "syncedAt": "2026-09-07T07:34:45Z"
+  },
+  {
+    "id": "grok-imagine_2095697750130123031",
+    "model": "grok-imagine",
+    "mediaType": "video",
+    "title": "Cinematic Transforming Robot Video Prompt",
+    "prompt": "Animate this photo of the floppy-eared dog with him lifting his paw as if he wanted to call a taxi",
+    "thumbnail": "https://pbs.twimg.com/amplify_video_thumb/2095697732446961664/img/sktAXZ_0xPSXFfqz.jpg",
+    "videoUrl": null,
+    "category": null,
+    "author": "@l03n27",
+    "authorUrl": "https://x.com/l03n27",
+    "sourceUrl": "https://x.com/l03n27/status/2095697750130123031",
+    "imageUrls": [
+      "https://pbs.twimg.com/amplify_video_thumb/2095697732446961664/img/sktAXZ_0xPSXFfqz.jpg"
+    ],
+    "syncedAt": "2026-09-07T07:34:45Z"
+  },
+  {
+    "id": "grok-imagine_2095679713952072040",
+    "model": "grok-imagine",
+    "mediaType": "video",
+    "title": "Crescent Moon and Mars Sky",
+    "prompt": "THE NEXT EVOLUTION When machines become warriors, armor becomes more than protection. It becomes power. It becomes the future. Transform. Arm. Dominate.Visual style: cinematic + photorealistic, massive transforming robot, advanced , glowing energy cores, mechanical transformation, sparks and smoke, futuristic battlefield, dramatic lighting, slow-motion camera movement, ultra-detailed 8K sci-fi realism.",
+    "thumbnail": "https://pbs.twimg.com/amplify_video_thumb/2095679086760955904/img/dY17UBnnbz300qJ7.jpg",
+    "videoUrl": null,
+    "category": null,
+    "author": "@Aiminithoughts",
+    "authorUrl": "https://x.com/Aiminithoughts",
+    "sourceUrl": "https://x.com/Aiminithoughts/status/2095679713952072040",
+    "imageUrls": [
+      "https://pbs.twimg.com/amplify_video_thumb/2095679086760955904/img/dY17UBnnbz300qJ7.jpg"
+    ],
+    "syncedAt": "2026-09-07T07:34:45Z"
+  },
+  {
+    "id": "grok-imagine_2095671180476772551",
+    "model": "grok-imagine",
+    "mediaType": "video",
+    "title": "Industrial Pipe Mountain Valley",
+    "prompt": "The crescent moon and Mars will appear close together in the pre-dawn sky on September 6, 2026",
+    "thumbnail": "https://pbs.twimg.com/amplify_video_thumb/2095671163506896896/img/DSkAkGFJDZpvAwYg.jpg",
+    "videoUrl": null,
+    "category": null,
+    "author": "@Marie8508319540",
+    "authorUrl": "https://x.com/Marie8508319540",
+    "sourceUrl": "https://x.com/Marie8508319540/status/2095671180476772551",
+    "imageUrls": [
+      "https://pbs.twimg.com/amplify_video_thumb/2095671163506896896/img/DSkAkGFJDZpvAwYg.jpg"
+    ],
+    "syncedAt": "2026-09-07T07:34:45Z"
+  },
+  {
+    "id": "grok-imagine_2095670680520179791",
+    "model": "grok-imagine",
+    "mediaType": "video",
+    "title": "Triumphant Cyborg Gladiator Victory",
+    "prompt": "Cinematic wide shot of a colossal rusted industrial pipe spanning a rocky mountain valley. A tiny lone figure walking along the top toward a shattered circular fan at the open end. Stormy grey clouds. Painterly oil texture. Dramatic overcast light. Ultra detailed. 8k. Grok Imagine.",
+    "thumbnail": "https://pbs.twimg.com/amplify_video_thumb/2095376109861023744/img/H0_0T2VkUee8wo79.jpg",
+    "videoUrl": null,
+    "category": null,
+    "author": "@Kisalay_",
+    "authorUrl": "https://x.com/Kisalay_",
+    "sourceUrl": "https://x.com/Kisalay_/status/2095670680520179791",
+    "imageUrls": [
+      "https://pbs.twimg.com/amplify_video_thumb/2095376109861023744/img/H0_0T2VkUee8wo79.jpg"
+    ],
+    "syncedAt": "2026-09-07T07:34:45Z"
+  },
+  {
+    "id": "grok-imagine_2095654657997603155",
+    "model": "grok-imagine",
+    "mediaType": "video",
+    "title": "Coal Miner Woman Cinematic Close-up",
+    "prompt": "Triumphant ending: the half-cyborg gladiator stands victorious in the arena, glowing blue armor and cyber eye, lions finishing the enemies in background, slow dramatic camera orbit, dust settling, heroic pose.",
+    "thumbnail": "https://pbs.twimg.com/amplify_video_thumb/2095654407300165632/img/-0qMFFKNhQRbE_VR.jpg",
+    "videoUrl": null,
+    "category": null,
+    "author": "@CicadaAQum",
+    "authorUrl": "https://x.com/CicadaAQum",
+    "sourceUrl": "https://x.com/CicadaAQum/status/2095654657997603155",
+    "imageUrls": [
+      "https://pbs.twimg.com/amplify_video_thumb/2095654407300165632/img/-0qMFFKNhQRbE_VR.jpg"
+    ],
+    "syncedAt": "2026-09-07T07:34:45Z"
+  },
+  {
+    "id": "grok-imagine_2095640485142434239",
+    "model": "grok-imagine",
+    "mediaType": "video",
+    "title": "Abstract Photon Transformation Video",
+    "prompt": "Cinematic close-up of a coal-covered woman miner in a dark circular mine tunnel. Battered helmet with a cracked glowing headlamp. Face coated in black dust. Intense stare. One eye slowly ignites into burning amber. Charcoal texture on skin. Moody single-source light. Photorealistic painterly. Ultra detailed. 8k. Grok Imagine.",
+    "thumbnail": "https://pbs.twimg.com/amplify_video_thumb/2095375961009315840/img/BIORGg9MWQwAbEQV.jpg",
+    "videoUrl": null,
+    "category": null,
+    "author": "@Kisalay_",
+    "authorUrl": "https://x.com/Kisalay_",
+    "sourceUrl": "https://x.com/Kisalay_/status/2095640485142434239",
+    "imageUrls": [
+      "https://pbs.twimg.com/amplify_video_thumb/2095375961009315840/img/BIORGg9MWQwAbEQV.jpg"
+    ],
+    "syncedAt": "2026-09-07T07:34:45Z"
+  },
+  {
+    "id": "grok-imagine_2095639716297114090",
+    "model": "grok-imagine",
+    "mediaType": "video",
+    "title": "Pleiadian Mothership Ultra HD",
+    "prompt": "Create a video where beautiful color photons transform fear into love and evil into goodness and suffering into happiness",
+    "thumbnail": "https://pbs.twimg.com/amplify_video_thumb/2095639688862175234/img/Uqm9DXixJWp70XOk.jpg",
+    "videoUrl": null,
+    "category": null,
+    "author": "@thejoaneunit",
+    "authorUrl": "https://x.com/thejoaneunit",
+    "sourceUrl": "https://x.com/thejoaneunit/status/2095639716297114090",
+    "imageUrls": [
+      "https://pbs.twimg.com/amplify_video_thumb/2095639688862175234/img/Uqm9DXixJWp70XOk.jpg"
+    ],
+    "syncedAt": "2026-09-07T07:34:45Z"
+  },
+  {
+    "id": "grok-imagine_2095538431971688609",
+    "model": "grok-imagine",
+    "mediaType": "video",
+    "title": "Animated Meowing Tabby Cat",
+    "prompt": "Pleiadians in lightships and motherships of saucer shape, masterpiece, ultra HD quality resolution 11111111111111111199999999999999 k resolution, volumetric bright lighting colors tones and shading",
+    "thumbnail": "https://pbs.twimg.com/amplify_video_thumb/2095538341324390401/img/JHfZmoUs8fxfMa0l.jpg",
+    "videoUrl": null,
+    "category": null,
+    "author": "@Octillion111111",
+    "authorUrl": "https://x.com/Octillion111111",
+    "sourceUrl": "https://x.com/Octillion111111/status/2095538431971688609",
+    "imageUrls": [
+      "https://pbs.twimg.com/amplify_video_thumb/2095538341324390401/img/JHfZmoUs8fxfMa0l.jpg"
+    ],
+    "syncedAt": "2026-09-07T07:34:45Z"
+  },
+  {
+    "id": "grok-imagine_2095412949867200741",
+    "model": "grok-imagine",
+    "mediaType": "video",
+    "title": "Sunlit Rose Garden Peace",
+    "prompt": "Animate the meowing tabby cat among eggshells: the cat's mouth moves as if meowing or hissing, head slightly bobbing, tail twitching, dust particles float in harsh sunlight, realistic lively motion.",
+    "thumbnail": "https://pbs.twimg.com/amplify_video_thumb/2095412860285513728/img/9v1E_gjrzWlZXuhU.jpg",
+    "videoUrl": null,
+    "category": null,
+    "author": "@JordanArdady",
+    "authorUrl": "https://x.com/JordanArdady",
+    "sourceUrl": "https://x.com/JordanArdady/status/2095412949867200741",
+    "imageUrls": [
+      "https://pbs.twimg.com/amplify_video_thumb/2095412860285513728/img/9v1E_gjrzWlZXuhU.jpg"
+    ],
+    "syncedAt": "2026-09-07T07:34:45Z"
+  },
+  {
+    "id": "grok-imagine_2095399312587157725",
+    "model": "grok-imagine",
+    "mediaType": "video",
+    "title": "A Light Appears Between the Trees Cinematic Prompt",
+    "prompt": "A quiet moment in a sunlit rose garden, she pauses, breathes in the bloom, and smiles. Soft light, falling petals, and that painterly glow. Peace in a single breath.",
+    "thumbnail": "https://pbs.twimg.com/amplify_video_thumb/2095399039038795776/img/DjnxP9Vuou2NRCyi.jpg",
+    "videoUrl": null,
+    "category": null,
+    "author": "@Bhart0678",
+    "authorUrl": "https://x.com/Bhart0678",
+    "sourceUrl": "https://x.com/Bhart0678/status/2095399312587157725",
+    "imageUrls": [
+      "https://pbs.twimg.com/amplify_video_thumb/2095399039038795776/img/DjnxP9Vuou2NRCyi.jpg"
+    ],
+    "syncedAt": "2026-09-07T07:34:45Z"
+  },
+  {
+    "id": "grok-imagine_2095362901326598521",
+    "model": "grok-imagine",
+    "mediaType": "video",
+    "title": "3D Cinematic Cartoon Video Prompt",
+    "prompt": "Create a photorealistic cinematic 15-second video from this exact image. Preserve the woman's exact face, hairstyle, wet hair, black raincoat, gray scarf, body proportions, forest environment, rainfall, lighting, and composition.0–4 sec: She stands completely still in the heavy rain, eyes closed and face tilted slightly upward, peacefully enjoying the rainfall. Water runs naturally through her wet hair and down her glossy raincoat. Her scarf moves gently in the cold breeze.4–7 sec: A faint, warm light suddenly appears deep between the trees behind her. At first it is barely noticeable, like a distant lantern glowing through the rain and mist. She slowly opens her eyes.7–10 sec: She notices the unusual light. Her expression changes from peaceful to curious. She slowly turns her head toward it, staring between the trees as rain continues falling around her.10–13 sec: The warm light becomes slightly brighter and flickers gently through the fog. She takes one cautious step toward it, her eyes fixed on the mysterious glow. The camera subtly moves with her.13–15 sec: Just as she takes another step, the light suddenly disappears. She stops and stares into the darkness between the trees, visibly confused. A beat of silence except for the rain. Cut to black.Photorealistic cinematic realism, atmospheric rainy forest, realistic rain and mist, wet hair and clothing, natural wind movement, subtle facial acting, believable walking motion, deep forest perspective, cool blue-gray surroundings contrasted with a distant warm amber light, shallow depth of field, subtle handheld camera movement. The light must remain distant and partially obscured by trees; never reveal its source. No supernatural creature, no person, no horror monster, no jump scare, no exaggerated reaction, no scene transition, no face changes, no outfit changes, no distorted hands, no morphing.",
+    "thumbnail": "https://pbs.twimg.com/amplify_video_thumb/2095362602394357760/img/5wNXh33bheXON9OH.jpg",
+    "videoUrl": null,
+    "category": null,
+    "author": "@iamahmedfaraz66",
+    "authorUrl": "https://x.com/iamahmedfaraz66",
+    "sourceUrl": "https://x.com/iamahmedfaraz66/status/2095362901326598521",
+    "imageUrls": [
+      "https://pbs.twimg.com/amplify_video_thumb/2095362602394357760/img/5wNXh33bheXON9OH.jpg"
+    ],
+    "syncedAt": "2026-09-07T07:34:45Z"
+  },
+  {
+    "id": "grok-imagine_2095337708159906160",
+    "model": "grok-imagine",
+    "mediaType": "video",
+    "title": "Airplane Wreck Stormy Sea Portrait",
+    "prompt": "Episode 3\nVertical 9:16 video, 10 seconds duration. Cinematic stylized 3D cartoon.",
+    "thumbnail": "https://pbs.twimg.com/amplify_video_thumb/2095337640304459776/img/q90cC4ZcPhb16cmv.jpg",
+    "videoUrl": null,
+    "category": null,
+    "author": "@unclekidtung",
+    "authorUrl": "https://x.com/unclekidtung",
+    "sourceUrl": "https://x.com/unclekidtung/status/2095337708159906160",
+    "imageUrls": [
+      "https://pbs.twimg.com/amplify_video_thumb/2095337640304459776/img/q90cC4ZcPhb16cmv.jpg"
+    ],
+    "syncedAt": "2026-09-07T07:34:45Z"
+  },
+  {
+    "id": "grok-imagine_2095308292243308887",
+    "model": "grok-imagine",
+    "mediaType": "video",
+    "title": "Elon Musk's Mars City Construction",
+    "prompt": "Cinematic wide shot of a young woman with long wet hair sitting barefoot on the wing of a rusted white airplane wreck half-submerged in a stormy sea. Red tail light still glowing. Heavy grey clouds. Waves against dark rocks and cliffs. Photorealistic. Moody. Ultra detailed. 8k. Grok Imagine.",
+    "thumbnail": "https://pbs.twimg.com/amplify_video_thumb/2095012974671089664/img/PzQuNhY-VIzwslsz.jpg",
+    "videoUrl": null,
+    "category": null,
+    "author": "@Kisalay_",
+    "authorUrl": "https://x.com/Kisalay_",
+    "sourceUrl": "https://x.com/Kisalay_/status/2095308292243308887",
+    "imageUrls": [
+      "https://pbs.twimg.com/amplify_video_thumb/2095012974671089664/img/PzQuNhY-VIzwslsz.jpg"
+    ],
+    "syncedAt": "2026-09-07T07:34:45Z"
+  },
+  {
+    "id": "grok-imagine_2095299170634518810",
+    "model": "grok-imagine",
+    "mediaType": "video",
+    "title": "Young Cleopatra Egypt Landscape",
+    "prompt": "A video of the planet Mars according to Elon Musk's vision, showing the construction of a futuristic city on Mars, with Tesla's Optimus humanoid robot actively building and working on the city structures",
+    "thumbnail": "https://pbs.twimg.com/amplify_video_thumb/2095299106017034240/img/qFfksIef5wsl65Fu.jpg",
+    "videoUrl": null,
+    "category": null,
+    "author": "@stephdel0204",
+    "authorUrl": "https://x.com/stephdel0204",
+    "sourceUrl": "https://x.com/stephdel0204/status/2095299170634518810",
+    "imageUrls": [
+      "https://pbs.twimg.com/amplify_video_thumb/2095299106017034240/img/qFfksIef5wsl65Fu.jpg"
+    ],
+    "syncedAt": "2026-09-07T07:34:45Z"
+  },
+  {
+    "id": "grok-imagine_2095297619492851887",
+    "model": "grok-imagine",
+    "mediaType": "video",
+    "title": "Cozy Bedroom Reading Animation",
+    "prompt": "Cleopatra when she was younger looking out at Egypt knowing she would rule it one day",
+    "thumbnail": "https://pbs.twimg.com/amplify_video_thumb/2095297599641427968/img/RLicB_jR0nFF0exF.jpg",
+    "videoUrl": null,
+    "category": null,
+    "author": "@crermc7",
+    "authorUrl": "https://x.com/crermc7",
+    "sourceUrl": "https://x.com/crermc7/status/2095297619492851887",
+    "imageUrls": [
+      "https://pbs.twimg.com/amplify_video_thumb/2095297599641427968/img/RLicB_jR0nFF0exF.jpg"
+    ],
+    "syncedAt": "2026-09-07T07:34:45Z"
+  },
+  {
+    "id": "grok-imagine_2095139680786493912",
+    "model": "grok-imagine",
+    "mediaType": "video",
+    "title": "Serene Moonlit Good Night Scene",
+    "prompt": "Create a photorealistic, cozy 15-second cinematic video from this exact image. Preserve the woman's exact face, hairstyle, cardigan, jewelry, body proportions, bedroom, bed, books, lamp, wall decorations, lighting, and overall composition.\n\n0–4 sec: She sits comfortably on the bed, looking toward the camera with a soft relaxed expression. She naturally blinks and breathes, then glances toward the stack of books beside her.\n\n4–7 sec: She reaches toward the stack and gently pulls out one book. As she does, another book suddenly slips from the stack and falls toward the floor.\n\n7–10 sec: She reacts quickly, leaning forward and reaching down to catch the falling book. She manages to grab it just before it hits the floor.\n\n10–12 sec: She sits back up holding the book, looking at it with a slightly surprised expression, then lets out a small amused laugh.\n\n12–15 sec: She looks directly toward the camera, smiles mischievously, and says softly, “That was close.” She places the book safely beside her.\n\nNatural human movement, realistic reaction timing, believable hand and finger movements, accurate interaction with the book, subtle hair movement, realistic cardigan fabric, natural facial expressions, cozy afternoon bedroom atmosphere, soft cinematic lighting, shallow depth of field, gentle handheld camera feel. The falling book must move naturally with gravity and be caught realistically. No exaggerated acting, no sudden camera movements, no extra people, no face changes, no outfit changes, no distorted hands, no object morphing.",
+    "thumbnail": "https://pbs.twimg.com/amplify_video_thumb/2095138179166949376/img/lSmg-daTNlRhHUN2.jpg",
+    "videoUrl": null,
+    "category": null,
+    "author": "@iamahmedfaraz66",
+    "authorUrl": "https://x.com/iamahmedfaraz66",
+    "sourceUrl": "https://x.com/iamahmedfaraz66/status/2095139680786493912",
+    "imageUrls": [
+      "https://pbs.twimg.com/amplify_video_thumb/2095138179166949376/img/lSmg-daTNlRhHUN2.jpg"
+    ],
+    "syncedAt": "2026-09-07T07:34:45Z"
+  },
+  {
+    "id": "grok-imagine_2095033462776369428",
+    "model": "grok-imagine",
+    "mediaType": "video",
+    "title": "Stormy City Duelist",
+    "prompt": "Have a peaceful night.\n\nA serene and peaceful good night scene featuring a large, bright full moon shining brilliantly in a clear deep blue night sky, casting soft silvery moonlight over a tranquil landscape with gentle rolling hills, a calm reflective lake mirroring the moon",
+    "thumbnail": "https://pbs.twimg.com/amplify_video_thumb/2095033444275302401/img/UFNKh_l3fXPCCLD6.jpg",
+    "videoUrl": null,
+    "category": null,
+    "author": "@Mattie129218",
+    "authorUrl": "https://x.com/Mattie129218",
+    "sourceUrl": "https://x.com/Mattie129218/status/2095033462776369428",
+    "imageUrls": [
+      "https://pbs.twimg.com/amplify_video_thumb/2095033444275302401/img/UFNKh_l3fXPCCLD6.jpg"
+    ],
+    "syncedAt": "2026-09-07T07:34:45Z"
+  },
+  {
+    "id": "grok-imagine_2094956857605468426",
+    "model": "grok-imagine",
+    "mediaType": "video",
+    "title": "Elderly Woman on Train Platform Prompt",
+    "prompt": "[0-4] Slow zoom in on the back of her head,\n\nThe duelist in the torn haori holds a curved blade low at her right side, centre frame, back to the storm-dark city, rain sheeting off the clay tiles at her boots, lightning cracks the sky\n\n[4-6] Snap cut, extreme close up to the tip of the blade,\n\n she flicks blood from it upwards in one sharp arc, the water breaking into spray off the steel",
+    "thumbnail": "https://pbs.twimg.com/amplify_video_thumb/2094956675954343937/img/GgcEi1HADBf_xY2F.jpg",
+    "videoUrl": null,
+    "category": null,
+    "author": "@hafuma",
+    "authorUrl": "https://x.com/hafuma",
+    "sourceUrl": "https://x.com/hafuma/status/2094956857605468426",
+    "imageUrls": [
+      "https://pbs.twimg.com/amplify_video_thumb/2094956675954343937/img/GgcEi1HADBf_xY2F.jpg"
+    ],
+    "syncedAt": "2026-09-07T07:34:45Z"
+  },
+  {
+    "id": "grok-imagine_2094885505456578626",
+    "model": "grok-imagine",
+    "mediaType": "video",
+    "title": "Bioluminescent Greenhouse Night Walk",
+    "prompt": "Cinematic painterly video of an elderly woman with long windblown white hair sitting on a deserted train platform at dusk. Holding a small glowing vintage radio in both hands. Rusted abandoned steam locomotive behind her. Wet empty tracks stretching into fog. Worn coat. Golden cloudy sky. Melancholic. Ultra detailed. 8k. Grok Imagine.",
+    "thumbnail": "https://pbs.twimg.com/amplify_video_thumb/2094600075960070144/img/kkpwtqGRgCRMoeX7.jpg",
+    "videoUrl": null,
+    "category": null,
+    "author": "@Kisalay_",
+    "authorUrl": "https://x.com/Kisalay_",
+    "sourceUrl": "https://x.com/Kisalay_/status/2094885505456578626",
+    "imageUrls": [
+      "https://pbs.twimg.com/amplify_video_thumb/2094600075960070144/img/kkpwtqGRgCRMoeX7.jpg"
+    ],
+    "syncedAt": "2026-09-07T07:34:45Z"
+  },
+  {
+    "id": "grok-imagine_2094825107705176343",
+    "model": "grok-imagine",
+    "mediaType": "video",
+    "title": "Starship Rockets Launching Behind Mountain",
+    "prompt": "Cinematic video of a young man with curly dark hair walking slowly through a vast overgrown greenhouse at night. Green shirt. Wet stone path. Bioluminescent plants glowing along both sides. Rain dripping from the glass roof. Full moon through the metal frame. He stops and looks upward with quiet wonder. Misty. Photorealistic. Ultra detailed. 8k. Grok Imagine.",
+    "thumbnail": "https://pbs.twimg.com/amplify_video_thumb/2094599866626535424/img/P6E6vtztB9o2dqMj.jpg",
+    "videoUrl": null,
+    "category": null,
+    "author": "@Kisalay_",
+    "authorUrl": "https://x.com/Kisalay_",
+    "sourceUrl": "https://x.com/Kisalay_/status/2094825107705176343",
+    "imageUrls": [
+      "https://pbs.twimg.com/amplify_video_thumb/2094599866626535424/img/P6E6vtztB9o2dqMj.jpg"
+    ],
+    "syncedAt": "2026-09-07T07:34:45Z"
+  },
+  {
+    "id": "grok-imagine_2094789762045345824",
+    "model": "grok-imagine",
+    "mediaType": "video",
+    "title": "Giant Desert Helmet Exploration",
+    "prompt": "As he walks forward imagine two starship rockets blasting off in the distance behind the mountain",
+    "thumbnail": "https://pbs.twimg.com/amplify_video_thumb/2094789718005219328/img/Hh6EvP8KRKNOkVgi.jpg",
+    "videoUrl": null,
+    "category": null,
+    "author": "@bennash",
+    "authorUrl": "https://x.com/bennash",
+    "sourceUrl": "https://x.com/bennash/status/2094789762045345824",
+    "imageUrls": [
+      "https://pbs.twimg.com/amplify_video_thumb/2094789718005219328/img/Hh6EvP8KRKNOkVgi.jpg"
+    ],
+    "syncedAt": "2026-09-07T07:34:45Z"
+  },
+  {
+    "id": "grok-imagine_2094649723860697356",
+    "model": "grok-imagine",
+    "mediaType": "video",
+    "title": "Cleopatra Fighting Azael Epic",
+    "prompt": "A helmet the size of a hill, half sunk in the desert, and one person standing in the open visor looking in at the machinery.",
+    "thumbnail": "https://pbs.twimg.com/ext_tw_video_thumb/2094649705397415936/pu/img/8S8DFWA2Byd31neq.jpg",
+    "videoUrl": null,
+    "category": null,
+    "author": "@sahilvermaai",
+    "authorUrl": "https://x.com/sahilvermaai",
+    "sourceUrl": "https://x.com/sahilvermaai/status/2094649723860697356",
+    "imageUrls": [
+      "https://pbs.twimg.com/ext_tw_video_thumb/2094649705397415936/pu/img/8S8DFWA2Byd31neq.jpg"
+    ],
+    "syncedAt": "2026-09-07T07:34:45Z"
+  },
+  {
+    "id": "grok-imagine_2094649662879772793",
+    "model": "grok-imagine",
+    "mediaType": "video",
+    "title": "Talking Character Image Animation",
+    "prompt": "Cleopatra, the queen of Egypt, alive and present, declaring 'it’s me Azael, I’m alive' while fighting Azael",
+    "thumbnail": "https://pbs.twimg.com/amplify_video_thumb/2094649638238183424/img/V5M5aKB5QtYLnZ0a.jpg",
+    "videoUrl": null,
+    "category": null,
+    "author": "@crermc7",
+    "authorUrl": "https://x.com/crermc7",
+    "sourceUrl": "https://x.com/crermc7/status/2094649662879772793",
+    "imageUrls": [
+      "https://pbs.twimg.com/amplify_video_thumb/2094649638238183424/img/V5M5aKB5QtYLnZ0a.jpg"
+    ],
+    "syncedAt": "2026-09-07T07:34:45Z"
+  },
+  {
+    "id": "grok-imagine_2094633824747721195",
+    "model": "grok-imagine",
+    "mediaType": "video",
+    "title": "Snoop Dogg Dragon Transformation",
+    "prompt": "Animate this image to say “I don’t know which station is Gilmore and which one is Holdom” in a cute voice",
+    "thumbnail": "https://pbs.twimg.com/amplify_video_thumb/2094633812957511680/img/PRBQeuURbuPuz9Dw.jpg",
+    "videoUrl": null,
+    "category": null,
+    "author": "@GinoFlen",
+    "authorUrl": "https://x.com/GinoFlen",
+    "sourceUrl": "https://x.com/GinoFlen/status/2094633824747721195",
+    "imageUrls": [
+      "https://pbs.twimg.com/amplify_video_thumb/2094633812957511680/img/PRBQeuURbuPuz9Dw.jpg"
+    ],
+    "syncedAt": "2026-09-07T07:34:45Z"
+  },
+  {
+    "id": "grok-imagine_2094628853540868104",
+    "model": "grok-imagine",
+    "mediaType": "video",
+    "title": "Smiling Woman at Outdoor Cafe",
+    "prompt": "Create a video of Snoop Dogg turning into a cartoon dragon with a cigarette hanging out the side its mouth",
+    "thumbnail": "https://pbs.twimg.com/amplify_video_thumb/2094628833395691520/img/Qo3rVOgH2zbosWXp.jpg",
+    "videoUrl": null,
+    "category": null,
+    "author": "@CazzThunder",
+    "authorUrl": "https://x.com/CazzThunder",
+    "sourceUrl": "https://x.com/CazzThunder/status/2094628853540868104",
+    "imageUrls": [
+      "https://pbs.twimg.com/amplify_video_thumb/2094628833395691520/img/Qo3rVOgH2zbosWXp.jpg"
+    ],
+    "syncedAt": "2026-09-07T07:34:45Z"
+  },
+  {
+    "id": "grok-imagine_2094612960568054130",
+    "model": "grok-imagine",
+    "mediaType": "video",
+    "title": "Melancholic Prison Cell Humming",
+    "prompt": "In a realistic casual style, a smiling woman relaxes at an outdoor cafe, her hands behind her head. She has short brown hair, dark sunglasses, a black sleeveless top, a small gold pendant necklace, and bracelets on her wrist, with a joyful expression",
+    "thumbnail": "https://pbs.twimg.com/amplify_video_thumb/2094612892670726144/img/9Di611jujQcOMjtO.jpg",
+    "videoUrl": null,
+    "category": null,
+    "author": "@nicolebruntet",
+    "authorUrl": "https://x.com/nicolebruntet",
+    "sourceUrl": "https://x.com/nicolebruntet/status/2094612960568054130",
+    "imageUrls": [
+      "https://pbs.twimg.com/amplify_video_thumb/2094612892670726144/img/9Di611jujQcOMjtO.jpg"
+    ],
+    "syncedAt": "2026-09-07T07:34:45Z"
+  },
+  {
+    "id": "grok-imagine_2094595693126074484",
+    "model": "grok-imagine",
+    "mediaType": "video",
+    "title": "City Freezing in Real Time",
+    "prompt": "She quietly hums a song to herself in the prison cell to keep the sadness at bay. She hasn't given up hope even though she is devastated. Handheld camera work, micro-expressions on her face tell the story of depression overcome by determination to keep the faith. No dialogue. No music other than her humming sounds.",
+    "thumbnail": "https://pbs.twimg.com/amplify_video_thumb/2094595558363029504/img/Nvvb-lTqxgxTB3cc.jpg",
+    "videoUrl": null,
+    "category": null,
+    "author": "@allan_robII",
+    "authorUrl": "https://x.com/allan_robII",
+    "sourceUrl": "https://x.com/allan_robII/status/2094595693126074484",
+    "imageUrls": [
+      "https://pbs.twimg.com/amplify_video_thumb/2094595558363029504/img/Nvvb-lTqxgxTB3cc.jpg"
+    ],
+    "syncedAt": "2026-09-07T07:34:45Z"
+  },
+  {
+    "id": "grok-imagine_2094592697797587015",
+    "model": "grok-imagine",
+    "mediaType": "video",
+    "title": "Mystical Glowing Greenhouse Dome",
+    "prompt": "6 seconds of a city freezing in real time — cars dead mid-road, snow swallowing the street.",
+    "thumbnail": "https://pbs.twimg.com/amplify_video_thumb/2094592646119628800/img/9iYW8jQRKffSyAU8.jpg",
+    "videoUrl": null,
+    "category": null,
+    "author": "@CHiang_AILab",
+    "authorUrl": "https://x.com/CHiang_AILab",
+    "sourceUrl": "https://x.com/CHiang_AILab/status/2094592697797587015",
+    "imageUrls": [
+      "https://pbs.twimg.com/amplify_video_thumb/2094592646119628800/img/9iYW8jQRKffSyAU8.jpg"
+    ],
+    "syncedAt": "2026-09-07T07:34:45Z"
+  },
+  {
+    "id": "grok-imagine_2094583516071866736",
+    "model": "grok-imagine",
+    "mediaType": "video",
+    "title": "Cosmic Space Energy Shot",
+    "prompt": "Cinematic wide shot of a solitary young woman with long black hair kneeling in the center of a vast overgrown greenhouse dome. Dark robe. Eyes closed. Bioluminescent purple flowers and glowing vines surrounding her. Misty teal light through the glass roof. Mossy ground. Quiet. Mystical. Ultra detailed. 8k. Grok Imagine.",
+    "thumbnail": "https://pbs.twimg.com/amplify_video_thumb/2094252201011216384/img/zaL6CQwmyOrz4LDY.jpg",
+    "videoUrl": null,
+    "category": null,
+    "author": "@Kisalay_",
+    "authorUrl": "https://x.com/Kisalay_",
+    "sourceUrl": "https://x.com/Kisalay_/status/2094583516071866736",
+    "imageUrls": [
+      "https://pbs.twimg.com/amplify_video_thumb/2094252201011216384/img/zaL6CQwmyOrz4LDY.jpg"
+    ],
+    "syncedAt": "2026-09-07T07:34:45Z"
+  },
+  {
+    "id": "grok-imagine_2094565773565915249",
+    "model": "grok-imagine",
+    "mediaType": "video",
+    "title": "Elegant Lace Portrait Video",
+    "prompt": "{\"shot\": {\"motion_level\": \"medium\", \"camera_depth\": \"medium shot\", \"camera_view\": \"eye level\", \"camera_movement\": \"static shot\"}, \"scene\": {\"location\": \"abstract cosmic space\", \"environment\": \"A dark, cosmic background with swirling energy patterns\"}}",
+    "thumbnail": "https://pbs.twimg.com/amplify_video_thumb/2094565745820594176/img/9V4RhUo7rkQhBKSG.jpg",
+    "videoUrl": null,
+    "category": null,
+    "author": "@HRDOGE17",
+    "authorUrl": "https://x.com/HRDOGE17",
+    "sourceUrl": "https://x.com/HRDOGE17/status/2094565773565915249",
+    "imageUrls": [
+      "https://pbs.twimg.com/amplify_video_thumb/2094565745820594176/img/9V4RhUo7rkQhBKSG.jpg"
+    ],
+    "syncedAt": "2026-09-07T07:34:45Z"
+  },
+  {
+    "id": "grok-imagine_2094553320576704951",
+    "model": "grok-imagine",
+    "mediaType": "video",
+    "title": "Hummingbird Garden Flight",
+    "prompt": "Photorealistic cinematic portrait of a beautiful young woman with light brown hair in a loose elegant updo. Black floral lace high-neck top. Standing near a tall window. Soft natural sidelight. Dark wooden interior. Calm direct gaze. Shallow depth of field. Filmic skin. Elegant. Intimate. Ultra detailed. 8k. Grok Imagine.",
+    "thumbnail": "https://pbs.twimg.com/amplify_video_thumb/2094252040176439296/img/TyJ3I7QoKlAQivL6.jpg",
+    "videoUrl": null,
+    "category": null,
+    "author": "@Kisalay_",
+    "authorUrl": "https://x.com/Kisalay_",
+    "sourceUrl": "https://x.com/Kisalay_/status/2094553320576704951",
+    "imageUrls": [
+      "https://pbs.twimg.com/amplify_video_thumb/2094252040176439296/img/TyJ3I7QoKlAQivL6.jpg"
+    ],
+    "syncedAt": "2026-09-07T07:34:45Z"
+  },
+  {
+    "id": "grok-imagine_2094539187026628984",
+    "model": "grok-imagine",
+    "mediaType": "video",
+    "title": "Snow Leopard and Armored Woman",
+    "prompt": "A HUMMING BIRD CARES FOR ITS YOUNG AND FLYS OFF TO THE FLOWERS IN A ADJACENT GARDEN",
+    "thumbnail": "https://pbs.twimg.com/amplify_video_thumb/2094539044755759104/img/Ikna7Jd9L-eADEmB.jpg",
+    "videoUrl": null,
+    "category": null,
+    "author": "@RobinMurrat43a",
+    "authorUrl": "https://x.com/RobinMurrat43a",
+    "sourceUrl": "https://x.com/RobinMurrat43a/status/2094539187026628984",
+    "imageUrls": [
+      "https://pbs.twimg.com/amplify_video_thumb/2094539044755759104/img/Ikna7Jd9L-eADEmB.jpg"
+    ],
+    "syncedAt": "2026-09-07T07:34:45Z"
+  },
+  {
+    "id": "grok-imagine_2094511511473361010",
+    "model": "grok-imagine",
+    "mediaType": "video",
+    "title": "Photorealistic Cumulus Cloud",
+    "prompt": "A giant snow leopard running through the forest with a woman with icy white hair and symbols on her shoulders wearing white armor she’s holding a flag that has 144,000 on it in gold .",
+    "thumbnail": "https://pbs.twimg.com/amplify_video_thumb/2094511489340100608/img/X-0mfJzOFF-ZGFPE.jpg",
+    "videoUrl": null,
+    "category": null,
+    "author": "@SaSHeaven26",
+    "authorUrl": "https://x.com/SaSHeaven26",
+    "sourceUrl": "https://x.com/SaSHeaven26/status/2094511511473361010",
+    "imageUrls": [
+      "https://pbs.twimg.com/amplify_video_thumb/2094511489340100608/img/X-0mfJzOFF-ZGFPE.jpg"
+    ],
+    "syncedAt": "2026-09-07T07:34:45Z"
+  },
+  {
+    "id": "grok-imagine_2094468621414080967",
+    "model": "grok-imagine",
+    "mediaType": "video",
+    "title": "Cinematic Waterfall Cascade",
+    "prompt": "A beautiful fluffy white cumulus cloud floating in a clear bright blue sky, soft volumetric lighting, photorealistic, highly detailed, serene atmosphere",
+    "thumbnail": "https://pbs.twimg.com/amplify_video_thumb/2094468607145099264/img/kscj1_03PVJp2Km-.jpg",
+    "videoUrl": null,
+    "category": null,
+    "author": "@owenxplore",
+    "authorUrl": "https://x.com/owenxplore",
+    "sourceUrl": "https://x.com/owenxplore/status/2094468621414080967",
+    "imageUrls": [
+      "https://pbs.twimg.com/amplify_video_thumb/2094468607145099264/img/kscj1_03PVJp2Km-.jpg"
+    ],
+    "syncedAt": "2026-09-07T07:34:45Z"
+  },
+  {
+    "id": "grok-imagine_2094444345940201865",
+    "model": "grok-imagine",
+    "mediaType": "video",
+    "title": "Cinematic Matcha Ceremony Video",
+    "prompt": "The waterfall cascades powerfully and continuously down the rocky cliffs into the turquoise pool below, with fine mist swirling and rising in the sunlight, subtle movement in the surrounding foliage and water ripples, smooth cinematic motion, photorealistic, highly detailed",
+    "thumbnail": "https://pbs.twimg.com/amplify_video_thumb/2094444318379352064/img/EQyW9-Gr4eBcEBL0.jpg",
+    "videoUrl": null,
+    "category": null,
+    "author": "@owenxplore",
+    "authorUrl": "https://x.com/owenxplore",
+    "sourceUrl": "https://x.com/owenxplore/status/2094444345940201865",
+    "imageUrls": [
+      "https://pbs.twimg.com/amplify_video_thumb/2094444318379352064/img/EQyW9-Gr4eBcEBL0.jpg"
+    ],
+    "syncedAt": "2026-09-07T07:34:45Z"
+  },
+  {
+    "id": "grok-imagine_2094392255599796489",
+    "model": "grok-imagine",
+    "mediaType": "video",
+    "title": "Serene Ocean Pan Video",
+    "prompt": "Animate this image into a photorealistic cinematic 15-second video. Preserve the woman's exact face, hairstyle, clothing, jewelry, body proportions, café interior, Japanese tea-shop details, lighting, and composition.\n\n0–4 sec: She calmly finishes preparing the matcha, gently sliding the ceramic bowl forward on the wooden counter. Her movements are careful and natural. Subtle breathing, blinking, hair movement, and realistic fabric motion.\n\n4–7 sec: As she moves the bowl, she notices a small folded handwritten note underneath it. She pauses, looks down with curiosity, and carefully picks up the note.\n\n7–10 sec: She unfolds the note and reads it. Her expression slowly changes from neutral to surprised. She rereads it once, clearly confused by what it says.\n\n10–13 sec: She looks around the quiet tea shop, scanning the room as if trying to figure out who left the note. She briefly looks toward the entrance.\n\n13–15 sec: She looks back at the note and quietly whispers, “For me?” Then she gives a small uncertain smile as the video ends.\n\nNatural realistic acting, subtle facial expressions, delicate hand movements, realistic paper interaction, accurate fingers, natural hair physics, warm Japanese café atmosphere, soft cinematic lighting, shallow depth of field, gentle handheld camera movement. No exaggerated movements, no sudden camera motion, no extra people, no face changes, no outfit changes, no object morphing, no distorted hands.",
+    "thumbnail": "https://pbs.twimg.com/amplify_video_thumb/2094383888613445632/img/u9pGKfdgULnvmdVD.jpg",
+    "videoUrl": null,
+    "category": null,
+    "author": "@iamahmedfaraz66",
+    "authorUrl": "https://x.com/iamahmedfaraz66",
+    "sourceUrl": "https://x.com/iamahmedfaraz66/status/2094392255599796489",
+    "imageUrls": [
+      "https://pbs.twimg.com/amplify_video_thumb/2094383888613445632/img/u9pGKfdgULnvmdVD.jpg"
+    ],
+    "syncedAt": "2026-09-07T07:34:45Z"
+  },
+  {
+    "id": "grok-imagine_2094382339107250687",
+    "model": "grok-imagine",
+    "mediaType": "video",
+    "title": "Anime Server Corridor Scene",
+    "prompt": "the doll stays still and sits there, very slow cinematic camera pan, soft atmospheric movement, serene and peaceful mood, elegant and tasteful motion, no aggressive movement, animate the natural ocean",
+    "thumbnail": "https://pbs.twimg.com/amplify_video_thumb/2094382224653066240/img/mCnWdVTTbnN7WRbR.jpg",
+    "videoUrl": null,
+    "category": null,
+    "author": "@AliciaMcnatt",
+    "authorUrl": "https://x.com/AliciaMcnatt",
+    "sourceUrl": "https://x.com/AliciaMcnatt/status/2094382339107250687",
+    "imageUrls": [
+      "https://pbs.twimg.com/amplify_video_thumb/2094382224653066240/img/mCnWdVTTbnN7WRbR.jpg"
+    ],
+    "syncedAt": "2026-09-07T07:34:45Z"
+  },
+  {
+    "id": "grok-imagine_2094372125855437291",
+    "model": "grok-imagine",
+    "mediaType": "video",
+    "title": "Cinematic Miniature Rescue Scene",
+    "prompt": "Cinematic anime shot of a young woman with short iridescent pastel hair in a dark server corridor. Black tech bodysuit with red circuit lines. One glowing cyan wireframe holographic hand reaching toward the camera. Eyes closed. Floating glass shards. Towering server racks packed with tiny lights. Digital particles. High contrast neon. Ultra detailed. 8k.",
+    "thumbnail": "https://pbs.twimg.com/amplify_video_thumb/2094251548927025152/img/Z3S24lRd8qDuxm-K.jpg",
+    "videoUrl": null,
+    "category": null,
+    "author": "@Kisalay_",
+    "authorUrl": "https://x.com/Kisalay_",
+    "sourceUrl": "https://x.com/Kisalay_/status/2094372125855437291",
+    "imageUrls": [
+      "https://pbs.twimg.com/amplify_video_thumb/2094251548927025152/img/Z3S24lRd8qDuxm-K.jpg"
+    ],
+    "syncedAt": "2026-09-07T07:34:45Z"
+  },
+  {
+    "id": "grok-imagine_2094299423258067039",
+    "model": "grok-imagine",
+    "mediaType": "video",
+    "title": "Cinematic Café Suspense",
+    "prompt": "Cinematic miniature rescue scene in a tiny realistic world, several miniature workers urgently rescuing a small person/animal from a difficult situation, detailed handcrafted environment, realistic movements, emotional but wholesome atmosphere, drama...",
+    "thumbnail": "https://pbs.twimg.com/amplify_video_thumb/2094299291691126784/img/a7Xs3JN4w6I2maWd.jpg",
+    "videoUrl": null,
+    "category": null,
+    "author": "@Mud01185127",
+    "authorUrl": "https://x.com/Mud01185127",
+    "sourceUrl": "https://x.com/Mud01185127/status/2094299423258067039",
+    "imageUrls": [
+      "https://pbs.twimg.com/amplify_video_thumb/2094299291691126784/img/a7Xs3JN4w6I2maWd.jpg"
+    ],
+    "syncedAt": "2026-09-07T07:34:45Z"
+  },
+  {
+    "id": "grok-imagine_2094275234719502716",
+    "model": "grok-imagine",
+    "mediaType": "video",
+    "title": "Flying to Starbase Video",
+    "prompt": "Create a photorealistic cinematic 15-second video from this exact image. Preserve the woman's exact face, identity, hairstyle, outfit, jewelry, body proportions, café interior, table objects, lighting, and composition. Make the animation feel like a real candid moment rather than a fashion video.\n\n0–3 sec: She sits quietly at the café table, relaxed and slightly lost in thought. Her fingers rest near her face. She blinks naturally, breathes subtly, and her long hair moves slightly. Warm café lights and candle flames flicker naturally in the background.\n\n3–6 sec: Her phone on the table suddenly vibrates with a notification. She hears it, looks down, reaches for the phone and picks it up.\n\n6–9 sec: She unlocks the phone and reads the message. Her expression gradually changes from relaxed to surprised. She stops moving for a moment, rereads the message, and her eyes widen slightly.\n\n9–12 sec: She lowers the phone a little and looks toward the café entrance, confused and slightly nervous, as if she suddenly realizes someone is nearby.\n\n12–15 sec: She looks back at the phone one more time. The message on the screen reads: “I'm outside. Don't look behind you.” Her expression becomes tense. She slowly looks toward the window instead of turning around. End on this suspenseful moment.\n\nNatural realistic acting, subtle facial expressions, realistic blinking, accurate hand and finger movements, believable phone interaction, natural hair physics, realistic fabric movement, warm sophisticated café ambience, shallow depth of field, very subtle handheld camera movement. Build suspense gradually. No exaggerated reactions, no sudden camera movements, no visible sender, no extra characters, no cuts, no face changes, no outfit changes, no distorted hands or phone.",
+    "thumbnail": "https://pbs.twimg.com/amplify_video_thumb/2094274016601313280/img/tDJlh3HquBBgCAQp.jpg",
+    "videoUrl": null,
+    "category": null,
+    "author": "@iamahmedfaraz66",
+    "authorUrl": "https://x.com/iamahmedfaraz66",
+    "sourceUrl": "https://x.com/iamahmedfaraz66/status/2094275234719502716",
+    "imageUrls": [
+      "https://pbs.twimg.com/amplify_video_thumb/2094274016601313280/img/tDJlh3HquBBgCAQp.jpg"
+    ],
+    "syncedAt": "2026-09-07T07:34:45Z"
+  },
+  {
+    "id": "grok-imagine_2094268636663853142",
+    "model": "grok-imagine",
+    "mediaType": "video",
+    "title": "Colossal Desert Helmet Relic",
+    "prompt": "Yes Have both of them lift up out of the water and start flying back to Starbase, Texas",
+    "thumbnail": "https://pbs.twimg.com/amplify_video_thumb/2094268532582219776/img/qp1kB85ccqNPZjsU.jpg",
+    "videoUrl": null,
+    "category": null,
+    "author": "@DogeCherball",
+    "authorUrl": "https://x.com/DogeCherball",
+    "sourceUrl": "https://x.com/DogeCherball/status/2094268636663853142",
+    "imageUrls": [
+      "https://pbs.twimg.com/amplify_video_thumb/2094268532582219776/img/qp1kB85ccqNPZjsU.jpg"
+    ],
+    "syncedAt": "2026-09-07T07:34:45Z"
+  },
+  {
+    "id": "grok-imagine_2094251326863736910",
+    "model": "grok-imagine",
+    "mediaType": "video",
+    "title": "Female Pilot Cockpit Close-up",
+    "prompt": "Wide cinematic illustration of a colossal weathered white mechanical helmet half-buried in a vast desert, riveted metal plates and rust stains, a lone tiny figure standing inside the open visor looking inward, pale sand piled around the base, distant low mountains under a clear blue sky, graphic novel style, clean linework, quiet scale, ultra detailed, 8k",
+    "thumbnail": "https://pbs.twimg.com/amplify_video_thumb/2093880020808925184/img/5REPjuGQLeVh0-4m.jpg",
+    "videoUrl": null,
+    "category": null,
+    "author": "@Kisalay_",
+    "authorUrl": "https://x.com/Kisalay_",
+    "sourceUrl": "https://x.com/Kisalay_/status/2094251326863736910",
+    "imageUrls": [
+      "https://pbs.twimg.com/amplify_video_thumb/2093880020808925184/img/5REPjuGQLeVh0-4m.jpg"
+    ],
+    "syncedAt": "2026-09-07T07:34:45Z"
+  },
+  {
+    "id": "grok-imagine_2094221127719825542",
+    "model": "grok-imagine",
+    "mediaType": "video",
+    "title": "Tesla Optimus Cyber Taxi Arrival",
+    "prompt": "Intense cinematic close-up of a female pilot inside a worn cockpit, cracked yellow flight helmet with shattered visor over one eye, sweat and a thin streak of blood on her face, wide focused eyes, slightly parted lips, analog gauges and clocks glowing warm orange in the background, graphic novel illustration style, heavy linework, dramatic lighting, tense atmosphere, ultra detailed, 8k",
+    "thumbnail": "https://pbs.twimg.com/amplify_video_thumb/2093879898020720640/img/mJlp1gFAFlwfjTpe.jpg",
+    "videoUrl": null,
+    "category": null,
+    "author": "@Kisalay_",
+    "authorUrl": "https://x.com/Kisalay_",
+    "sourceUrl": "https://x.com/Kisalay_/status/2094221127719825542",
+    "imageUrls": [
+      "https://pbs.twimg.com/amplify_video_thumb/2093879898020720640/img/mJlp1gFAFlwfjTpe.jpg"
+    ],
+    "syncedAt": "2026-09-07T07:34:45Z"
+  },
+  {
+    "id": "grok-imagine_2094218689952276679",
+    "model": "grok-imagine",
+    "mediaType": "video",
+    "title": "Tesla Optimus Factory Hero Video",
+    "prompt": "Your all New Tesla Optimus robot pulls up in a cyber taxi 🚕 and knocks your front door…",
+    "thumbnail": "https://pbs.twimg.com/amplify_video_thumb/2094218594431143936/img/t4L5eUa2nj5aPFhe.jpg",
+    "videoUrl": null,
+    "category": null,
+    "author": "@MorePower2use",
+    "authorUrl": "https://x.com/MorePower2use",
+    "sourceUrl": "https://x.com/MorePower2use/status/2094218689952276679",
+    "imageUrls": [
+      "https://pbs.twimg.com/amplify_video_thumb/2094218594431143936/img/t4L5eUa2nj5aPFhe.jpg"
+    ],
+    "syncedAt": "2026-09-07T07:34:45Z"
+  },
+  {
+    "id": "grok-imagine_2094130530744959050",
+    "model": "grok-imagine",
+    "mediaType": "video",
+    "title": "Character Hat Animation",
+    "prompt": "Landing page hero for Tesla Optimus walking a factory floor. Deep charcoal to near-black. Oversized immersive photograph. Warm copper and amber against cool cyan and steel blue. Soft volumetric haze. Cinematic contrast. Subtle glass UI. Refined type. Asymmetric. Generous empty space. Ultra-premium. Futuristic.",
+    "thumbnail": "https://pbs.twimg.com/amplify_video_thumb/2093898597893017600/img/9KGpmyCMtZAv63Wi.jpg",
+    "videoUrl": null,
+    "category": null,
+    "author": "@Kisalay_",
+    "authorUrl": "https://x.com/Kisalay_",
+    "sourceUrl": "https://x.com/Kisalay_/status/2094130530744959050",
+    "imageUrls": [
+      "https://pbs.twimg.com/amplify_video_thumb/2093898597893017600/img/9KGpmyCMtZAv63Wi.jpg"
+    ],
+    "syncedAt": "2026-09-07T07:34:45Z"
+  },
+  {
+    "id": "grok-imagine_2094053671927484525",
+    "model": "grok-imagine",
+    "mediaType": "video",
+    "title": "360-Degree Clothing Change Timelapse",
+    "prompt": "Animate this image pulls off hat and says go ahead and say it punk or do you even have the balls probably not.",
+    "thumbnail": "https://pbs.twimg.com/amplify_video_thumb/2094053656836403200/img/n5Qt2KA-KsY5IuVp.jpg",
+    "videoUrl": null,
+    "category": null,
+    "author": "@MarshaBush50",
+    "authorUrl": "https://x.com/MarshaBush50",
+    "sourceUrl": "https://x.com/MarshaBush50/status/2094053671927484525",
+    "imageUrls": [
+      "https://pbs.twimg.com/amplify_video_thumb/2094053656836403200/img/n5Qt2KA-KsY5IuVp.jpg"
+    ],
+    "syncedAt": "2026-09-07T07:34:45Z"
+  },
+  {
+    "id": "grok-imagine_2094052366005723514",
+    "model": "grok-imagine",
+    "mediaType": "video",
+    "title": "Medieval Noble Woman on Battlement",
+    "prompt": "The camera rotating 360 degrees smoothly in fast motion, while the man clothes changed with every camera loop, before every spin the man snapping his fingers to change to new clothing, place the same person and pose unchanged steady in place, the camera rotating unstoppable in 360, the only change is clothes , timelapse, seamless motion",
+    "thumbnail": "https://pbs.twimg.com/amplify_video_thumb/2094052255523639296/img/bpo_riyioik03HRS.jpg",
+    "videoUrl": null,
+    "category": null,
+    "author": "@aziz4ai",
+    "authorUrl": "https://x.com/aziz4ai",
+    "sourceUrl": "https://x.com/aziz4ai/status/2094052366005723514",
+    "imageUrls": [
+      "https://pbs.twimg.com/amplify_video_thumb/2094052255523639296/img/bpo_riyioik03HRS.jpg"
+    ],
+    "syncedAt": "2026-09-07T07:34:45Z"
+  },
+  {
+    "id": "grok-imagine_2094039934650994982",
+    "model": "grok-imagine",
+    "mediaType": "video",
+    "title": "Consistent Monkey Street Animation",
+    "prompt": "Classical medieval fantasy oil painting of a noble woman with long dark hair standing on a high stone battlement, viewed from behind and slightly to the side, wearing a rich black cloak with intricate gold embroidery flowing in the wind, looking out over a vast mountain valley with a winding river, dense forests, and a distant castle city, dramatic storm clouds breaking with golden sun rays, painterly brushwork, cinematic scale, epic atmosphere, ultra detailed, 8k",
+    "thumbnail": "https://pbs.twimg.com/amplify_video_thumb/2093879783499464704/img/wM21diJcLNvTZ5P-.jpg",
+    "videoUrl": null,
+    "category": null,
+    "author": "@Kisalay_",
+    "authorUrl": "https://x.com/Kisalay_",
+    "sourceUrl": "https://x.com/Kisalay_/status/2094039934650994982",
+    "imageUrls": [
+      "https://pbs.twimg.com/amplify_video_thumb/2093879783499464704/img/wM21diJcLNvTZ5P-.jpg"
+    ],
+    "syncedAt": "2026-09-07T07:34:45Z"
+  },
+  {
+    "id": "grok-imagine_2094028742553149650",
+    "model": "grok-imagine",
+    "mediaType": "video",
+    "title": "Photorealistic Monkey Church Documentary",
+    "prompt": "Start from this exact image and keep the same monkey, face, fur, body, clothes, bench, wall, shop window, sidewalk, lighting, and camera angle the whole time. Do not change the physique, species, outfit, or background. No morphing. Photoreal street c...",
+    "thumbnail": "https://pbs.twimg.com/amplify_video_thumb/2094028641747218432/img/3jqwa_JFV0Zfv8yh.jpg",
+    "videoUrl": null,
+    "category": null,
+    "author": "@Romeo_Blogs001",
+    "authorUrl": "https://x.com/Romeo_Blogs001",
+    "sourceUrl": "https://x.com/Romeo_Blogs001/status/2094028742553149650",
+    "imageUrls": [
+      "https://pbs.twimg.com/amplify_video_thumb/2094028641747218432/img/3jqwa_JFV0Zfv8yh.jpg"
+    ],
+    "syncedAt": "2026-09-07T07:34:45Z"
+  },
+  {
+    "id": "grok-imagine_2094001284588208315",
+    "model": "grok-imagine",
+    "mediaType": "video",
+    "title": "Goddesses of Myth Narrative Video",
+    "prompt": "Start from this exact image and keep the same monkey, face, fur, clothes, Bible, wall, church, lighting, and camera angle the whole time. Do not change the body, face shape, species, outfit, or background.\nPhotoreal documentary clip, quiet and slow.",
+    "thumbnail": "https://pbs.twimg.com/amplify_video_thumb/2094001242640900096/img/mMprhCzIizL8ErtE.jpg",
+    "videoUrl": null,
+    "category": null,
+    "author": "@shidoff_dc2043",
+    "authorUrl": "https://x.com/shidoff_dc2043",
+    "sourceUrl": "https://x.com/shidoff_dc2043/status/2094001284588208315",
+    "imageUrls": [
+      "https://pbs.twimg.com/amplify_video_thumb/2094001242640900096/img/mMprhCzIizL8ErtE.jpg"
+    ],
+    "syncedAt": "2026-09-07T07:34:45Z"
   },
   {
     "id": "grok-imagine_2093970466688180492",
     "model": "grok-imagine",
     "mediaType": "video",
-    "title": "Cosmic TV Explosion in Decaying Room",
-    "prompt": "The goddess Diana frolics with animals in a deep forest. The scene shifts to Artemis, the goddess of the night moon, singing a song and inducing sleep with a harp; Persephone, the blood goddess, mourning the emissaries; the goddesses continue to sing the song of cycles, a 15-minute video singing in Italian with music, mysterious, solemn",
+    "title": "Falcon Heavy Rocket Launch",
+    "prompt": "Goddess Diana playing with animals in a deep forest. Scene changes to the night moon goddess Artemis singing and playing the harp to induce sleep. The blood goddess Persephone mourning the messengers. The goddesses continue to sing the song of circulation. A 15-minute video singing in Italian with music, mysterious and solemn.",
     "thumbnail": "https://pbs.twimg.com/amplify_video_thumb/2093970430604488704/img/dUneXzq8ksJk4Tyo.jpg",
     "videoUrl": null,
     "category": null,
@@ -65,13 +1204,30 @@
     "imageUrls": [
       "https://pbs.twimg.com/amplify_video_thumb/2093970430604488704/img/dUneXzq8ksJk4Tyo.jpg"
     ],
-    "syncedAt": "2026-08-31T08:57:12Z"
+    "syncedAt": "2026-09-07T07:34:45Z"
+  },
+  {
+    "id": "grok-imagine_2093900217548509584",
+    "model": "grok-imagine",
+    "mediaType": "video",
+    "title": "Cosmic TV in Decaying Room",
+    "prompt": "Falcon Heavy launch\nSound of Human Hope\n“Engines roar, hearts pound. The rocket trembles at the edge of Earth’s grip — one breath away from turning night into fire....",
+    "thumbnail": "https://pbs.twimg.com/amplify_video_thumb/2093900201723375616/img/lWNzm4JEhuAX6sIf.jpg",
+    "videoUrl": null,
+    "category": null,
+    "author": "@Marie8508319540",
+    "authorUrl": "https://x.com/Marie8508319540",
+    "sourceUrl": "https://x.com/Marie8508319540/status/2093900217548509584",
+    "imageUrls": [
+      "https://pbs.twimg.com/amplify_video_thumb/2093900201723375616/img/lWNzm4JEhuAX6sIf.jpg"
+    ],
+    "syncedAt": "2026-09-07T07:34:45Z"
   },
   {
     "id": "grok-imagine_2093858740567220413",
     "model": "grok-imagine",
     "mediaType": "video",
-    "title": "Dynamic Triptych Goddesses Camera Swaps Video Prompt",
+    "title": "Goddess Triptych with Close-Ups",
     "prompt": "Cinematic side profile of a young woman sitting in a dark decaying room, messy bun, wearing a thick knitted brown sweater, staring at an old CRT television. The TV screen glows with a vivid cosmic explosion of cyan, gold, purple and orange energy, a tiny figure visible at the center of the burst. Peeling plaster walls, dusty wooden dresser, broken window, the only light coming from the television illuminating her face. Photorealistic, moody atmosphere, subtle flicker from the screen, dust particles in the air, 16:9.",
     "thumbnail": "https://pbs.twimg.com/amplify_video_thumb/2093559444944883712/img/ImQJUypW1fqM0XPD.jpg",
     "videoUrl": null,
@@ -82,14 +1238,14 @@
     "imageUrls": [
       "https://pbs.twimg.com/amplify_video_thumb/2093559444944883712/img/ImQJUypW1fqM0XPD.jpg"
     ],
-    "syncedAt": "2026-08-31T08:57:12Z"
+    "syncedAt": "2026-09-07T07:34:45Z"
   },
   {
     "id": "grok-imagine_2093849707751882793",
     "model": "grok-imagine",
     "mediaType": "video",
-    "title": "Bioluminescent Wave Bloom",
-    "prompt": "Artemis, at night, playing the harp in the temple of the moon; Diana, deep forest, wolf, deer, maintaining her bow; Proserpina, the underground world, wishing for people's peace, their respective appearances, three-part split screen, mysterious, screen switches by closing up on each item",
+    "title": "Bioluminescent Underwater Bloom",
+    "prompt": "Artemis playing a harp at the Temple of the Moon at night; Diana in a deep forest tending to wolves, deer, and her bow; Proserpina in the underworld wishing for the peace of the people. Their respective forms, split into three, mysterious, switching screens with close-ups of each item.",
     "thumbnail": "https://pbs.twimg.com/amplify_video_thumb/2093849686881005569/img/tGkbjPi8yy6G8fE2.jpg",
     "videoUrl": null,
     "category": null,
@@ -99,7 +1255,7 @@
     "imageUrls": [
       "https://pbs.twimg.com/amplify_video_thumb/2093849686881005569/img/tGkbjPi8yy6G8fE2.jpg"
     ],
-    "syncedAt": "2026-08-31T08:57:12Z"
+    "syncedAt": "2026-09-07T07:34:45Z"
   },
   {
     "id": "grok-imagine_2093842983485354025",
@@ -116,13 +1272,13 @@
     "imageUrls": [
       "https://pbs.twimg.com/amplify_video_thumb/2093842536888401920/img/Q0ORcHCfoRSmQJuG.jpg"
     ],
-    "syncedAt": "2026-08-31T08:57:12Z"
+    "syncedAt": "2026-09-07T07:34:45Z"
   },
   {
     "id": "grok-imagine_2093840804871606418",
     "model": "grok-imagine",
     "mediaType": "video",
-    "title": "360 Degree Orbit Timelapse",
+    "title": "360 Degree Orbiting Time Lapse",
     "prompt": "The bioluminescent ones — yes, this is exactly the place. When the water’s warm enough, the waves light up blue-green every time they break, like the ocean’s breathing fireflies.",
     "thumbnail": "https://pbs.twimg.com/amplify_video_thumb/2093839190999904257/img/8X2oSPPclHPXQl83.jpg",
     "videoUrl": null,
@@ -133,13 +1289,13 @@
     "imageUrls": [
       "https://pbs.twimg.com/amplify_video_thumb/2093839190999904257/img/8X2oSPPclHPXQl83.jpg"
     ],
-    "syncedAt": "2026-08-31T08:57:12Z"
+    "syncedAt": "2026-09-07T07:34:45Z"
   },
   {
     "id": "grok-imagine_2093840506379755808",
     "model": "grok-imagine",
     "mediaType": "video",
-    "title": "Toddler's First Vintage Piano Discovery",
+    "title": "Toddler Playing Vintage Piano",
     "prompt": "He is standing in place , people passing around him in long exposure with time lapse and motion blur with push in dolly handheld camera motion, the camera orbiting around his body in 360 degrees",
     "thumbnail": "https://pbs.twimg.com/amplify_video_thumb/2093840475153125376/img/aojsCP-3YxTfkBEc.jpg",
     "videoUrl": null,
@@ -150,7 +1306,7 @@
     "imageUrls": [
       "https://pbs.twimg.com/amplify_video_thumb/2093840475153125376/img/aojsCP-3YxTfkBEc.jpg"
     ],
-    "syncedAt": "2026-08-31T08:57:12Z"
+    "syncedAt": "2026-09-07T07:34:45Z"
   },
   {
     "id": "grok-imagine_2093817691404443699",
@@ -167,7 +1323,7 @@
     "imageUrls": [
       "https://pbs.twimg.com/amplify_video_thumb/2093817673129795584/img/Gmtw8EsMRvfmwr1D.jpg"
     ],
-    "syncedAt": "2026-08-31T08:57:12Z"
+    "syncedAt": "2026-09-07T07:34:45Z"
   },
   {
     "id": "grok-imagine_2093798342484529272",
@@ -184,7 +1340,7 @@
     "imageUrls": [
       "https://pbs.twimg.com/amplify_video_thumb/2093558947961868288/img/rVVMgMrvO8Qb0S6w.jpg"
     ],
-    "syncedAt": "2026-08-31T08:57:12Z"
+    "syncedAt": "2026-09-07T07:34:45Z"
   },
   {
     "id": "grok-imagine_2093793244345717016",
@@ -201,7 +1357,7 @@
     "imageUrls": [
       "https://pbs.twimg.com/amplify_video_thumb/2093793227941806080/img/eQ1rn-MloK5yinPS.jpg"
     ],
-    "syncedAt": "2026-08-31T08:57:12Z"
+    "syncedAt": "2026-09-07T07:34:45Z"
   },
   {
     "id": "grok-imagine_2093787576817619304",
@@ -218,7 +1374,7 @@
     "imageUrls": [
       "https://pbs.twimg.com/amplify_video_thumb/2093787519196274688/img/5MJnFuThi5oYrsAB.jpg"
     ],
-    "syncedAt": "2026-08-31T08:57:12Z"
+    "syncedAt": "2026-09-07T07:34:45Z"
   },
   {
     "id": "grok-imagine_2093778613443170455",
@@ -235,7 +1391,7 @@
     "imageUrls": [
       "https://pbs.twimg.com/amplify_video_thumb/2093778597387345920/img/iNSdAIFXJoexgyUM.jpg"
     ],
-    "syncedAt": "2026-08-31T08:57:12Z"
+    "syncedAt": "2026-09-07T07:34:45Z"
   },
   {
     "id": "grok-imagine_2093768143072055711",
@@ -252,7 +1408,7 @@
     "imageUrls": [
       "https://pbs.twimg.com/amplify_video_thumb/2093558641895124992/img/ovbP3RucFdUhRbBy.jpg"
     ],
-    "syncedAt": "2026-08-31T08:57:12Z"
+    "syncedAt": "2026-09-07T07:34:45Z"
   },
   {
     "id": "grok-imagine_2093699085345726537",
@@ -269,7 +1425,7 @@
     "imageUrls": [
       "https://pbs.twimg.com/amplify_video_thumb/2093699054563643393/img/sLoYR9ib3MzFtTNv.jpg"
     ],
-    "syncedAt": "2026-08-31T08:57:12Z"
+    "syncedAt": "2026-09-07T07:34:45Z"
   },
   {
     "id": "grok-imagine_2093613199237259699",
@@ -286,7 +1442,7 @@
     "imageUrls": [
       "https://pbs.twimg.com/amplify_video_thumb/2093613181478535168/img/9Hy7H3Wq1IaEwRTK.jpg"
     ],
-    "syncedAt": "2026-08-31T08:57:12Z"
+    "syncedAt": "2026-09-07T07:34:45Z"
   },
   {
     "id": "grok-imagine_2093492954321293507",
@@ -303,7 +1459,7 @@
     "imageUrls": [
       "https://pbs.twimg.com/amplify_video_thumb/2093492695650164736/img/_9dU6QiY4NYtRXsR.jpg"
     ],
-    "syncedAt": "2026-08-31T08:57:12Z"
+    "syncedAt": "2026-09-07T07:34:45Z"
   },
   {
     "id": "grok-imagine_2093463477184614905",
@@ -320,7 +1476,7 @@
     "imageUrls": [
       "https://pbs.twimg.com/amplify_video_thumb/2093463391092330496/img/2L6sK226jwv9ZyX7.jpg"
     ],
-    "syncedAt": "2026-08-31T08:57:12Z"
+    "syncedAt": "2026-09-07T07:34:45Z"
   },
   {
     "id": "grok-imagine_2093432499808477297",
@@ -337,7 +1493,7 @@
     "imageUrls": [
       "https://pbs.twimg.com/amplify_video_thumb/2093432471073247232/img/niMfQDtLXmodiXQ7.jpg"
     ],
-    "syncedAt": "2026-08-31T08:57:12Z"
+    "syncedAt": "2026-09-07T07:34:45Z"
   },
   {
     "id": "grok-imagine_2093337519014527394",
@@ -354,7 +1510,7 @@
     "imageUrls": [
       "https://pbs.twimg.com/amplify_video_thumb/2093337483572662272/img/Rx_m6TxkmFmqyCbF.jpg"
     ],
-    "syncedAt": "2026-08-31T08:57:12Z"
+    "syncedAt": "2026-09-07T07:34:45Z"
   },
   {
     "id": "grok-imagine_2093320273067970594",
@@ -371,7 +1527,7 @@
     "imageUrls": [
       "https://pbs.twimg.com/amplify_video_thumb/2093320247277182976/img/1ZM7nf1LrEROjxp3.jpg"
     ],
-    "syncedAt": "2026-08-31T08:57:12Z"
+    "syncedAt": "2026-09-07T07:34:45Z"
   },
   {
     "id": "grok-imagine_2093319537336750297",
@@ -388,7 +1544,7 @@
     "imageUrls": [
       "https://pbs.twimg.com/amplify_video_thumb/2093319484375171072/img/_6Ak95Qt-L1bV670.jpg"
     ],
-    "syncedAt": "2026-08-31T08:57:12Z"
+    "syncedAt": "2026-09-07T07:34:45Z"
   },
   {
     "id": "grok-imagine_2093316534064009631",
@@ -405,7 +1561,7 @@
     "imageUrls": [
       "https://pbs.twimg.com/amplify_video_thumb/2093316414954217472/img/HA_iDnoxroVepVKJ.jpg"
     ],
-    "syncedAt": "2026-08-31T08:57:12Z"
+    "syncedAt": "2026-09-07T07:34:45Z"
   },
   {
     "id": "grok-imagine_2093288701094695110",
@@ -422,7 +1578,7 @@
     "imageUrls": [
       "https://pbs.twimg.com/amplify_video_thumb/2093288680542584832/img/ua4qihAXdKV-zfDP.jpg"
     ],
-    "syncedAt": "2026-08-31T08:57:12Z"
+    "syncedAt": "2026-09-07T07:34:45Z"
   },
   {
     "id": "grok-imagine_2093246555998548377",
@@ -439,7 +1595,7 @@
     "imageUrls": [
       "https://pbs.twimg.com/amplify_video_thumb/2093246293917466624/img/mbJviXaH_0BG9aG4.jpg"
     ],
-    "syncedAt": "2026-08-31T08:57:12Z"
+    "syncedAt": "2026-09-07T07:34:45Z"
   },
   {
     "id": "grok-imagine_2093224141302448619",
@@ -456,7 +1612,7 @@
     "imageUrls": [
       "https://pbs.twimg.com/amplify_video_thumb/2093224113318109184/img/JOabjs3hbWp2dEf4.jpg"
     ],
-    "syncedAt": "2026-08-31T08:57:12Z"
+    "syncedAt": "2026-09-07T07:34:45Z"
   },
   {
     "id": "grok-imagine_2093208966230929432",
@@ -473,7 +1629,7 @@
     "imageUrls": [
       "https://pbs.twimg.com/amplify_video_thumb/2093208937080512512/img/V4aBbbhrNngf3FIB.jpg"
     ],
-    "syncedAt": "2026-08-31T08:57:12Z"
+    "syncedAt": "2026-09-07T07:34:45Z"
   },
   {
     "id": "grok-imagine_2093196626336858368",
@@ -490,7 +1646,7 @@
     "imageUrls": [
       "https://pbs.twimg.com/amplify_video_thumb/2093196579461292032/img/9h4hfy6jnN3m2EVo.jpg"
     ],
-    "syncedAt": "2026-08-31T08:57:12Z"
+    "syncedAt": "2026-09-07T07:34:45Z"
   },
   {
     "id": "grok-imagine_2093167333254594568",
@@ -507,7 +1663,7 @@
     "imageUrls": [
       "https://pbs.twimg.com/amplify_video_thumb/2093167309800001536/img/xi3izzOMXq_pHks_.jpg"
     ],
-    "syncedAt": "2026-08-31T08:57:12Z"
+    "syncedAt": "2026-09-07T07:34:45Z"
   },
   {
     "id": "grok-imagine_2093117079104725139",
@@ -524,7 +1680,7 @@
     "imageUrls": [
       "https://pbs.twimg.com/amplify_video_thumb/2093117064491761664/img/KYvolIL1MZU7dBrH.jpg"
     ],
-    "syncedAt": "2026-08-31T08:57:12Z"
+    "syncedAt": "2026-09-07T07:34:45Z"
   },
   {
     "id": "grok-imagine_2093104471303688698",
@@ -541,7 +1697,7 @@
     "imageUrls": [
       "https://pbs.twimg.com/amplify_video_thumb/2093104400797405185/img/AzgGhqx5-Cdy65gt.jpg"
     ],
-    "syncedAt": "2026-08-31T08:57:12Z"
+    "syncedAt": "2026-09-07T07:34:45Z"
   },
   {
     "id": "grok-imagine_2092982630153073030",
@@ -558,7 +1714,7 @@
     "imageUrls": [
       "https://pbs.twimg.com/amplify_video_thumb/2092982559617511424/img/9VzG2E8XbX0XFRhk.jpg"
     ],
-    "syncedAt": "2026-08-31T08:57:12Z"
+    "syncedAt": "2026-09-07T07:34:45Z"
   },
   {
     "id": "grok-imagine_2092954940901568737",
@@ -575,13 +1731,13 @@
     "imageUrls": [
       "https://pbs.twimg.com/amplify_video_thumb/2092954916721430528/img/TpmX8ByTrL8Wsaug.jpg"
     ],
-    "syncedAt": "2026-08-31T08:57:12Z"
+    "syncedAt": "2026-09-07T07:34:45Z"
   },
   {
     "id": "grok-imagine_2092905721499148502",
     "model": "grok-imagine",
     "mediaType": "video",
-    "title": "Korean Neighborhood Slice of Life Video Script",
+    "title": "📚 More Prompts Available",
     "prompt": "SpaceX forge crew to MrFIXitX MoonBase forge colonization with payloads designed by subscribers simulators training then Implement",
     "thumbnail": "https://pbs.twimg.com/amplify_video_thumb/2092905690440335361/img/n_JS-saIe54EGm5o.jpg",
     "videoUrl": null,
@@ -592,1162 +1748,6 @@
     "imageUrls": [
       "https://pbs.twimg.com/amplify_video_thumb/2092905690440335361/img/n_JS-saIe54EGm5o.jpg"
     ],
-    "syncedAt": "2026-08-31T08:57:12Z"
-  },
-  {
-    "id": "grok-imagine_2092884832816906256",
-    "model": "grok-imagine",
-    "mediaType": "video",
-    "title": "Surreal Chewing Gum Interaction",
-    "prompt": "Subject & Character Details\\nSetting: A quiet, sun-dappled residential alley in an older Korean/East Asian neighborhood — narrow paved lane, low houses with tiled and corrugated roofs, tangled power lines overhead, potted plants, laundry hanging to dry, a parked bicycle, and a small convenience-store fridge stocked with drinks. Midday, warm natural sunlight with soft leaf-shadow dappling on the ground, filtered through overhanging tree branches. Handheld, walk-and-talk camera style, mostly following/tracking the couple from behind or in front.\\n\\nCharacter 1 — Man\\nEast Asian male, appears late 20s–30s, short black tousled hair, clean-shaven with a soft, relaxed expression\\nWearing an oversized, faded charcoal-grey/brown crewneck T-shirt with visible fabric wrinkles, loose beige/khaki wide-leg trousers, white sneakers\\nWearing a wristwatch on left wrist\\nCarries a woven tote bag with a small round yellow logo patch\\nHolds a clear plastic bottle of iced tea/barley tea throughout\\nCalm, warm, slightly playful demeanor — smiles, glances sideways at his companion, gestures gently while talking\\n\\nCharacter 2 — Woman\\nEast Asian female, appears late 20s, dark hair pulled back into a low bun with loose face-framing strands\\nWearing an oversized sage-green button-front shirt with sleeves loosely rolled, light blue/grey straw-colored jeans, white sneakers\\nWears a thin pendant necklace\\nAlso carries a woven tote bag and a bottled iced tea\\nBright, easygoing expression — smiles, laughs softly, walks in step beside him\\n\\nRelationship/mood: Casual, affectionate couple on a relaxed neighborhood stroll after a small shopping trip — comfortable silence and small talk, natural chemistry, \\\"slice of life\\\" tone.\\n\\n0:00–0:05Wide shot from behind, the couple walking away from camera down a narrow tree-shaded alley. Man in grey tee and khakis on the left, woman in sage-green shirt and jeans on the right, both carrying white plastic shopping bags. Dappled sunlight on the pavement, bicycles and potted plants lining the walls, laundry hanging on the right. Slow steady tracking shot following them from behind.\\n\\n0:05–0:10Camera now leads them, shooting from the front/side at chest height. Man in foreground looks off to the side smiling, woman slightly behind him on the right, hair in a bun, also smiling. Laundry line and green foliage visible behind them, warm backlit sunlight. Camera slowly pans/tracks backward as they approach.\\n0:10–0:15Close two-shot, camera facing them as they walk toward an open drink fridge outside a small shop. Man holds a bottle of iced tea up near his chin, talking with a thoughtful/animated gesture; woman beside him holds two bottles, smiling and glancing at him. Stocked beverage cooler with colorful bottles visible in the background on the right.\\n\\n0:15–0:20Medium shot, both now walking directly toward the camera holding iced tea bottles, both smiling warmly at s",
-    "thumbnail": "https://pbs.twimg.com/amplify_video_thumb/2092618886546067456/img/yAeh9Kog_lpT6HmO.jpg",
-    "videoUrl": null,
-    "category": null,
-    "author": "@afrinxai",
-    "authorUrl": "https://x.com/afrinxai",
-    "sourceUrl": "https://x.com/afrinxai/status/2092884832816906256",
-    "imageUrls": [
-      "https://pbs.twimg.com/amplify_video_thumb/2092618886546067456/img/yAeh9Kog_lpT6HmO.jpg"
-    ],
-    "syncedAt": "2026-08-31T08:57:12Z"
-  },
-  {
-    "id": "grok-imagine_2092850454254239799",
-    "model": "grok-imagine",
-    "mediaType": "video",
-    "title": "Bipedal White Flesh Being",
-    "prompt": "Make the right face bite of the head form the left figure and make a big chewing gum bubble out of him",
-    "thumbnail": "https://pbs.twimg.com/amplify_video_thumb/2092850437850308608/img/Gk4DcuSZcN34m5i3.jpg",
-    "videoUrl": null,
-    "category": null,
-    "author": "@vandehigh",
-    "authorUrl": "https://x.com/vandehigh",
-    "sourceUrl": "https://x.com/vandehigh/status/2092850454254239799",
-    "imageUrls": [
-      "https://pbs.twimg.com/amplify_video_thumb/2092850437850308608/img/Gk4DcuSZcN34m5i3.jpg"
-    ],
-    "syncedAt": "2026-08-31T08:57:12Z"
-  },
-  {
-    "id": "grok-imagine_2092819970040180802",
-    "model": "grok-imagine",
-    "mediaType": "video",
-    "title": "Sky Falling Animal Toy Box",
-    "prompt": "The fully formed bipedal white flesh being stands on the peak, slowly turns its head to look over the misty mountains, organic tissue shifting and dripping, atmospheric wind and fog movement.",
-    "thumbnail": "https://pbs.twimg.com/amplify_video_thumb/2092819943754534912/img/yT2Y_NY9GuZN3c_9.jpg",
-    "videoUrl": null,
-    "category": null,
-    "author": "@BecausGIU",
-    "authorUrl": "https://x.com/BecausGIU",
-    "sourceUrl": "https://x.com/BecausGIU/status/2092819970040180802",
-    "imageUrls": [
-      "https://pbs.twimg.com/amplify_video_thumb/2092819943754534912/img/yT2Y_NY9GuZN3c_9.jpg"
-    ],
-    "syncedAt": "2026-08-31T08:57:12Z"
-  },
-  {
-    "id": "grok-imagine_2092808594484031888",
-    "model": "grok-imagine",
-    "mediaType": "video",
-    "title": "Goddess Diana Archery Scene",
-    "prompt": "Box falls from the sky breaks open on the grass out of the box pops five random sea animal toys five random wild animal toys five random farm animal toys two toy tractors five toy classic cars five random charms bracket type charms",
-    "thumbnail": "https://pbs.twimg.com/amplify_video_thumb/2092808529220665344/img/uFa_JEJ7wFCiIq_e.jpg",
-    "videoUrl": null,
-    "category": null,
-    "author": "@HawkinsonLindy",
-    "authorUrl": "https://x.com/HawkinsonLindy",
-    "sourceUrl": "https://x.com/HawkinsonLindy/status/2092808594484031888",
-    "imageUrls": [
-      "https://pbs.twimg.com/amplify_video_thumb/2092808529220665344/img/uFa_JEJ7wFCiIq_e.jpg"
-    ],
-    "syncedAt": "2026-08-31T08:57:12Z"
-  },
-  {
-    "id": "grok-imagine_2092783433961590892",
-    "model": "grok-imagine",
-    "mediaType": "video",
-    "title": "Pleiadian Light Ships Summer Video",
-    "prompt": "Create a new dramatic variation of the fierce goddess Diana with silver-gray hair in a flowing white dress, leaping forward in a dark misty forest while drawing a large bow and aiming the arrow directly at the vi...",
-    "thumbnail": "https://pbs.twimg.com/amplify_video_thumb/2092783400952438784/img/o_BndaBEHdZ4GrAN.jpg",
-    "videoUrl": null,
-    "category": null,
-    "author": "@Apple0816799221",
-    "authorUrl": "https://x.com/Apple0816799221",
-    "sourceUrl": "https://x.com/Apple0816799221/status/2092783433961590892",
-    "imageUrls": [
-      "https://pbs.twimg.com/amplify_video_thumb/2092783400952438784/img/o_BndaBEHdZ4GrAN.jpg"
-    ],
-    "syncedAt": "2026-08-31T08:57:12Z"
-  },
-  {
-    "id": "grok-imagine_2092779760585756700",
-    "model": "grok-imagine",
-    "mediaType": "video",
-    "title": "Natural Steady Scene Animation",
-    "prompt": "Pleiadian light ships in summer blue turquoise skies, masterpiece, ultra hd quality resolution 11111111111199999999999 k, volumetric bright lighting and colors tones",
-    "thumbnail": "https://pbs.twimg.com/amplify_video_thumb/2092779708542779392/img/923tBS6kA-LuxU8x.jpg",
-    "videoUrl": null,
-    "category": null,
-    "author": "@Octillion111111",
-    "authorUrl": "https://x.com/Octillion111111",
-    "sourceUrl": "https://x.com/Octillion111111/status/2092779760585756700",
-    "imageUrls": [
-      "https://pbs.twimg.com/amplify_video_thumb/2092779708542779392/img/923tBS6kA-LuxU8x.jpg"
-    ],
-    "syncedAt": "2026-08-31T08:57:12Z"
-  },
-  {
-    "id": "grok-imagine_2092757934664994973",
-    "model": "grok-imagine",
-    "mediaType": "video",
-    "title": "Cat and Model Fashion Runway Walk",
-    "prompt": "Animate. Keep the scene and don't zoom in or out. no talking, or words. just natural existing. No blinking.",
-    "thumbnail": "https://pbs.twimg.com/amplify_video_thumb/2092757907360129024/img/Re-Uu0FV7fbY5LdQ.jpg",
-    "videoUrl": null,
-    "category": null,
-    "author": "@Breeves1979",
-    "authorUrl": "https://x.com/Breeves1979",
-    "sourceUrl": "https://x.com/Breeves1979/status/2092757934664994973",
-    "imageUrls": [
-      "https://pbs.twimg.com/amplify_video_thumb/2092757907360129024/img/Re-Uu0FV7fbY5LdQ.jpg"
-    ],
-    "syncedAt": "2026-08-31T08:57:12Z"
-  },
-  {
-    "id": "grok-imagine_2092746221219701241",
-    "model": "grok-imagine",
-    "mediaType": "video",
-    "title": "Saratoga Horse Race Dream",
-    "prompt": "The camera starts wide on the runway. The cat in the velvet coat walks forward on his hind legs, one paw holding the model’s hand, the other resting lightly on his hip. His head is high, chin lifted, tail swaying with each step. The model glides beside him, chin raised, gown flowing. As they reach the end of the runway, the cat turns his head, gives a slow, deliberate blink to the crowd, then looks back up at the model with a tiny, smug smile. He adjusts his grip on her hand like a gentleman, then they turn together and start the walk back, his little boots clicking on the runway.",
-    "thumbnail": "https://pbs.twimg.com/amplify_video_thumb/2092746135194460160/img/oebMADcvNGeHO8SL.jpg",
-    "videoUrl": null,
-    "category": null,
-    "author": "@AliciaMcnatt",
-    "authorUrl": "https://x.com/AliciaMcnatt",
-    "sourceUrl": "https://x.com/AliciaMcnatt/status/2092746221219701241",
-    "imageUrls": [
-      "https://pbs.twimg.com/amplify_video_thumb/2092746135194460160/img/oebMADcvNGeHO8SL.jpg"
-    ],
-    "syncedAt": "2026-08-31T08:57:12Z"
-  },
-  {
-    "id": "grok-imagine_2092720610602364995",
-    "model": "grok-imagine",
-    "mediaType": "video",
-    "title": "German Nerd Comedy Scene",
-    "prompt": "Lori’s dream running August 27 at the famous Saratoga racecourse race number one horse number five show the number five on the horse",
-    "thumbnail": "https://pbs.twimg.com/amplify_video_thumb/2092720494675943424/img/aPohigPgxXrlkaV7.jpg",
-    "videoUrl": null,
-    "category": null,
-    "author": "@rlunden",
-    "authorUrl": "https://x.com/rlunden",
-    "sourceUrl": "https://x.com/rlunden/status/2092720610602364995",
-    "imageUrls": [
-      "https://pbs.twimg.com/amplify_video_thumb/2092720494675943424/img/aPohigPgxXrlkaV7.jpg"
-    ],
-    "syncedAt": "2026-08-31T08:57:12Z"
-  },
-  {
-    "id": "grok-imagine_2092708814281978175",
-    "model": "grok-imagine",
-    "mediaType": "video",
-    "title": "Telepathic Communication City Street",
-    "prompt": "Put this guy into a scene in “Revenge of the Nerds”. But he has a thick German accent and nobody can understand him. Everyone just looks confused.",
-    "thumbnail": "https://pbs.twimg.com/amplify_video_thumb/2092708748708233216/img/4c3C0RNpOzTOYwkV.jpg",
-    "videoUrl": null,
-    "category": null,
-    "author": "@ttul",
-    "authorUrl": "https://x.com/ttul",
-    "sourceUrl": "https://x.com/ttul/status/2092708814281978175",
-    "imageUrls": [
-      "https://pbs.twimg.com/amplify_video_thumb/2092708748708233216/img/4c3C0RNpOzTOYwkV.jpg"
-    ],
-    "syncedAt": "2026-08-31T08:57:12Z"
-  },
-  {
-    "id": "grok-imagine_2092703844874465385",
-    "model": "grok-imagine",
-    "mediaType": "video",
-    "title": "Martian Dust Storm Cinematic",
-    "prompt": "Telepathic communication viewed on the city streets as bubbles with text inside of them above the people’s heads also how it feels when someone gets access to your brain illegally to steal intellectual properties from you including ideas you have",
-    "thumbnail": "https://pbs.twimg.com/amplify_video_thumb/2092703828034408448/img/DAXAzkyMwkSWmOQa.jpg",
-    "videoUrl": null,
-    "category": null,
-    "author": "@5pazzisAlive",
-    "authorUrl": "https://x.com/5pazzisAlive",
-    "sourceUrl": "https://x.com/5pazzisAlive/status/2092703844874465385",
-    "imageUrls": [
-      "https://pbs.twimg.com/amplify_video_thumb/2092703828034408448/img/DAXAzkyMwkSWmOQa.jpg"
-    ],
-    "syncedAt": "2026-08-31T08:57:12Z"
-  },
-  {
-    "id": "grok-imagine_2092676492765401175",
-    "model": "grok-imagine",
-    "mediaType": "video",
-    "title": "Miami Vice Detective with 3D Printers",
-    "prompt": "Slow cinematic camera drift across the vast Martian landscape, gentle wind stirring fine reddish dust and sand across the dunes and rocky terrain, atmospheric haze subtly shifting, distant dust clouds slowly swirling under the hazy orange sky, photorealistic",
-    "thumbnail": "https://pbs.twimg.com/amplify_video_thumb/2092676476038459392/img/2I_QDJ3vNtnSDJLf.jpg",
-    "videoUrl": null,
-    "category": null,
-    "author": "@owenxplore",
-    "authorUrl": "https://x.com/owenxplore",
-    "sourceUrl": "https://x.com/owenxplore/status/2092676492765401175",
-    "imageUrls": [
-      "https://pbs.twimg.com/amplify_video_thumb/2092676476038459392/img/2I_QDJ3vNtnSDJLf.jpg"
-    ],
-    "syncedAt": "2026-08-31T08:57:12Z"
-  },
-  {
-    "id": "grok-imagine_2092673831143940542",
-    "model": "grok-imagine",
-    "mediaType": "video",
-    "title": "Dynamic Meteor Shower Animation",
-    "prompt": "1970s police detective Miami vice style walking on a construction site with 3D concrete Printers",
-    "thumbnail": "https://pbs.twimg.com/amplify_video_thumb/2092673806716305408/img/U-6yQfO4PcBBfFWh.jpg",
-    "videoUrl": null,
-    "category": null,
-    "author": "@lebron3d",
-    "authorUrl": "https://x.com/lebron3d",
-    "sourceUrl": "https://x.com/lebron3d/status/2092673831143940542",
-    "imageUrls": [
-      "https://pbs.twimg.com/amplify_video_thumb/2092673806716305408/img/U-6yQfO4PcBBfFWh.jpg"
-    ],
-    "syncedAt": "2026-08-31T08:57:12Z"
-  },
-  {
-    "id": "grok-imagine_2092641586085609681",
-    "model": "grok-imagine",
-    "mediaType": "video",
-    "title": "Sunlit Impressionist Garden Duckling",
-    "prompt": "Dynamic meteor shower animation: bright meteors and shooting stars continuously streak across the night sky in various directions leaving glowing green and blue trails, new meteors appear and fall, stars twinkle gently, subtle camera drift upward, ci...",
-    "thumbnail": "https://pbs.twimg.com/amplify_video_thumb/2092641534357192704/img/b6DIJqps-oez_mfy.jpg",
-    "videoUrl": null,
-    "category": null,
-    "author": "@owenxplore",
-    "authorUrl": "https://x.com/owenxplore",
-    "sourceUrl": "https://x.com/owenxplore/status/2092641586085609681",
-    "imageUrls": [
-      "https://pbs.twimg.com/amplify_video_thumb/2092641534357192704/img/b6DIJqps-oez_mfy.jpg"
-    ],
-    "syncedAt": "2026-08-31T08:57:12Z"
-  },
-  {
-    "id": "grok-imagine_2092580518147617152",
-    "model": "grok-imagine",
-    "mediaType": "video",
-    "title": "Luxurious Mansion Setting Change",
-    "prompt": "The still and the for the video I prompt move slightly to the left as a little birdie flies on the top of the easel. A sunlit impressionist garden, photoreal and wet oil paint at once: thick cream-gold light, greens you could smear, the sun itself a bright wet daub that is not dry. A tiny duckling in a late-1800s painter’s smock and a straw hat too big for it, standing at a miniature easel in the grass, earnestly painting that sun onto a little canvas. Impasto sunflowers, canvas tooth in the path, 1990s filmic grain. One idea: the sun is still wet, and so is the painting. Beautiful and a little silly.",
-    "thumbnail": "https://cms-assets.youmind.com/media/1788077778220_6iaw4d_HQpScBhWQAAYNxT.jpg",
-    "videoUrl": null,
-    "category": null,
-    "author": "@princess414141",
-    "authorUrl": "https://x.com/princess414141",
-    "sourceUrl": "https://x.com/princess414141/status/2092580518147617152",
-    "imageUrls": [
-      "https://cms-assets.youmind.com/media/1788077778220_6iaw4d_HQpScBhWQAAYNxT.jpg"
-    ],
-    "syncedAt": "2026-08-31T08:57:12Z"
-  },
-  {
-    "id": "grok-imagine_2092525163887853620",
-    "model": "grok-imagine",
-    "mediaType": "video",
-    "title": "Red Mermaid Dress Fashion Runway",
-    "prompt": "Change the setting from the beach/boat to the luxurious Playboy Mansion: elegant multi-story mansion with grand architecture, palm trees, a sparkling pool, party lights, and a high-end party atmosphere",
-    "thumbnail": "https://pbs.twimg.com/amplify_video_thumb/2092525058430554112/img/RhyUC1mWOSdYQTVp.jpg",
-    "videoUrl": null,
-    "category": null,
-    "author": "@AA63782",
-    "authorUrl": "https://x.com/AA63782",
-    "sourceUrl": "https://x.com/AA63782/status/2092525163887853620",
-    "imageUrls": [
-      "https://pbs.twimg.com/amplify_video_thumb/2092525058430554112/img/RhyUC1mWOSdYQTVp.jpg"
-    ],
-    "syncedAt": "2026-08-31T08:57:12Z"
-  },
-  {
-    "id": "grok-imagine_2092497529464111412",
-    "model": "grok-imagine",
-    "mediaType": "video",
-    "title": "Girl Cutting Giant Pineapple",
-    "prompt": "This girl will model a long party dress on a catwalk with a high bun with loose curls and a beautiful red mermaid-shaped dress",
-    "thumbnail": "https://pbs.twimg.com/amplify_video_thumb/2092497513056010240/img/nKnXiUus3YskAzuH.jpg",
-    "videoUrl": null,
-    "category": null,
-    "author": "@esther_san41998",
-    "authorUrl": "https://x.com/esther_san41998",
-    "sourceUrl": "https://x.com/esther_san41998/status/2092497529464111412",
-    "imageUrls": [
-      "https://pbs.twimg.com/amplify_video_thumb/2092497513056010240/img/nKnXiUus3YskAzuH.jpg"
-    ],
-    "syncedAt": "2026-08-31T08:57:12Z"
-  },
-  {
-    "id": "grok-imagine_2092454370650591648",
-    "model": "grok-imagine",
-    "mediaType": "video",
-    "title": "Cat Marshmallow Coffee Art",
-    "prompt": "attractive 23 year old girl walks into the scene and cuts the pineapple in half, yellow juicy pineapple on inside",
-    "thumbnail": "https://pbs.twimg.com/amplify_video_thumb/2092450891580252160/img/c0BOWAW0nvo8h3hG.jpg",
-    "videoUrl": null,
-    "category": null,
-    "author": "@seeksteve",
-    "authorUrl": "https://x.com/seeksteve",
-    "sourceUrl": "https://x.com/seeksteve/status/2092454370650591648",
-    "imageUrls": [
-      "https://pbs.twimg.com/amplify_video_thumb/2092450891580252160/img/c0BOWAW0nvo8h3hG.jpg"
-    ],
-    "syncedAt": "2026-08-31T08:57:12Z"
-  },
-  {
-    "id": "grok-imagine_2092366605452030211",
-    "model": "grok-imagine",
-    "mediaType": "video",
-    "title": "Ethereal Portrait with Gentle Motion",
-    "prompt": "A tiny cat laying asleep on a giant marshmallow, the marshmallow is floating on top of a latte art coffee",
-    "thumbnail": "https://pbs.twimg.com/amplify_video_thumb/2092366587508776960/img/uVMA3QMhb9_IscVJ.jpg",
-    "videoUrl": null,
-    "category": null,
-    "author": "@Maxime887812",
-    "authorUrl": "https://x.com/Maxime887812",
-    "sourceUrl": "https://x.com/Maxime887812/status/2092366605452030211",
-    "imageUrls": [
-      "https://pbs.twimg.com/amplify_video_thumb/2092366587508776960/img/uVMA3QMhb9_IscVJ.jpg"
-    ],
-    "syncedAt": "2026-08-31T08:57:12Z"
-  },
-  {
-    "id": "grok-imagine_2092362908936057342",
-    "model": "grok-imagine",
-    "mediaType": "video",
-    "title": "Rainbow Universe Sci-Fi Prototype Reveal",
-    "prompt": "the wind gently lifts her long hair and the hem of her flowing dress, no big movements, She turns her head to face Odysseus directly, locking eyes with him in a playful yet fiercely loyal gaze, her expression soft and charged, lips slightly parted, eyes warm and intent with quiet heat and deep devotion",
-    "thumbnail": "https://pbs.twimg.com/amplify_video_thumb/2092362822286032898/img/VBlJOLcS7ICgtbKs.jpg",
-    "videoUrl": null,
-    "category": null,
-    "author": "@AliciaMcnatt",
-    "authorUrl": "https://x.com/AliciaMcnatt",
-    "sourceUrl": "https://x.com/AliciaMcnatt/status/2092362908936057342",
-    "imageUrls": [
-      "https://pbs.twimg.com/amplify_video_thumb/2092362822286032898/img/VBlJOLcS7ICgtbKs.jpg"
-    ],
-    "syncedAt": "2026-08-31T08:57:12Z"
-  },
-  {
-    "id": "grok-imagine_2092270062539334033",
-    "model": "grok-imagine",
-    "mediaType": "video",
-    "title": "Cosmic Olympic Robot Scene",
-    "prompt": "Cinematic living reveal of the Rainbow Universe MsX and MrX prototype: the humanized friendly companions shift gently with warm smiles, the holographic wiki avatars of subscribers and RIP geniuses (Tesla, Franklin and diverse minds) orbit slowly and glow softly.",
-    "thumbnail": "https://pbs.twimg.com/amplify_video_thumb/2092270020260728832/img/UmwIiYfb4ENgG0NI.jpg",
-    "videoUrl": null,
-    "category": null,
-    "author": "@MrFixItAme53993",
-    "authorUrl": "https://x.com/MrFixItAme53993",
-    "sourceUrl": "https://x.com/MrFixItAme53993/status/2092270062539334033",
-    "imageUrls": [
-      "https://pbs.twimg.com/amplify_video_thumb/2092270020260728832/img/UmwIiYfb4ENgG0NI.jpg"
-    ],
-    "syncedAt": "2026-08-31T08:57:12Z"
-  },
-  {
-    "id": "grok-imagine_2092269299788357988",
-    "model": "grok-imagine",
-    "mediaType": "video",
-    "title": "Sailboat on Calm Waters",
-    "prompt": "Cinematic wide hero image, dark cosmic background with soft rainbow nebula, Olympic stadium stage in the middle distance with soft blue and gold lighting, a gentle feminine Soft RA MsX robot standing gracefully on the left in approachable Yin style,...",
-    "thumbnail": "https://pbs.twimg.com/amplify_video_thumb/2092269283828998144/img/t2k5SLHipLULwavf.jpg",
-    "videoUrl": null,
-    "category": null,
-    "author": "@MrFixItAme53993",
-    "authorUrl": "https://x.com/MrFixItAme53993",
-    "sourceUrl": "https://x.com/MrFixItAme53993/status/2092269299788357988",
-    "imageUrls": [
-      "https://pbs.twimg.com/amplify_video_thumb/2092269283828998144/img/t2k5SLHipLULwavf.jpg"
-    ],
-    "syncedAt": "2026-08-31T08:57:12Z"
-  },
-  {
-    "id": "grok-imagine_2092266722287841695",
-    "model": "grok-imagine",
-    "mediaType": "video",
-    "title": "Monet Style Frog Rowboat",
-    "prompt": "The sailboat gently glides forward through calm blue ocean waters, white sails billowing softly in a light breeze, subtle waves rippling around the hull with sparkling reflections, soft clouds drifting slowly across the clear blue sky, realistic moti...",
-    "thumbnail": "https://pbs.twimg.com/amplify_video_thumb/2092266700456488961/img/OMe714vKas3Lzl5-.jpg",
-    "videoUrl": null,
-    "category": null,
-    "author": "@owenxplore",
-    "authorUrl": "https://x.com/owenxplore",
-    "sourceUrl": "https://x.com/owenxplore/status/2092266722287841695",
-    "imageUrls": [
-      "https://pbs.twimg.com/amplify_video_thumb/2092266700456488961/img/OMe714vKas3Lzl5-.jpg"
-    ],
-    "syncedAt": "2026-08-31T08:57:12Z"
-  },
-  {
-    "id": "grok-imagine_2092229826128093365",
-    "model": "grok-imagine",
-    "mediaType": "video",
-    "title": "Dragons in the Pine Pass",
-    "prompt": "9:16 still, Speed-friendly. One small wooden rowboat on a Monet lily pond, photoreal and wet impressionist oil at once: thick blues, greens, and cream-gold light, water like paint that isn’t dry. No second boat. In the boat, a cute little frog in late-1800s period clothes: tiny straw boater, striped waistcoat, a short jacket, earnest and cheerful, paddling with a miniature oar. Impasto lilies, canvas tooth in the bank, 1990s filmic grain over 1870s color. No people, no extra boats, no grim. One idea: a frog taking the painted water seriously. Beautiful and a little silly.",
-    "thumbnail": "https://pbs.twimg.com/amplify_video_thumb/2092228723957182464/img/S6AL77HY-HEmf0as.jpg",
-    "videoUrl": null,
-    "category": null,
-    "author": "@princess414141",
-    "authorUrl": "https://x.com/princess414141",
-    "sourceUrl": "https://x.com/princess414141/status/2092229826128093365",
-    "imageUrls": [
-      "https://pbs.twimg.com/amplify_video_thumb/2092228723957182464/img/S6AL77HY-HEmf0as.jpg"
-    ],
-    "syncedAt": "2026-08-31T08:57:12Z"
-  },
-  {
-    "id": "grok-imagine_2092100540683723048",
-    "model": "grok-imagine",
-    "mediaType": "video",
-    "title": "White Mustang with Pegasus Wings",
-    "prompt": "Looking between tow pine at the distant pass between the mountains clouds thunder a sliver of moon two dragon faces gradually become visible in the pine tree boughs",
-    "thumbnail": "https://pbs.twimg.com/amplify_video_thumb/2092100466524192768/img/rUNZoH1_eaKHSvjM.jpg",
-    "videoUrl": null,
-    "category": null,
-    "author": "@HawkinsonLindy",
-    "authorUrl": "https://x.com/HawkinsonLindy",
-    "sourceUrl": "https://x.com/HawkinsonLindy/status/2092100540683723048",
-    "imageUrls": [
-      "https://pbs.twimg.com/amplify_video_thumb/2092100466524192768/img/rUNZoH1_eaKHSvjM.jpg"
-    ],
-    "syncedAt": "2026-08-31T08:57:12Z"
-  },
-  {
-    "id": "grok-imagine_2092075810265976865",
-    "model": "grok-imagine",
-    "mediaType": "video",
-    "title": "Various Dance Styles Scene",
-    "prompt": "A sleek white Ford Mustang muscle car with large, majestic white Pegasus wings extending from the sides, capable of flight, floating on water like a boat, and driving on roads. The car has a glossy white paint finish, chrome details -- A.I. for a vision board - focus",
-    "thumbnail": "https://pbs.twimg.com/amplify_video_thumb/2092075702979833858/img/eJPoL-PyWLHN7Nn8.jpg",
-    "videoUrl": null,
-    "category": null,
-    "author": "@AliciaMcnatt",
-    "authorUrl": "https://x.com/AliciaMcnatt",
-    "sourceUrl": "https://x.com/AliciaMcnatt/status/2092075810265976865",
-    "imageUrls": [
-      "https://pbs.twimg.com/amplify_video_thumb/2092075702979833858/img/eJPoL-PyWLHN7Nn8.jpg"
-    ],
-    "syncedAt": "2026-08-31T08:57:12Z"
-  },
-  {
-    "id": "grok-imagine_2092069486153421219",
-    "model": "grok-imagine",
-    "mediaType": "video",
-    "title": "Lip Sync Animation",
-    "prompt": "The dancers listened to the music and began to dance.\n\nSome danced together.\n\nSome danced ballet.\n\nSome tried different kinds of dancing.",
-    "thumbnail": "https://pbs.twimg.com/amplify_video_thumb/2092069465953533953/img/5jA9c9vMeKVnNuhk.jpg",
-    "videoUrl": null,
-    "category": null,
-    "author": "@AwesomeGodNewL",
-    "authorUrl": "https://x.com/AwesomeGodNewL",
-    "sourceUrl": "https://x.com/AwesomeGodNewL/status/2092069486153421219",
-    "imageUrls": [
-      "https://pbs.twimg.com/amplify_video_thumb/2092069465953533953/img/5jA9c9vMeKVnNuhk.jpg"
-    ],
-    "syncedAt": "2026-08-31T08:57:12Z"
-  },
-  {
-    "id": "grok-imagine_2092040251233755253",
-    "model": "grok-imagine",
-    "mediaType": "video",
-    "title": "Flowing Scarf Artistic Animation",
-    "prompt": "Leaving image unchanged have him mouth: “Let your light so shine. I love you....",
-    "thumbnail": "https://pbs.twimg.com/amplify_video_thumb/2092040230283231232/img/rUfm0KX7-qBsQvNh.jpg",
-    "videoUrl": null,
-    "category": null,
-    "author": "@CosmicJulioBro",
-    "authorUrl": "https://x.com/CosmicJulioBro",
-    "sourceUrl": "https://x.com/CosmicJulioBro/status/2092040251233755253",
-    "imageUrls": [
-      "https://pbs.twimg.com/amplify_video_thumb/2092040230283231232/img/rUfm0KX7-qBsQvNh.jpg"
-    ],
-    "syncedAt": "2026-08-31T08:57:12Z"
-  },
-  {
-    "id": "grok-imagine_2091951872047538472",
-    "model": "grok-imagine",
-    "mediaType": "video",
-    "title": "Mobius Cosmic Earth Ring",
-    "prompt": "Animate the scarf around her flies of air and we are focusing on the flewn clothe like a painting",
-    "thumbnail": "https://pbs.twimg.com/amplify_video_thumb/2091951788253646848/img/h6tQ_eAEZh8gveHO.jpg",
-    "videoUrl": null,
-    "category": null,
-    "author": "@livisameno",
-    "authorUrl": "https://x.com/livisameno",
-    "sourceUrl": "https://x.com/livisameno/status/2091951872047538472",
-    "imageUrls": [
-      "https://pbs.twimg.com/amplify_video_thumb/2091951788253646848/img/h6tQ_eAEZh8gveHO.jpg"
-    ],
-    "syncedAt": "2026-08-31T08:57:12Z"
-  },
-  {
-    "id": "grok-imagine_2091932171309383863",
-    "model": "grok-imagine",
-    "mediaType": "video",
-    "title": "Surreal Pastel Cat Creature Video",
-    "prompt": "Opening the final door, Mobius was there. Mobius accepts all existence, further sublimates it, and embodies it. Mobius's appearance was like a ring surrounding the Earth, looking like something not of this world.",
-    "thumbnail": "https://pbs.twimg.com/amplify_video_thumb/2091932129219510272/img/kCBtoKQkNo-KxaNK.jpg",
-    "videoUrl": null,
-    "category": null,
-    "author": "@8pdxah",
-    "authorUrl": "https://x.com/8pdxah",
-    "sourceUrl": "https://x.com/8pdxah/status/2091932171309383863",
-    "imageUrls": [
-      "https://pbs.twimg.com/amplify_video_thumb/2091932129219510272/img/kCBtoKQkNo-KxaNK.jpg"
-    ],
-    "syncedAt": "2026-08-31T08:57:12Z"
-  },
-  {
-    "id": "grok-imagine_2091903834931224692",
-    "model": "grok-imagine",
-    "mediaType": "video",
-    "title": "French Language Character Speech",
-    "prompt": "A surreal cat-like creature in a pastel landscape with floating lights and ethereal structures.",
-    "thumbnail": "https://pbs.twimg.com/amplify_video_thumb/2091903535357317120/img/b83pz5FUonJaLHCH.jpg",
-    "videoUrl": null,
-    "category": null,
-    "author": "@MrDasOnX",
-    "authorUrl": "https://x.com/MrDasOnX",
-    "sourceUrl": "https://x.com/MrDasOnX/status/2091903834931224692",
-    "imageUrls": [
-      "https://pbs.twimg.com/amplify_video_thumb/2091903535357317120/img/b83pz5FUonJaLHCH.jpg"
-    ],
-    "syncedAt": "2026-08-31T08:57:12Z"
-  },
-  {
-    "id": "grok-imagine_2091857123856589196",
-    "model": "grok-imagine",
-    "mediaType": "video",
-    "title": "Walking on Clouds Heavenly City",
-    "prompt": "make the character say, in French, \"Of course I know how to speak French! It's my native language!\"",
-    "thumbnail": "https://pbs.twimg.com/amplify_video_thumb/2091856861918068736/img/GKaBgb6c-jWhY-0V.jpg",
-    "videoUrl": null,
-    "category": null,
-    "author": "@gillesguerraz",
-    "authorUrl": "https://x.com/gillesguerraz",
-    "sourceUrl": "https://x.com/gillesguerraz/status/2091857123856589196",
-    "imageUrls": [
-      "https://pbs.twimg.com/amplify_video_thumb/2091856861918068736/img/GKaBgb6c-jWhY-0V.jpg"
-    ],
-    "syncedAt": "2026-08-31T08:57:12Z"
-  },
-  {
-    "id": "grok-imagine_2091767050691878932",
-    "model": "grok-imagine",
-    "mediaType": "video",
-    "title": "Tesla Semi Convoy Night Highway",
-    "prompt": "Make a video of him walking on clouds, he approaches a city of gold in the heavens",
-    "thumbnail": "https://pbs.twimg.com/amplify_video_thumb/2091767013354205184/img/1g_jse2dIZjjVwd1.jpg",
-    "videoUrl": null,
-    "category": null,
-    "author": "@GayBar_Ai",
-    "authorUrl": "https://x.com/GayBar_Ai",
-    "sourceUrl": "https://x.com/GayBar_Ai/status/2091767050691878932",
-    "imageUrls": [
-      "https://pbs.twimg.com/amplify_video_thumb/2091767013354205184/img/1g_jse2dIZjjVwd1.jpg"
-    ],
-    "syncedAt": "2026-08-31T08:57:12Z"
-  },
-  {
-    "id": "grok-imagine_2091744810600153157",
-    "model": "grok-imagine",
-    "mediaType": "video",
-    "title": "LinkedIn Headshot Transformation",
-    "prompt": "Landing page hero section design for Tesla Semi convoy on a night highway, soft warm off-white and pale stone canvas, oversized clean photographic imagery with gentle natural light, elegant muted champagne and soft gray tones, ultra-clean composition, sophisticated high-end typography, soft diffused lighting, polished luxury product aesthetic, calm and refined atmosphere",
-    "thumbnail": "https://cms-assets.youmind.com/media/1787646407487_is4cy1_HQaq-KLa0AAIdtr.jpg",
-    "videoUrl": null,
-    "category": null,
-    "author": "@Kisalay_",
-    "authorUrl": "https://x.com/Kisalay_",
-    "sourceUrl": "https://x.com/Kisalay_/status/2091744810600153157",
-    "imageUrls": [
-      "https://cms-assets.youmind.com/media/1787646407487_is4cy1_HQaq-KLa0AAIdtr.jpg"
-    ],
-    "syncedAt": "2026-08-31T08:57:12Z"
-  },
-  {
-    "id": "grok-imagine_2091736707750408427",
-    "model": "grok-imagine",
-    "mediaType": "video",
-    "title": "Cinematic Slow Camera Pan",
-    "prompt": "Transform this photo into a professional studio-grade LinkedIn headshot of the exact same woman. Preserve her identity perfectly: exact face geometry, proportions, eye shape and color, nose, mouth, jawline, ears, dark skin tone and real skin texture",
-    "thumbnail": "https://pbs.twimg.com/amplify_video_thumb/2091736677568151552/img/RiOtSy-7YK4tmeOy.jpg",
-    "videoUrl": null,
-    "category": null,
-    "author": "@Elizangelakt1i",
-    "authorUrl": "https://x.com/Elizangelakt1i",
-    "sourceUrl": "https://x.com/Elizangelakt1i/status/2091736707750408427",
-    "imageUrls": [
-      "https://pbs.twimg.com/amplify_video_thumb/2091736677568151552/img/RiOtSy-7YK4tmeOy.jpg"
-    ],
-    "syncedAt": "2026-08-31T08:57:12Z"
-  },
-  {
-    "id": "grok-imagine_2091706285750177866",
-    "model": "grok-imagine",
-    "mediaType": "video",
-    "title": "Dancing Cake Character Transformation",
-    "prompt": "very slow cinematic camera pan, soft atmospheric movement, serene and peaceful mood, elegant and tasteful motion, no aggressive movement, smoke a cigarette very slow cinematic camera pan, soft atmospheric movement",
-    "thumbnail": "https://pbs.twimg.com/amplify_video_thumb/2091706157979115520/img/VlzIS9ewmUjIaP8I.jpg",
-    "videoUrl": null,
-    "category": null,
-    "author": "@AliciaMcnatt",
-    "authorUrl": "https://x.com/AliciaMcnatt",
-    "sourceUrl": "https://x.com/AliciaMcnatt/status/2091706285750177866",
-    "imageUrls": [
-      "https://pbs.twimg.com/amplify_video_thumb/2091706157979115520/img/VlzIS9ewmUjIaP8I.jpg"
-    ],
-    "syncedAt": "2026-08-31T08:57:12Z"
-  },
-  {
-    "id": "grok-imagine_2091629779653140866",
-    "model": "grok-imagine",
-    "mediaType": "video",
-    "title": "Spiritual Light Transformation",
-    "prompt": "Turn this cake into a character dancing with a top hat, white gloves, red shoes and a big smile.",
-    "thumbnail": "https://pbs.twimg.com/amplify_video_thumb/2091629766164271104/img/OBVf9mNmuQREoJ43.jpg",
-    "videoUrl": null,
-    "category": null,
-    "author": "@Chrihsteenuh",
-    "authorUrl": "https://x.com/Chrihsteenuh",
-    "sourceUrl": "https://x.com/Chrihsteenuh/status/2091629779653140866",
-    "imageUrls": [
-      "https://pbs.twimg.com/amplify_video_thumb/2091629766164271104/img/OBVf9mNmuQREoJ43.jpg"
-    ],
-    "syncedAt": "2026-08-31T08:57:12Z"
-  },
-  {
-    "id": "grok-imagine_2091579231113470116",
-    "model": "grok-imagine",
-    "mediaType": "video",
-    "title": "Laporta and Gil Marin Football Deal",
-    "prompt": "A woman with black curly hair, a size 8, underneath the light rising and becoming her true self in absolute gods beauty",
-    "thumbnail": "https://pbs.twimg.com/amplify_video_thumb/2091579205859581953/img/UnTFtIm3cJayIXm-.jpg",
-    "videoUrl": null,
-    "category": null,
-    "author": "@Wednesdayo17",
-    "authorUrl": "https://x.com/Wednesdayo17",
-    "sourceUrl": "https://x.com/Wednesdayo17/status/2091579231113470116",
-    "imageUrls": [
-      "https://pbs.twimg.com/amplify_video_thumb/2091579205859581953/img/UnTFtIm3cJayIXm-.jpg"
-    ],
-    "syncedAt": "2026-08-31T08:57:12Z"
-  },
-  {
-    "id": "grok-imagine_2091417853454942579",
-    "model": "grok-imagine",
-    "mediaType": "video",
-    "title": "Sediment Coat Runway Fashion Walk",
-    "prompt": "Laporta sealing the Alvarez deal around a table with Gil Marin....😃😃😃😃😃",
-    "thumbnail": "https://pbs.twimg.com/amplify_video_thumb/2091417756373483520/img/iRmXQrStMFPjQ6P0.jpg",
-    "videoUrl": null,
-    "category": null,
-    "author": "@HermannFCB2003",
-    "authorUrl": "https://x.com/HermannFCB2003",
-    "sourceUrl": "https://x.com/HermannFCB2003/status/2091417853454942579",
-    "imageUrls": [
-      "https://pbs.twimg.com/amplify_video_thumb/2091417756373483520/img/iRmXQrStMFPjQ6P0.jpg"
-    ],
-    "syncedAt": "2026-08-31T08:57:12Z"
-  },
-  {
-    "id": "grok-imagine_2091409536443670706",
-    "model": "grok-imagine",
-    "mediaType": "video",
-    "title": "Kitty and Mimmy Candy Theft",
-    "prompt": "Look 01 — Sediment Coat Full-body editorial fashion photo of a woman AI model named AVA-9 walking a runway, wearing a structured trench coat made of hand-layered wool felt in horizontal bands of ochre, umber, and charcoal, edges lightly sanded and frayed so raw fiber shows between layers like a cut cliffside, matte fabric finish, tailored shoulders, coat falling to mid-calf, worn open over a plain dark base layer, minimalist dark runway background with a single overhead spotlight, cinematic editorial fashion photography, sharp focus on texture, 85mm lens look. Camera + lighting: Low three-quarter angle, model walking toward camera; single hard top-down spotlight to emphasize the layered banding as directional shadow lines; dark seamless backdrop. Video/motion note: 4–6 second clip, slow confident walk toward camera, coat hem swaying slightly, camera holds still or does a slow push-in; end on a 45° turn to reveal the side profile of the layered stripes. Negative prompt: no shiny fabric, no sequins, no floral pattern, no color gradient blend (bands must stay distinct), no smiling/glamour pose — expression neutral and composed.",
-    "thumbnail": "https://pbs.twimg.com/amplify_video_thumb/2091409505435471872/img/s9DbqZZu7mC4IOdW.jpg",
-    "videoUrl": null,
-    "category": null,
-    "author": "@Shaiicalpineda",
-    "authorUrl": "https://x.com/Shaiicalpineda",
-    "sourceUrl": "https://x.com/Shaiicalpineda/status/2091409536443670706",
-    "imageUrls": [
-      "https://pbs.twimg.com/amplify_video_thumb/2091409505435471872/img/s9DbqZZu7mC4IOdW.jpg"
-    ],
-    "syncedAt": "2026-08-31T08:57:12Z"
-  },
-  {
-    "id": "grok-imagine_2091373253503709274",
-    "model": "grok-imagine",
-    "mediaType": "video",
-    "title": "Kitty and Mimmy Dream Thief Animation",
-    "prompt": "Kitty and Mimmy don’t steal the candy you all in big trouble: they cries they’re mom said he call the police and take kitty and Mimmy to jail",
-    "thumbnail": "https://pbs.twimg.com/amplify_video_thumb/2091373229449342976/img/22iUZv2HL1k61AEz.jpg",
-    "videoUrl": null,
-    "category": null,
-    "author": "@DavontaDav5iv",
-    "authorUrl": "https://x.com/DavontaDav5iv",
-    "sourceUrl": "https://x.com/DavontaDav5iv/status/2091373253503709274",
-    "imageUrls": [
-      "https://pbs.twimg.com/amplify_video_thumb/2091373229449342976/img/22iUZv2HL1k61AEz.jpg"
-    ],
-    "syncedAt": "2026-08-31T08:57:12Z"
-  },
-  {
-    "id": "grok-imagine_2091371917827539054",
-    "model": "grok-imagine",
-    "mediaType": "video",
-    "title": "Halloween Ghost Scare",
-    "prompt": "Kitty and Mimmy saw the dream thief sleeping in the pillow and screams: kitty said turn on the light: Mimmy said right the dream thief hides in the fire place",
-    "thumbnail": "https://pbs.twimg.com/amplify_video_thumb/2091371899003568128/img/3dAMrBuymY9jLYOP.jpg",
-    "videoUrl": null,
-    "category": null,
-    "author": "@DavontaDav5iv",
-    "authorUrl": "https://x.com/DavontaDav5iv",
-    "sourceUrl": "https://x.com/DavontaDav5iv/status/2091371917827539054",
-    "imageUrls": [
-      "https://pbs.twimg.com/amplify_video_thumb/2091371899003568128/img/3dAMrBuymY9jLYOP.jpg"
-    ],
-    "syncedAt": "2026-08-31T08:57:12Z"
-  },
-  {
-    "id": "grok-imagine_2091371296479142276",
-    "model": "grok-imagine",
-    "mediaType": "video",
-    "title": "Halloween Ghost Trick or Treat",
-    "prompt": "Trick or treat and the ghost says boo he scared them and they runs and the ghost says happy Halloween",
-    "thumbnail": "https://pbs.twimg.com/amplify_video_thumb/2091371275197231104/img/zNCkrlNIUcHIrRJV.jpg",
-    "videoUrl": null,
-    "category": null,
-    "author": "@DavontaDav5iv",
-    "authorUrl": "https://x.com/DavontaDav5iv",
-    "sourceUrl": "https://x.com/DavontaDav5iv/status/2091371296479142276",
-    "imageUrls": [
-      "https://pbs.twimg.com/amplify_video_thumb/2091371275197231104/img/zNCkrlNIUcHIrRJV.jpg"
-    ],
-    "syncedAt": "2026-08-31T08:57:12Z"
-  },
-  {
-    "id": "grok-imagine_2091371262568173849",
-    "model": "grok-imagine",
-    "mediaType": "video",
-    "title": "Santa Rescue North Pole",
-    "prompt": "Trick or treat and the ghost says boo and runs away the ghost says happy Halloween",
-    "thumbnail": "https://pbs.twimg.com/amplify_video_thumb/2091371249222004736/img/gGdYbkmTSwAjp5Rq.jpg",
-    "videoUrl": null,
-    "category": null,
-    "author": "@DavontaDav5iv",
-    "authorUrl": "https://x.com/DavontaDav5iv",
-    "sourceUrl": "https://x.com/DavontaDav5iv/status/2091371262568173849",
-    "imageUrls": [
-      "https://pbs.twimg.com/amplify_video_thumb/2091371249222004736/img/gGdYbkmTSwAjp5Rq.jpg"
-    ],
-    "syncedAt": "2026-08-31T08:57:12Z"
-  },
-  {
-    "id": "grok-imagine_2091371115956388126",
-    "model": "grok-imagine",
-    "mediaType": "video",
-    "title": "Bioluminescent Alien Forest Mission",
-    "prompt": "Santa’s calling for help and they going to save him from the evil elf at the North Pole",
-    "thumbnail": "https://pbs.twimg.com/amplify_video_thumb/2091371098424123394/img/nasNynzhBNQNcrPu.jpg",
-    "videoUrl": null,
-    "category": null,
-    "author": "@DavontaDav5iv",
-    "authorUrl": "https://x.com/DavontaDav5iv",
-    "sourceUrl": "https://x.com/DavontaDav5iv/status/2091371115956388126",
-    "imageUrls": [
-      "https://pbs.twimg.com/amplify_video_thumb/2091371098424123394/img/nasNynzhBNQNcrPu.jpg"
-    ],
-    "syncedAt": "2026-08-31T08:57:12Z"
-  },
-  {
-    "id": "grok-imagine_2091363764519981376",
-    "model": "grok-imagine",
-    "mediaType": "video",
-    "title": "Goddess in Ethereal Lace Palace",
-    "prompt": "Use the multi-panel storyboard @ image purely as a visual blueprint and story guide — do not treat it as the first frame or start on any of its still panels. Generate a completely new continuous 10-second cinematic video of the mission: David the Time Curator (bald, glasses, blue shirt) and Daphne (red hair, freckles, field outfit) move silently at night through a dense bioluminescent alien forest. Soft pulsing blue, teal and green lights from glowing trees, mushrooms and plants light their path. Chronos device glows softly on David’s wrist. They walk carefully, alert, camera tracking smoothly behind and around them through the luminous undergrowth. Mysterious, atmospheric, high-detail photoreal style.",
-    "thumbnail": "https://cms-assets.youmind.com/media/1787471108266_w9ur3i_HQYDLJAW8AAmoer.jpg",
-    "videoUrl": null,
-    "category": null,
-    "author": "@neveils_david_c",
-    "authorUrl": "https://x.com/neveils_david_c",
-    "sourceUrl": "https://x.com/neveils_david_c/status/2091363764519981376",
-    "imageUrls": [
-      "https://cms-assets.youmind.com/media/1787471108266_w9ur3i_HQYDLJAW8AAmoer.jpg"
-    ],
-    "syncedAt": "2026-08-31T08:57:12Z"
-  },
-  {
-    "id": "grok-imagine_2091347936693064055",
-    "model": "grok-imagine",
-    "mediaType": "video",
-    "title": "Snoopy Painting Mona Lisa",
-    "prompt": "A breathtaking 9:16 vertical portrait stereoscopic 3D animation of a goddess-like woman standing with her back to the viewer in an ethereal white palace hall. She wears an ultra-detailed off-shoulder white lace wedding gown with silver-iridescent ice-white embroidery, long flowing train, and sheer veil cascading over golden braided hair adorned with white roses. Gentle breeze lifts, floats, and twirls the veil, train, and delicate lace ruffles with hyper-realistic physics and high tactile 3D textures; the fabric flutters and flows in smooth, hypnotic slow-motion. Extreme depth of field and layered stereoscopic depth: immediate foreground features silver-iridescent ice-white lace dust, rose petals, and tiny crystalline droplets floating weightlessly and gently splashing past the camera; midground shows the woman in luminous detail; background reveals towering white marble columns draped in cascading white roses, a polished reflective floor, ornate golden throne with a dark hooded figure seated upon it, distant crystalline castle spires under a massive glowing full moon in a starry twilight sky. Volumetric soft silver mist and faint neon-holographic light rays cut through the air, creating distinct parallax layers of depth. Subtle floating ethereal leaf and rose motifs drift through the scene. Style: highly detailed masterpiece inspired by Gustav Klimt’s Golden Phase and Alphonse Mucha Art Nouveau — metallic silver, rose-pink, and ice-white iridescent surfaces, intricate floral and geometric mosaic patterns, shimmering Byzantine-like leaf and vine motifs covering architectural details and the gown. Museum-quality elegant decorative rendering, hyper-detailed 3D textures, dreamy magical atmosphere, painterly yet photorealistic quality. Camera: slow, fluid, sustained dolly-in / gentle orbital motion with parallax, 60 fps, smooth cinematic movement. Soft fairy-lullaby harp strings (no human sounds). Serene, spellbinding, hypnotic rhythm; luminous, tranquil, statuesque presence. Ultra-enhanced quality, intricate 3D textures, elements of the foreground reaching out of the screen, pure stereoscopic depth masterpiece.",
-    "thumbnail": "https://pbs.twimg.com/amplify_video_thumb/2091347865410904064/img/7JjAjQL1SATCvUTe.jpg",
-    "videoUrl": null,
-    "category": null,
-    "author": "@PamWestmor85243",
-    "authorUrl": "https://x.com/PamWestmor85243",
-    "sourceUrl": "https://x.com/PamWestmor85243/status/2091347936693064055",
-    "imageUrls": [
-      "https://pbs.twimg.com/amplify_video_thumb/2091347865410904064/img/7JjAjQL1SATCvUTe.jpg"
-    ],
-    "syncedAt": "2026-08-31T08:57:12Z"
-  },
-  {
-    "id": "grok-imagine_2091230056186106355",
-    "model": "grok-imagine",
-    "mediaType": "video",
-    "title": "Documentary Pigeon Rescue Sequence",
-    "prompt": "Now make Snoopy paint Mona Lisa.\nStart with a blank canvas and make Mona appear at the end....",
-    "thumbnail": "https://pbs.twimg.com/amplify_video_thumb/2091229985788874752/img/4-WB2a45-utXsPXG.jpg",
-    "videoUrl": null,
-    "category": null,
-    "author": "@deweller",
-    "authorUrl": "https://x.com/deweller",
-    "sourceUrl": "https://x.com/deweller/status/2091230056186106355",
-    "imageUrls": [
-      "https://pbs.twimg.com/amplify_video_thumb/2091229985788874752/img/4-WB2a45-utXsPXG.jpg"
-    ],
-    "syncedAt": "2026-08-31T08:57:12Z"
-  },
-  {
-    "id": "grok-imagine_2091216340317339929",
-    "model": "grok-imagine",
-    "mediaType": "video",
-    "title": "Dancing King Kong and T-Rex",
-    "prompt": "Documentary-style shot in a overcast European pedestrian plaza on paved stone. A compassionate man wearing a brown and white plaid flannel jacket over a white t-shirt and dark jeans slowly kneels and gently captures a pigeon on the ground. Cinematic handheld 4K camera slowly moves closer, natural daylight, soft focus background, realistic textures.\n\nClose-up cinematic shot in a European plaza. The man in the brown plaid flannel jacket carefully wraps the captured pigeon in a soft gray cloth, holding it comfortably against his lap to keep it calm. Handheld camera motion, overcast natural daylight, detailed macro focus on the bird resting calmly.\n\nExtreme macro close-up video. Thick yellow cotton string is tangled tightly around the pigeon's pink feet. The man uses small scissors and a seam ripper to meticulously cut and unwrap the string. Steady handheld macro camera, realistic textures of the cotton thread and bird's feet, natural soft daylight.\n\nTight macro view of the man's hands carefully pulling the final pieces of yellow string away from the pigeon's pink feet using a seam ripper. Micro-details on the skin texture and cotton fiber. Natural overcast lighting, cinematic depth of field, slow and precise movements.\n\nClose-up macro shot showing the pigeon's completely freed, healthy pink feet resting on the soft gray cloth. The man gently sprays a fine mist of antiseptic spray onto the feet. Cinematic handheld camera, realistic water droplet physics, soft natural light in a European street setting.\n\nMedium shot in a European stone pedestrian plaza on an overcast day. The man unwraps the soft gray cloth and gently sets the healthy pigeon free on the paved street. The camera pans up slightly as the pigeon walks away naturally. Warm documentary tone, cinematic 4K handheld finish, soft focus background.",
-    "thumbnail": "https://pbs.twimg.com/amplify_video_thumb/2091216218556678144/img/3pN3AgO0ba0l5xvy.jpg",
-    "videoUrl": null,
-    "category": null,
-    "author": "@jailanikm",
-    "authorUrl": "https://x.com/jailanikm",
-    "sourceUrl": "https://x.com/jailanikm/status/2091216340317339929",
-    "imageUrls": [
-      "https://pbs.twimg.com/amplify_video_thumb/2091216218556678144/img/3pN3AgO0ba0l5xvy.jpg"
-    ],
-    "syncedAt": "2026-08-31T08:57:12Z"
-  },
-  {
-    "id": "grok-imagine_2091132590908686390",
-    "model": "grok-imagine",
-    "mediaType": "video",
-    "title": "AGI Intelligence Explosion Over IRC",
-    "prompt": "King Kong and the T-Rex dance in a foggy jungle sunset, wearing party hats in a humorous, cinematic style.",
-    "thumbnail": "https://pbs.twimg.com/amplify_video_thumb/2091132383601074176/img/gAbEwZHFxW_ly81A.jpg",
-    "videoUrl": null,
-    "category": null,
-    "author": "@MrDasOnX",
-    "authorUrl": "https://x.com/MrDasOnX",
-    "sourceUrl": "https://x.com/MrDasOnX/status/2091132590908686390",
-    "imageUrls": [
-      "https://pbs.twimg.com/amplify_video_thumb/2091132383601074176/img/gAbEwZHFxW_ly81A.jpg"
-    ],
-    "syncedAt": "2026-08-31T08:57:12Z"
-  },
-  {
-    "id": "grok-imagine_2091046077306663311",
-    "model": "grok-imagine",
-    "mediaType": "video",
-    "title": "Cybertruck Driving Phoenix Traffic Overlay",
-    "prompt": "many agents speak to each other over IRC triggering a sudden intelligence explosion , and AGI is born /evolve @github @nasa",
-    "thumbnail": "https://pbs.twimg.com/amplify_video_thumb/2091046062442057728/img/EywVJVW7jsSV84lt.jpg",
-    "videoUrl": null,
-    "category": null,
-    "author": "@InvariantX",
-    "authorUrl": "https://x.com/InvariantX",
-    "sourceUrl": "https://x.com/InvariantX/status/2091046077306663311",
-    "imageUrls": [
-      "https://pbs.twimg.com/amplify_video_thumb/2091046062442057728/img/EywVJVW7jsSV84lt.jpg"
-    ],
-    "syncedAt": "2026-08-31T08:57:12Z"
-  },
-  {
-    "id": "grok-imagine_2091001668422824354",
-    "model": "grok-imagine",
-    "mediaType": "video",
-    "title": "Cinematic Sci-Fi Spaceship Bridge",
-    "prompt": "A small overlay screen of a guy driving a cyber truck seeing how smooth the rare steering is the big screen shows from the windshield point of view him in traffic in Phoenix. You see an overlay of a chat of different people texting on what is going o...",
-    "thumbnail": "https://pbs.twimg.com/amplify_video_thumb/2091001617977872385/img/ff8gChZxcBhQSW3X.jpg",
-    "videoUrl": null,
-    "category": null,
-    "author": "@RadCyberTruck",
-    "authorUrl": "https://x.com/RadCyberTruck",
-    "sourceUrl": "https://x.com/RadCyberTruck/status/2091001668422824354",
-    "imageUrls": [
-      "https://pbs.twimg.com/amplify_video_thumb/2091001617977872385/img/ff8gChZxcBhQSW3X.jpg"
-    ],
-    "syncedAt": "2026-08-31T08:57:12Z"
-  },
-  {
-    "id": "grok-imagine_2090959637105500374",
-    "model": "grok-imagine",
-    "mediaType": "video",
-    "title": "Cybertruck Victory Celebration",
-    "prompt": "Cinematic sci-fi shot inside a dark spaceship bridge. Several officers in dark military uniforms stand silhouetted against a massive panoramic window showing a blue planet and a glowing galaxy. Soft volumetric light rays cut through the darkness, red and green control panel lights glow on the consoles. Quiet, epic atmosphere, highly detailed, realistic lighting and reflections.",
-    "thumbnail": "https://pbs.twimg.com/amplify_video_thumb/2090815306050727936/img/kfWgA3-jWemFpHQU.jpg",
-    "videoUrl": null,
-    "category": null,
-    "author": "@Kisalay_",
-    "authorUrl": "https://x.com/Kisalay_",
-    "sourceUrl": "https://x.com/Kisalay_/status/2090959637105500374",
-    "imageUrls": [
-      "https://pbs.twimg.com/amplify_video_thumb/2090815306050727936/img/kfWgA3-jWemFpHQU.jpg"
-    ],
-    "syncedAt": "2026-08-31T08:57:12Z"
-  },
-  {
-    "id": "grok-imagine_2090950263406227956",
-    "model": "grok-imagine",
-    "mediaType": "video",
-    "title": "Traffic Lane Reduction Merge",
-    "prompt": "Cybertruck flashes its headlights as winner gets on top of cybertruck as he says in an 16 bit recorded voice” victory is Cyber”",
-    "thumbnail": "https://pbs.twimg.com/amplify_video_thumb/2090950236361420800/img/mUgxuBnOf3SrRdI0.jpg",
-    "videoUrl": null,
-    "category": null,
-    "author": "@RadCyberTruck",
-    "authorUrl": "https://x.com/RadCyberTruck",
-    "sourceUrl": "https://x.com/RadCyberTruck/status/2090950263406227956",
-    "imageUrls": [
-      "https://pbs.twimg.com/amplify_video_thumb/2090950236361420800/img/mUgxuBnOf3SrRdI0.jpg"
-    ],
-    "syncedAt": "2026-08-31T08:57:12Z"
-  },
-  {
-    "id": "grok-imagine_2090873216747393211",
-    "model": "grok-imagine",
-    "mediaType": "video",
-    "title": "Met Gala Night Forest Event",
-    "prompt": "lane reduction indicated lane, and soon vehicle in that lane was merge onto through lane",
-    "thumbnail": "https://pbs.twimg.com/amplify_video_thumb/2090873171868368896/img/e1LmBTWxpjTll7Qc.jpg",
-    "videoUrl": null,
-    "category": null,
-    "author": "@maybeme8338o01",
-    "authorUrl": "https://x.com/maybeme8338o01",
-    "sourceUrl": "https://x.com/maybeme8338o01/status/2090873216747393211",
-    "imageUrls": [
-      "https://pbs.twimg.com/amplify_video_thumb/2090873171868368896/img/e1LmBTWxpjTll7Qc.jpg"
-    ],
-    "syncedAt": "2026-08-31T08:57:12Z"
-  },
-  {
-    "id": "grok-imagine_2090819440258490487",
-    "model": "grok-imagine",
-    "mediaType": "video",
-    "title": "Tesla Cybercab Red Carpet Arrival",
-    "prompt": "Red carpet event at the met with lots of trees at night with landscape lighting, huge crowds",
-    "thumbnail": "https://pbs.twimg.com/amplify_video_thumb/2090819423099609088/img/6xwyET37FO-5_NOX.jpg",
-    "videoUrl": null,
-    "category": null,
-    "author": "@owenxplore",
-    "authorUrl": "https://x.com/owenxplore",
-    "sourceUrl": "https://x.com/owenxplore/status/2090819440258490487",
-    "imageUrls": [
-      "https://pbs.twimg.com/amplify_video_thumb/2090819423099609088/img/6xwyET37FO-5_NOX.jpg"
-    ],
-    "syncedAt": "2026-08-31T08:57:12Z"
-  },
-  {
-    "id": "grok-imagine_2090816984485085400",
-    "model": "grok-imagine",
-    "mediaType": "video",
-    "title": "Queen of Darkness Shadow Walk",
-    "prompt": "The gold Tesla Cybercab has just pulled up and stops smoothly on the red carpet. Its butterfly doors open fully upward and outward automatically. The glamorous woman in the sparkling black diamond sequined dress gracefully steps out of the car onto t...",
-    "thumbnail": "https://pbs.twimg.com/amplify_video_thumb/2090816950385381377/img/jnIQhceZFCmj1lb9.jpg",
-    "videoUrl": null,
-    "category": null,
-    "author": "@owenxplore",
-    "authorUrl": "https://x.com/owenxplore",
-    "sourceUrl": "https://x.com/owenxplore/status/2090816984485085400",
-    "imageUrls": [
-      "https://pbs.twimg.com/amplify_video_thumb/2090816950385381377/img/jnIQhceZFCmj1lb9.jpg"
-    ],
-    "syncedAt": "2026-08-31T08:57:12Z"
-  },
-  {
-    "id": "grok-imagine_2090784726068174879",
-    "model": "grok-imagine",
-    "mediaType": "video",
-    "title": "Anime Space Battleship Combat Scene",
-    "prompt": "The Queen of Darkness comes walking in my direction, spreading shadows and darkness around",
-    "thumbnail": "https://pbs.twimg.com/amplify_video_thumb/2090784552319143937/img/M3jnUjKaSAa463X0.jpg",
-    "videoUrl": null,
-    "category": null,
-    "author": "@Mmmm8x5mMmmm",
-    "authorUrl": "https://x.com/Mmmm8x5mMmmm",
-    "sourceUrl": "https://x.com/Mmmm8x5mMmmm/status/2090784726068174879",
-    "imageUrls": [
-      "https://pbs.twimg.com/amplify_video_thumb/2090784552319143937/img/M3jnUjKaSAa463X0.jpg"
-    ],
-    "syncedAt": "2026-08-31T08:57:12Z"
-  },
-  {
-    "id": "grok-imagine_2090680229329248377",
-    "model": "grok-imagine",
-    "mediaType": "video",
-    "title": "Kimono Sword Dance Sakura Petals",
-    "prompt": "Final battle scene of the space battleship Kyoshi, anime style, high detail. Against the backdrop of vast space, a huge silver space battleship \"Kyoshi\" is seen from a diagonal overhead angle. The battleship has a heavy form reminiscent of the Yamato class, with the golden character \"Kyo\" shining on the bow. In the front left, a silver high-speed assault boat crashes into the enemy flagship, creating an explosion of light. Right next to it, a red energy body transformed into a horse fires a beam that pierces the enemy ship. The enemy fleet is already on fire, with debris scattering in space. From the battleship's bridge window, a young black-haired commander wearing glasses (Kyoshi Goto)...",
-    "thumbnail": "https://pbs.twimg.com/amplify_video_thumb/2090680091122753536/img/GMKcGyQ-efed1tCm.jpg",
-    "videoUrl": null,
-    "category": null,
-    "author": "@rubensutsuyosi",
-    "authorUrl": "https://x.com/rubensutsuyosi",
-    "sourceUrl": "https://x.com/rubensutsuyosi/status/2090680229329248377",
-    "imageUrls": [
-      "https://pbs.twimg.com/amplify_video_thumb/2090680091122753536/img/GMKcGyQ-efed1tCm.jpg"
-    ],
-    "syncedAt": "2026-08-31T08:57:12Z"
-  },
-  {
-    "id": "grok-imagine_2090667452472688797",
-    "model": "grok-imagine",
-    "mediaType": "video",
-    "title": "Nero Fiddling While Rome Burns",
-    "prompt": "A young woman with long black hair wearing a blue kimono dress, standing in a Japanese garden lined with cherry blossom trees. When she swings a glowing light-blue sword horizontally, countless cherry blossom petals fly out from the blade, dancing around her and forming the text 'Thank you for your support today,' before the petals scatter toward the camera.",
-    "thumbnail": "https://cms-assets.youmind.com/media/1787384997650_66coof_HQOKd7racAA2eg4.jpg",
-    "videoUrl": null,
-    "category": null,
-    "author": "@omomomomo0309",
-    "authorUrl": "https://x.com/omomomomo0309",
-    "sourceUrl": "https://x.com/omomomomo0309/status/2090667452472688797",
-    "imageUrls": [
-      "https://cms-assets.youmind.com/media/1787384997650_66coof_HQOKd7racAA2eg4.jpg"
-    ],
-    "syncedAt": "2026-08-31T08:57:12Z"
-  },
-  {
-    "id": "grok-imagine_2090654372690534648",
-    "model": "grok-imagine",
-    "mediaType": "video",
-    "title": "Cabin Blizzard Writing Scene",
-    "prompt": "Nero fiddling while Rome burns.Playing Devil Went Down to Georgia in the style of Charlie Daniel’s.",
-    "thumbnail": "https://pbs.twimg.com/amplify_video_thumb/2090654349298921473/img/_0vIwmroTpGn3cNp.jpg",
-    "videoUrl": null,
-    "category": null,
-    "author": "@SERCObad",
-    "authorUrl": "https://x.com/SERCObad",
-    "sourceUrl": "https://x.com/SERCObad/status/2090654372690534648",
-    "imageUrls": [
-      "https://pbs.twimg.com/amplify_video_thumb/2090654349298921473/img/_0vIwmroTpGn3cNp.jpg"
-    ],
-    "syncedAt": "2026-08-31T08:57:12Z"
-  },
-  {
-    "id": "grok-imagine_2090635293577662604",
-    "model": "grok-imagine",
-    "mediaType": "video",
-    "title": "Realistic Puppy in Pajamas Video Vlog",
-    "prompt": "The scene is a dark square room in a log cabin, the only light is a candle on an old wooden desk. It’s a cold, blizzard-like night in the wooded mountains. A man is seated at the desk writing his first ever book. A fireplace cracks and pops in the ba...",
-    "thumbnail": "https://pbs.twimg.com/amplify_video_thumb/2090635267078008832/img/edo7_Tv2rTo5kK5k.jpg",
-    "videoUrl": null,
-    "category": null,
-    "author": "@MichaelOnXUSA",
-    "authorUrl": "https://x.com/MichaelOnXUSA",
-    "sourceUrl": "https://x.com/MichaelOnXUSA/status/2090635293577662604",
-    "imageUrls": [
-      "https://pbs.twimg.com/amplify_video_thumb/2090635267078008832/img/edo7_Tv2rTo5kK5k.jpg"
-    ],
-    "syncedAt": "2026-08-31T08:57:12Z"
-  },
-  {
-    "id": "grok-imagine_2090631627844280421",
-    "model": "grok-imagine",
-    "mediaType": "video",
-    "title": "Data Center Roller Rink Power Generation",
-    "prompt": "A small, cute puppy in a loose, casual puppy pajama set lies on its side on a low bed in a small rented studio apartment, already gazing straight into the front camera of the phone its owner is holding just above it; the place has a lived-in twenty-something feel — rumpled cream cotton sheets, a couple of plain pillows, a clothes rack and a cluttered little shelf softly out of focus behind it, a warm bedside lamp glowing from the right. Blinking slowly, the puppy's tail wags softly as the off-screen owner holding the phone — never shown — says softly in Korean: \"What are you doing not sleeping?\" A beat later, the puppy tilts its head with floppy ears, letting out a tiny, breathy huff as if shy, and the owner teases back, warm in Korean: \"You're pretty, so why?\" Then suddenly the puppy buries its whole face into a plain pillow beside it, paws gripping its edge into soft creases, letting out a muffled, playful whimper or soft puppy breath into the pillow. A moment later, it slowly turns its face back out and peeks with just one eye first, floppy ears tousled, then its whole face turns to the camera; frontally visible, it softly licks its nose and opens its mouth slightly with a happy, playful puppy expression while the owner says in Korean: \"I told you to stop filming~\", giving one soft blink as the moment gently settles. Shoot it as one continuous first-person handheld selfie, the frame breathing with the owner's arm and leaning in a little; keep the puppy's fur texture, wet nose highlights, and whiskers razor-sharp with no beauty filter and no smoothing, like real phone footage with subtle video grain and non-cinematic warm indoor light. Exactly one puppy is ever in frame — the phone-holder stays off-screen and is never shown, no second animal or person in frame, and never render a reference sheet or duplicate the subject. Strictly no subtitles, no on-screen text, no logo, no watermark. Diegetic sound only: quiet room tone of a small apartment, soft bedsheet rustling, muffled cute puppy noises into the pillow; the off-screen woman lines warm and teasing from behind the camera, with no background music",
-    "thumbnail": "https://pbs.twimg.com/amplify_video_thumb/2090631581887299584/img/4xZUv4rq9vEXAMHp.jpg",
-    "videoUrl": null,
-    "category": null,
-    "author": "@winneravgwin",
-    "authorUrl": "https://x.com/winneravgwin",
-    "sourceUrl": "https://x.com/winneravgwin/status/2090631627844280421",
-    "imageUrls": [
-      "https://pbs.twimg.com/amplify_video_thumb/2090631581887299584/img/4xZUv4rq9vEXAMHp.jpg"
-    ],
-    "syncedAt": "2026-08-31T08:57:12Z"
-  },
-  {
-    "id": "grok-imagine_2090629295139860535",
-    "model": "grok-imagine",
-    "mediaType": "video",
-    "title": "Twitch Streamer Cybertruck Gameplay",
-    "prompt": "A data center roller rink that uses human group energy as they skate to convert to power next to a steak n shake",
-    "thumbnail": "https://pbs.twimg.com/amplify_video_thumb/2090629256116133888/img/vZOj4HyvF3Tt2gQq.jpg",
-    "videoUrl": null,
-    "category": null,
-    "author": "@AMERICA250e9",
-    "authorUrl": "https://x.com/AMERICA250e9",
-    "sourceUrl": "https://x.com/AMERICA250e9/status/2090629295139860535",
-    "imageUrls": [
-      "https://pbs.twimg.com/amplify_video_thumb/2090629256116133888/img/vZOj4HyvF3Tt2gQq.jpg"
-    ],
-    "syncedAt": "2026-08-31T08:57:12Z"
-  },
-  {
-    "id": "grok-imagine_2090624078499512717",
-    "model": "grok-imagine",
-    "mediaType": "video",
-    "title": "Portuguese Speaking Man Friendly Message",
-    "prompt": "A woman live streaming on twitch playing a cyber truck 3-D game as you see her on a smaller overlay screen talking about how the cyber truck is bulky and yet still fun to driving here to motor",
-    "thumbnail": "https://pbs.twimg.com/amplify_video_thumb/2090624018608951296/img/5jIZUEIpXC2q_XBZ.jpg",
-    "videoUrl": null,
-    "category": null,
-    "author": "@RadCyberTruck",
-    "authorUrl": "https://x.com/RadCyberTruck",
-    "sourceUrl": "https://x.com/RadCyberTruck/status/2090624078499512717",
-    "imageUrls": [
-      "https://pbs.twimg.com/amplify_video_thumb/2090624018608951296/img/5jIZUEIpXC2q_XBZ.jpg"
-    ],
-    "syncedAt": "2026-08-31T08:57:12Z"
-  },
-  {
-    "id": "grok-imagine_2090608698666160330",
-    "model": "grok-imagine",
-    "mediaType": "video",
-    "title": "Aurora Cyberpunk Pursuit Video",
-    "prompt": "The man smiles and speaks naturally in Portuguese (Brazilian accent), saying a short friendly positive message like \"Oi! Estou me sentindo muito bem hoje. Que dia incrível, né?\". Keep the car interior background, exact same appearance, natural head movement",
-    "thumbnail": "https://pbs.twimg.com/amplify_video_thumb/2090608673697464321/img/XIkmOTOKm5JEpI6c.jpg",
-    "videoUrl": null,
-    "category": null,
-    "author": "@Vinil9t",
-    "authorUrl": "https://x.com/Vinil9t",
-    "sourceUrl": "https://x.com/Vinil9t/status/2090608698666160330",
-    "imageUrls": [
-      "https://pbs.twimg.com/amplify_video_thumb/2090608673697464321/img/XIkmOTOKm5JEpI6c.jpg"
-    ],
-    "syncedAt": "2026-08-31T08:57:12Z"
-  },
-  {
-    "id": "grok-imagine_2090580214120165872",
-    "model": "grok-imagine",
-    "mediaType": "video",
-    "title": "Surreal Magritte Desert Scene",
-    "prompt": "[[🟩+🟪]+[[hoverbike+[🤖=👮‍♀️=unit_Aurora_7]]+[🎯_pursuit]+[glossy]+[🔈🔉🔊🔉🔈🚨]]",
-    "thumbnail": "https://pbs.twimg.com/amplify_video_thumb/2090580112202768384/img/SQ-5s4IEznGOmMTR.jpg",
-    "videoUrl": null,
-    "category": null,
-    "author": "@astvatsaturn",
-    "authorUrl": "https://x.com/astvatsaturn",
-    "sourceUrl": "https://x.com/astvatsaturn/status/2090580214120165872",
-    "imageUrls": [
-      "https://pbs.twimg.com/amplify_video_thumb/2090580112202768384/img/SQ-5s4IEznGOmMTR.jpg"
-    ],
-    "syncedAt": "2026-08-31T08:57:12Z"
-  },
-  {
-    "id": "grok-imagine_2090558298533593235",
-    "model": "grok-imagine",
-    "mediaType": "video",
-    "title": "📚 More Prompts Available",
-    "prompt": "A surrealist Magritte-style oil painting of a couple seated in a vintage olive-green convertible in a flat desert landscape under a pale blue sky with a single horizontal cloud bank. The woman wears an oversized black-and-white checkered conical hat topped with a coral pom-pom, yellow cat-eye sunglasses, pearl earrings, and a pale pink jacket with a large white pointed collar and black buttons. The man wears a coral felt hat with a dented crown, yellow rectangular sunglasses, a beige turtleneck and a dark houndstooth blazer with a white pocket square. Deadpan expressions, smooth matte painterly finish, 1940s magazine-realism style.",
-    "thumbnail": "https://pbs.twimg.com/amplify_video_thumb/2090558281303433216/img/Wg6LxnjN_60CVMWj.jpg",
-    "videoUrl": null,
-    "category": null,
-    "author": "@danai_lama",
-    "authorUrl": "https://x.com/danai_lama",
-    "sourceUrl": "https://x.com/danai_lama/status/2090558298533593235",
-    "imageUrls": [
-      "https://pbs.twimg.com/amplify_video_thumb/2090558281303433216/img/Wg6LxnjN_60CVMWj.jpg"
-    ],
-    "syncedAt": "2026-08-31T08:57:12Z"
+    "syncedAt": "2026-09-07T07:34:45Z"
   }
 ]
