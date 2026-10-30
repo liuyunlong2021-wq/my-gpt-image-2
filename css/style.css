@@ -89,6 +89,66 @@ nav {
   text-decoration: none;
 }
 
+/* Creative reference links */
+.reference-hub {
+  margin: 28px 0 24px;
+  padding: 18px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: linear-gradient(135deg, var(--bg-card), rgba(124, 92, 255, 0.08));
+}
+.reference-hub-heading {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 14px;
+}
+.reference-hub-heading h2 {
+  font-size: 17px;
+  line-height: 1.3;
+}
+.reference-hub-heading p,
+.reference-hub-heading > span {
+  color: var(--text-dim);
+  font-size: 12px;
+}
+.reference-hub-heading > span { white-space: nowrap; }
+.reference-links {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 10px;
+}
+.reference-link {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 10px;
+  min-width: 0;
+  padding: 12px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  background: var(--bg-elevated);
+  color: var(--text);
+  transition: border-color 0.2s, transform 0.2s;
+}
+.reference-link:hover {
+  border-color: var(--accent);
+  text-decoration: none;
+  transform: translateY(-1px);
+}
+.reference-icon { font-size: 22px; }
+.reference-link strong,
+.reference-link small { display: block; }
+.reference-link strong { font-size: 14px; }
+.reference-link small {
+  margin-top: 2px;
+  color: var(--text-dim);
+  font-size: 11px;
+  line-height: 1.35;
+}
+.reference-arrow { color: var(--accent); }
+
 /* Hero */
 .hero {
   padding: 80px 0 60px;
@@ -598,12 +658,15 @@ footer a { color: var(--accent); }
   .gallery { grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); }
   .nav-links > a { display: none; }
   .modal-actions { flex-direction: column; }
+  .reference-links { grid-template-columns: 1fr; }
 }
 
 @media (max-width: 480px) {
   .gallery { grid-template-columns: 1fr; }
   .hero { padding: 48px 0 32px; }
   .modal { margin: 12px; }
+  .reference-hub-heading { display: block; }
+  .reference-hub-heading > span { display: inline-block; margin-top: 6px; }
 }
 
 /* Language switcher */

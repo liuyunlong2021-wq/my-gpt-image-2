@@ -225,6 +225,7 @@ type ModelId =
 ```
 Header (Logo → jiucaihezi.studio | 画廊 | 语言)
 Hero (搭子提示词库 | 副标题 | 主站 CTA | 统计)
+Creative References (RuiC-PoseAtlas 姿势 | 衣装 | 人像 + OpenZhenZhen 外链)
 Model Tab Bar (5 模型 + 数量)
 Type Filter (全部 | 图片 | 视频)
 Search

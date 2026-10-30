@@ -29,7 +29,7 @@
 
 ```
 dazi-studio/
-├── index.html              # 单页：Hero + 模型 Tab + 画廊 + Footer
+├── index.html              # 单页：创作参考 + 模型 Tab + 画廊 + Footer
 ├── css/style.css           # 暗色主题，#7c5cff 主色，响应式
 ├── js/app.js               # 全部交互逻辑（~550 行）
 ├── data/                   # 构建产物（由 scripts/sync.py 生成，勿手改）
@@ -148,6 +148,8 @@ sync.py 从以下域提取缩略图（跳过 shields.io 徽章）：
 - 改动保持与现有 CSS 变量、命名风格一致
 - 图片/视频 URL 保持外链，不下载入库（除非 SDD 修订）
 - nav 栏只保留语言切换（已删除无意义的「画廊」「GitHub」链接）
+- 创作参考区外链到获授权的 RuiC-PoseAtlas 姿势、衣装与人像图鉴，不复制图集资源
+- 创作参考区同时外链 OpenZhenZhen 图片与视频提示词画廊
 
 ---
 
