@@ -63,7 +63,7 @@ fetch('data/index.json') → 按需 fetch('data/{model}.json') → 缓存 → �
 | 模型 | 5/5 有数据 |
 | 媒体类型 | 图片 4 模型 + 视频 2 模型 |
 | 数据更新 | GitHub Actions 每周一自动同步 |
-| 部署 | push `main` 分支 → GitHub Pages 自动部署 |
+| 部署 | Cloudflare Pages 项目 `dazi`，发布生产静态文件 |
 
 ### `data/*.json` 单条 schema（v2）
 
@@ -169,13 +169,13 @@ python3 -m http.server 8080
 
 | 分支 | 用途 |
 |------|------|
-| `main` | **生产基线**（push 即触发 GitHub Pages 部署到 dazi.studio） |
+| `main` | **生产基线**（推送后仍需发布 Cloudflare Pages 项目 `dazi`） |
 | `feat/phase-a-ui` | 阶段 A/B/C 开发分支 |
 | `docs/prompt-hub-sdd` | SDD + mockup 示意 |
 
 远程：`origin` → `https://github.com/liuyunlong2021-wq/my-gpt-image-2.git`
 
-**部署流程**：`git push origin main` → GitHub Pages 自动构建（约 1-2 分钟）→ dazi.studio 更新
+**部署流程**：`git push origin main` → 仅打包 `index.html`、`css/`、`js/`、`data/` → 发布 Cloudflare Pages 项目 `dazi` → 核对 `dazi.studio`。不得把 `.venv`、`.wrangler` 或点开头的调研缓存上传。
 
 如需合并开发分支到 main：
 ```bash
@@ -242,8 +242,8 @@ git checkout main && git merge feat/xxx && git push origin main
 
 ### 部署
 
-- `dazi.studio` 由 GitHub Pages 托管
-- **只有 `main` 分支的变更会触发部署**
+- `dazi.studio` 由 Cloudflare Pages 项目 `dazi` 托管
+- 推送 `main` 不等于生产部署完成，必须以线上页面读回为准
 - 开发在功能分支（如 `feat/xxx`）进行，完成后 merge 到 `main`
 
 ---
