@@ -391,6 +391,12 @@ nav {
   object-fit: cover;
   transition: transform 0.3s;
 }
+.card-img-wrap img.failed { display: none; }
+.card-img-placeholder {
+  width: 100%;
+  height: 100%;
+  background: var(--bg-elevated);
+}
 .card:hover .card-img-wrap img { transform: scale(1.03); }
 .card-play {
   position: absolute;
