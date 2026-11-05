@@ -398,7 +398,7 @@ function renderGallery() {
           if (entry.isIntersecting) {
             img.src = img.dataset.src;
             img.onload = () => img.classList.add('loaded');
-            img.onerror = () => { img.src = ''; img.classList.add('loaded'); };
+            img.onerror = () => { img.classList.add('failed', 'loaded'); };
             observer.unobserve(img);
           }
         });
@@ -423,7 +423,7 @@ function createCard(c) {
   return `
     <div class="card" data-id="${c.id}" onclick="openModal('${c.id}')">
       <div class="card-img-wrap">
-        <img data-src="${imgUrl}" alt="${escHtml(c.title)}" loading="lazy">
+        ${imgUrl ? `<img data-src="${imgUrl}" alt="${escHtml(c.title)}" loading="lazy">` : '<div class="card-img-placeholder" aria-hidden="true"></div>'}
         ${isVideo ? '<div class="card-play">▶</div>' : ''}
       </div>
       <div class="card-body">
