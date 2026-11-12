@@ -39,8 +39,11 @@ dazi-studio/
 │   ├── seedream.json       # 111 条（图片）
 │   ├── seedance.json       # 106 条（视频）
 │   └── grok-imagine.json   # 103 条（视频）
+├── assets/jc-gallery/      # JC 精选图库本地 WebP 资源 + 来源映射
 ├── scripts/
-│   └── sync.py             # 数据同步脚本（见 §3）
+│   ├── sync.py             # 提示词数据同步脚本（见 §3）
+│   ├── build-jc-gallery.py # 重建 JC 精选图库清单
+│   └── mirror-jc-gallery.py # 将 JC 图片下载/压缩为本地 WebP
 ├── .github/workflows/
 │   └── sync-prompts.yml    # 每周一 03:00 UTC 自动同步
 ├── LICENSE
@@ -205,6 +208,7 @@ git checkout main && git merge feat/xxx && git push origin main
 | 改文案/结构 | `index.html`, `js/app.js`（`i18n` 对象） |
 | 改样式 | `css/style.css` |
 | 批量更新数据 | `python3 scripts/sync.py --skip-youmind-detail` |
+| 初始化/本地化 JC 图库图片 | `python scripts/mirror-jc-gallery.py`（重建清单后运行） |
 | 添加新模型 Tab | `js/app.js`（`MODELS` 数组）+ `scripts/sync.py`（`MODEL_DEFS` + repo 映射） |
 | 添加新数据源 | `scripts/sync.py`（加 fetch 函数 + 解析函数） |
 | 改 Hero 统计 | `js/app.js`（`updateHeroStats()`） |

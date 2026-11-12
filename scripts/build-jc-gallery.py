@@ -3,10 +3,11 @@
 import json, re, os
 from datetime import datetime, timezone
 
-SKILL_DIR = "/Users/by3/Documents/jiucaihezi-app/public/skills/JC-GPT-Image2-Skill/gpt-image/references"
+PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+SKILL_DIR = os.environ.get("JC_GALLERY_SKILL_DIR", "/Users/by3/Documents/jiucaihezi-app/public/skills/JC-GPT-Image2-Skill/gpt-image/references")
 GH_RAW_BASE = "https://raw.githubusercontent.com/liuyunlong2021-wq/JC-GPTImage2-skill/main/JC-GPT-Image2-Skill"
-DOCS_DIR = "/Users/by3/Documents/JC-GPTImage2-skill/JC-GPT-Image2-Skill"
-OUTPUT = "/Users/by3/Documents/dazi-studio/data/jc-gpt2-gallery.json"
+DOCS_DIR = os.environ.get("JC_GALLERY_DOCS_DIR", "/Users/by3/Documents/JC-GPTImage2-skill/JC-GPT-Image2-Skill")
+OUTPUT = os.path.join(PROJECT_ROOT, "data", "jc-gpt2-gallery.json")
 
 def parse_gallery_file(filepath, counter):
     with open(filepath, 'r', encoding='utf-8') as f:
@@ -91,6 +92,7 @@ def parse_gallery_file(filepath, counter):
     return entries
 
 def main():
+    """After rebuilding the JSON, run mirror-jc-gallery.py to localize assets."""
     all_entries = []
     counter = [0]  # mutable counter for global ID tracking
     for fname in sorted(os.listdir(SKILL_DIR)):
