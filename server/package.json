@@ -1,0 +1,11 @@
+{
+  "name": "dazi-tom-upload",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node tom-upload.mjs"
+  },
+  "dependencies": {
+    "busboy": "^1.6.0"
+  }
+}

@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Tom 老师作品管理 · 搭子</title>
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; min-height: 100vh; color: #202522; background: #f4f5f1; font: 15px/1.55 system-ui, sans-serif; }
+    main { width: min(720px, calc(100% - 32px)); margin: 48px auto; }
+    header { margin-bottom: 28px; }
+    h1 { margin: 0; font-size: 26px; }
+    header p, .hint { color: #626b64; }
+    form { display: grid; gap: 16px; }
+    label { display: grid; gap: 6px; font-weight: 600; }
+    input, textarea { width: 100%; border: 1px solid #c8cec8; border-radius: 6px; padding: 11px 12px; font: inherit; background: #fff; }
+    textarea { min-height: 96px; resize: vertical; }
+    #prompt { min-height: 180px; }
+    button { width: fit-content; min-height: 42px; padding: 9px 16px; border: 0; border-radius: 6px; background: #245e4c; color: white; font: inherit; font-weight: 650; cursor: pointer; }
+    button.secondary { background: transparent; border: 1px solid #9ca69e; color: #202522; }
+    button:disabled { opacity: .55; cursor: wait; }
+    .row { display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+    .status { min-height: 24px; margin-top: 14px; color: #245e4c; white-space: pre-line; }
+    .status.error { padding: 12px 14px; border-left: 3px solid #a3342a; background: #fff2f0; color: #78271f; }
+    .hidden { display: none !important; }
+    .panel { padding: 20px; border: 1px solid #d8ddd7; border-radius: 8px; background: #fff; }
+    .work-list { display: grid; gap: 10px; margin-top: 20px; }
+    .work-list-heading { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; padding-top: 18px; border-top: 1px solid #e1e5e0; }
+    .work-list-heading span, .work-meta { color: #626b64; font-size: 12px; }
+    .work-item { display: grid; grid-template-columns: 72px minmax(0, 1fr) auto; align-items: center; gap: 12px; padding: 10px; border: 1px solid #d8ddd7; border-radius: 6px; }
+    .work-item.is-hidden { opacity: .68; }
+    .work-thumb { display: grid; width: 72px; aspect-ratio: 1; place-items: center; overflow: hidden; background: #edf0eb; color: #245e4c; font-weight: 700; }
+    .work-thumb img { width: 100%; height: 100%; object-fit: cover; }
+    .work-info { min-width: 0; }
+    .work-info strong { display: block; overflow-wrap: anywhere; }
+    .work-meta { display: block; margin-top: 3px; }
+    .work-actions { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 8px; }
+    .work-actions button { min-height: 36px; padding: 6px 10px; font-size: 13px; }
+    .work-actions .danger { color: #a3342a; border-color: #dbb4ae; }
+    .work-loading, .work-empty { padding: 16px 0; color: #626b64; text-align: center; }
+    .cover-field[hidden], .cover-preview[hidden] { display: none; }
+    .cover-preview { display: block; max-width: 240px; max-height: 150px; margin-top: 8px; object-fit: contain; background: #edf0eb; }
+    @media (max-width: 520px) { main { margin: 24px auto; } h1 { font-size: 22px; } }
+    @media (max-width: 560px) { .work-item { grid-template-columns: 56px minmax(0, 1fr); } .work-thumb { width: 56px; } .work-actions { grid-column: 1 / -1; justify-content: flex-start; } }
+  </style>
+</head>
+<body>
+  <main>
+    <header><h1>Tom 老师作品管理</h1><p>上传的作品会立即公开显示在 Tom 老师专区。遇到问题时，页面会说明原因和处理方法。</p></header>
+    <section id="loginPanel" class="panel hidden">
+      <form id="loginForm"><label>管理密码<input id="password" type="password" autocomplete="current-password" required></label><button>登录</button></form>
+    </section>
+    <section id="uploadPanel" class="panel hidden">
+      <div class="row"><strong>发布新作品</strong><button id="logout" class="secondary" type="button">退出登录</button></div>
+      <form id="uploadForm" enctype="multipart/form-data">
+        <label>作品标题<input name="title" maxlength="120" required></label>
+        <label>作品简介（选填）<textarea name="description" maxlength="2000"></textarea></label>
+        <label>提示词<textarea id="prompt" name="prompt" maxlength="20000" required></textarea></label>
+        <label>图片或视频<input id="mediaInput" name="media" type="file" accept="image/jpeg,image/png,image/webp,image/gif,video/mp4,video/webm" required><span class="hint">JPG、PNG、WebP、GIF、MP4 或 WebM；图片或视频原片不超过 1 GiB。上传大文件时请保持页面打开；网络中断后需重新上传。</span></label>
+        <label id="coverField" class="cover-field" hidden>视频封面图<input id="coverInput" name="cover" type="file" accept="image/jpeg,image/png,image/webp,image/gif"><span class="hint">视频需要同时选择一张封面图片，支持 JPG、PNG、WebP、GIF，最大 10 MiB。</span><img id="coverPreview" class="cover-preview" alt="封面图片预览" hidden></label>
+        <button id="publish">上传并公开</button>
+      </form>
+      <section class="work-list" aria-labelledby="worksTitle">
+        <div class="work-list-heading"><strong id="worksTitle">当前作品</strong><span id="worksCount">加载中…</span></div>
+        <div id="worksList" aria-live="polite"><p class="work-loading">正在读取作品列表…</p></div>
+      </section>
+    </section>
+    <p id="status" class="status" role="status" aria-live="polite"></p>
+  </main>
+  <script>
+    const loginPanel = document.querySelector('#loginPanel');
+    const uploadPanel = document.querySelector('#uploadPanel');
+    const worksList = document.querySelector('#worksList');
+    const worksCount = document.querySelector('#worksCount');
+    const mediaInput = document.querySelector('#mediaInput');
+    const coverField = document.querySelector('#coverField');
+    const coverInput = document.querySelector('#coverInput');
+    const coverPreview = document.querySelector('#coverPreview');
+    const status = document.querySelector('#status');
+    const setStatus = (message, error = false) => { status.textContent = message; status.classList.toggle('error', error); };
+    async function api(path, options = {}) {
+      let response;
+      try {
+        response = await fetch(path, { credentials: 'same-origin', ...options });
+      } catch {
+        throw new Error('网络连接失败。请检查网络后刷新页面，再重新登录或上传。若文件较大，请先确认上次上传是否已成功，避免重复发布。');
+      }
+      const result = await response.json().catch(() => ({}));
+      if (!response.ok) {
+        const serverMessage = result.error || '';
+        if (response.status === 401 && path === '/api/login') throw new Error('密码不正确。请核对收到的初始密码；连续输错 6 次后需等待 15 分钟再试。');
+        if (response.status === 401) throw new Error('登录已过期。请重新登录后再上传。');
+        if (response.status === 403) throw new Error('请求未通过来源校验。请从 HTTPS 上传入口重新打开页面，不要使用 HTTP 地址或跨站跳转。');
+        if (response.status === 413) throw new Error('文件超过服务器接收上限。请将单个文件控制在 1 GiB 以内后重试。');
+        if (response.status === 429) throw new Error('尝试次数过多，系统已暂时限制登录。请等待 15 分钟后再试，并确认密码无误。');
+        if (response.status >= 500) throw new Error('服务器暂时无法处理请求。请稍等片刻后刷新页面；如果作品没有出现在专区，再重新上传并把此提示发给管理员。');
+        if (serverMessage.includes('1 GiB')) throw new Error('文件超过 1 GiB。请压缩文件后再上传。');
+        if (serverMessage.includes('10 MiB')) throw new Error('封面图片超过 10 MiB。请压缩封面图片后重试。');
+        if (serverMessage.includes('仅支持')) throw new Error(`${serverMessage}。请检查文件后缀与实际格式一致，再重新选择。`);
+        if (serverMessage.includes('标题和提示词')) throw new Error('标题和提示词不能为空。请补齐这两项后再发布。');
+        if (serverMessage.includes('请选择')) throw new Error('还没有选择图片或视频。请选择一个文件后再发布。');
+        if (serverMessage.includes('封面')) throw new Error('视频必须同时选择 JPG、PNG、WebP 或 GIF 封面图片，封面不超过 10 MiB。请补选封面后重试。');
+        if (serverMessage.includes('每次只能')) throw new Error('每次只能上传一个媒体文件。请只选择一张图片或一个视频。');
+        throw new Error('请求未能完成。请刷新页面后重试；如果再次失败，请截图并联系管理员。');
+      }
+      return result;
+    }
+    function show(authenticated) {
+      loginPanel.classList.toggle('hidden', authenticated);
+      uploadPanel.classList.toggle('hidden', !authenticated);
+      if (authenticated) loadWorks();
+    }
+    function escapeHtml(value) {
+      return String(value || '').replace(/[&<>"']/g, char => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[char]);
+    }
+    async function loadWorks() {
+      worksList.innerHTML = '<p class="work-loading">正在读取作品列表…</p>';
+      try {
+        const works = await api('/api/admin/works');
+        worksCount.textContent = `${works.length} 条`;
+        if (!works.length) {
+          worksList.innerHTML = '<p class="work-empty">还没有作品。上传后的作品会显示在这里。</p>';
+          return;
+        }
+        worksList.innerHTML = works.map(work => {
+          const primaryMedia = work.media && work.media[0];
+          const thumbnail = work.cover || (primaryMedia && primaryMedia.type !== 'video' ? primaryMedia.url : '');
+          const hidden = Boolean(work.hidden);
+          const date = work.publishedAt ? new Date(work.publishedAt).toLocaleString('zh-CN') : '';
+          const isVideo = primaryMedia && primaryMedia.type === 'video';
+          return `<article class="work-item${hidden ? ' is-hidden' : ''}" data-work-id="${escapeHtml(work.id)}">
+            <span class="work-thumb">${thumbnail ? `<img src="${escapeHtml(thumbnail)}" alt="" loading="lazy">` : (primaryMedia && primaryMedia.type === 'video' ? '视频' : '作品')}</span>
+            <span class="work-info"><strong>${escapeHtml(work.title || '未命名作品')}</strong><small class="work-meta">${hidden ? '已隐藏 · 不会公开展示' : '公开展示'}${date ? ` · ${escapeHtml(date)}` : ''}</small></span>
+            <span class="work-actions">${isVideo ? `<button class="secondary" type="button" data-action="cover">${work.cover ? '更换封面' : '设置封面'}</button><input class="cover-file-input" type="file" accept="image/jpeg,image/png,image/webp,image/gif" data-cover-input hidden>` : ''}<button class="secondary" type="button" data-action="toggle">${hidden ? '恢复展示' : '隐藏'}</button><button class="secondary danger" type="button" data-action="remove">移除</button></span>
+          </article>`;
+        }).join('');
+      } catch (error) {
+        worksCount.textContent = '';
+        worksList.innerHTML = `<p class="work-empty">${escapeHtml(error.message)}<br>请刷新页面重试；如果问题持续，请联系管理员。</p>`;
+      }
+    }
+    worksList.addEventListener('click', async event => {
+      const button = event.target.closest('button[data-action]');
+      const item = button && button.closest('[data-work-id]');
+      if (!button || !item) return;
+      const id = item.dataset.workId;
+      const action = button.dataset.action;
+      if (action === 'cover') {
+        item.querySelector('[data-cover-input]').click();
+        return;
+      }
+      if (action === 'remove' && !window.confirm('移除后作品会从公开专区撤下，关联媒体文件也会从服务器删除。此操作无法撤销，确定移除吗？')) return;
+      button.disabled = true;
+      try {
+        if (action === 'toggle') {
+          const hidden = !item.classList.contains('is-hidden');
+          await api(`/api/admin/works/${encodeURIComponent(id)}`, { method: 'PATCH', headers: { 'content-type': 'application/json' }, body: JSON.stringify({ hidden }) });
+          setStatus(hidden ? '作品已隐藏，不再公开展示。' : '作品已恢复展示。');
+        } else {
+          await api(`/api/admin/works/${encodeURIComponent(id)}`, { method: 'DELETE' });
+          setStatus('作品及关联媒体已移除。');
+        }
+        await loadWorks();
+      } catch (error) {
+        setStatus(error.message, true);
+        button.disabled = false;
+      }
+    });
+    worksList.addEventListener('change', async event => {
+      const input = event.target.closest('[data-cover-input]');
+      const item = input && input.closest('[data-work-id]');
+      const file = input && input.files[0];
+      if (!file || !item) return;
+      if (!['image/jpeg', 'image/png', 'image/webp', 'image/gif'].includes(file.type)) {
+        setStatus('封面只支持 JPG、PNG、WebP 或 GIF 图片，请重新选择。', true);
+        input.value = '';
+        return;
+      }
+      if (file.size > 10 * 1024 * 1024) {
+        setStatus('封面图片不能超过 10 MiB，请压缩后重新选择。', true);
+        input.value = '';
+        return;
+      }
+      const button = item.querySelector('[data-action="cover"]');
+      button.disabled = true;
+      setStatus('正在更新视频封面…');
+      try {
+        const formData = new FormData();
+        formData.append('cover', file);
+        await api(`/api/admin/works/${encodeURIComponent(item.dataset.workId)}/cover`, { method: 'PUT', body: formData });
+        setStatus('视频封面已更新，公开专区会显示新封面。');
+        await loadWorks();
+      } catch (error) {
+        setStatus(error.message, true);
+        button.disabled = false;
+      }
+    });
+    api('/api/session').then(() => show(true)).catch(() => show(false));
+    document.querySelector('#loginForm').addEventListener('submit', async event => {
+      event.preventDefault();
+      const button = event.submitter;
+      button.disabled = true;
+      try {
+        await api('/api/login', { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify({ password: document.querySelector('#password').value }) });
+        document.querySelector('#password').value = '';
+        show(true);
+        setStatus('已登录');
+      } catch (error) { setStatus(error.message, true); }
+      finally { button.disabled = false; }
+    });
+    document.querySelector('#logout').addEventListener('click', async () => {
+      try { await api('/api/logout', { method: 'POST' }); show(false); setStatus('已退出登录'); }
+      catch (error) { setStatus(error.message, true); }
+    });
+    document.querySelector('#uploadForm').addEventListener('submit', async event => {
+      event.preventDefault();
+      const form = event.currentTarget;
+      const button = document.querySelector('#publish');
+      button.disabled = true;
+      setStatus('正在上传…');
+      try {
+        await api('/api/upload', { method: 'POST', body: new FormData(form) });
+        form.reset();
+        coverField.hidden = true;
+        coverInput.required = false;
+        if (coverPreview.dataset.objectUrl) URL.revokeObjectURL(coverPreview.dataset.objectUrl);
+        delete coverPreview.dataset.objectUrl;
+        coverPreview.removeAttribute('src');
+        coverPreview.hidden = true;
+        setStatus('作品已发布，Tom 老师专区现已公开展示。');
+        await loadWorks();
+      } catch (error) { setStatus(error.message, true); }
+      finally { button.disabled = false; }
+    });
+    mediaInput.addEventListener('change', () => {
+      const isVideo = Boolean(mediaInput.files[0] && mediaInput.files[0].type.startsWith('video/'));
+      coverField.hidden = !isVideo;
+      coverInput.required = isVideo;
+      if (!isVideo) {
+        coverInput.value = '';
+        coverPreview.removeAttribute('src');
+        coverPreview.hidden = true;
+      }
+    });
+    coverInput.addEventListener('change', () => {
+      const file = coverInput.files[0];
+      if (!file) {
+        coverPreview.removeAttribute('src');
+        coverPreview.hidden = true;
+        return;
+      }
+      if (coverPreview.dataset.objectUrl) URL.revokeObjectURL(coverPreview.dataset.objectUrl);
+      const objectUrl = URL.createObjectURL(file);
+      coverPreview.dataset.objectUrl = objectUrl;
+      coverPreview.src = objectUrl;
+      coverPreview.hidden = false;
+    });
+  </script>
+</body>
+</html>
