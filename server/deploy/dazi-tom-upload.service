@@ -1,0 +1,25 @@
+[Unit]
+Description=Dazi Tom Teacher Upload API
+After=network.target
+
+[Service]
+Type=simple
+User=www-data
+Group=www-data
+WorkingDirectory=/opt/dazi-tom-upload
+EnvironmentFile=/etc/dazi-tom-upload.env
+Environment=STATIC_ROOT=/var/www/dazi-preview
+Environment=TOM_DATA_FILE=/var/lib/dazi-tom-upload/tom-teacher.json
+Environment=TOM_MEDIA_DIR=/var/lib/dazi-tom-upload/media
+Environment=PORT=3178
+ExecStart=/usr/bin/node /opt/dazi-tom-upload/tom-upload.mjs
+Restart=on-failure
+RestartSec=3
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=true
+ReadWritePaths=/var/lib/dazi-tom-upload
+
+[Install]
+WantedBy=multi-user.target

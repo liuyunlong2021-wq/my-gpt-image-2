@@ -9,6 +9,8 @@ const MODELS = [
 ];
 
 const GALLERY_FILE = 'data/jc-gpt2-gallery.json';
+const TOM_API = '/api/tom';
+let tomWorks = [];
 
 const categoryNames = {
   zh: {
@@ -522,6 +524,63 @@ function copyPrompt(text) {
   });
 }
 
+async function loadTomWorks() {
+  const container = document.getElementById('tomGallery');
+  if (!container) return;
+  try {
+    const response = await fetch(TOM_API, { cache: 'no-store' });
+    if (!response.ok) throw new Error(`HTTP ${response.status}`);
+    const works = await response.json();
+    tomWorks = Array.isArray(works) ? works : [];
+    if (!tomWorks.length) {
+      container.innerHTML = '<p class="tom-empty">Tom 老师的作品正在准备中，敬请期待。</p>';
+      return;
+    }
+    container.innerHTML = tomWorks.map((work, index) => {
+      const title = escHtml(work.title || '未命名作品');
+      const primaryMedia = work.media && work.media[0];
+      const cover = escHtml(work.cover || (primaryMedia && primaryMedia.type !== 'video' ? primaryMedia.url : ''));
+      const kind = primaryMedia && primaryMedia.type === 'video' ? '视频' : '作品';
+      return `<button class="tom-card" type="button" data-tom-index="${index}" aria-label="查看：${title}">
+        <span class="tom-card-media">${cover ? `<img src="${cover}" alt="${title}" loading="lazy">` : `<span class="tom-card-placeholder">${kind === '视频' ? '▶' : 'T'}</span>`}</span>
+        <span class="tom-card-copy"><strong>${title}</strong><small>${escHtml(work.publishedAt ? new Date(work.publishedAt).toLocaleDateString('zh-CN') : kind)}</small></span>
+      </button>`;
+    }).join('');
+  } catch (error) {
+    container.innerHTML = '<p class="tom-empty">Tom 老师专区暂时无法加载，请稍后再试。</p>';
+  }
+}
+
+function openTomWork(index) {
+  const work = tomWorks[index];
+  if (!work) return;
+  const media = Array.isArray(work.media) ? work.media : [];
+  const primary = media[0];
+  const isVideo = primary && primary.type === 'video';
+  const mediaHtml = isVideo
+    ? (work.cover
+      ? `<img class="modal-media" src="${escHtml(work.cover)}" alt="${escHtml(work.title || '视频封面')}">`
+      : '<div class="tom-video-placeholder"><span aria-hidden="true">▶</span><strong>视频原片</strong><small>点击下方按钮在新标签页查看</small></div>')
+    : (primary ? `<img class="modal-media" src="${escHtml(primary.url)}" alt="${escHtml(primary.alt || work.title || '')}">` : '');
+  const prompt = work.prompt || '';
+  els.modalContent.innerHTML = `${mediaHtml}<div class="modal-body">
+    <div class="card-tags"><span class="tag tag-model">Tom 老师作品</span>${(work.tags || []).map(tag => `<span class="tag">${escHtml(tag)}</span>`).join('')}</div>
+    <h2>${escHtml(work.title || '未命名作品')}</h2>
+    ${work.description ? `<p class="tom-description">${escHtml(work.description)}</p>` : ''}
+    ${prompt ? `<div class="modal-prompt-label">提示词</div><div class="modal-prompt">${escHtml(prompt)}</div>` : ''}
+    ${(prompt || isVideo) ? `<div class="modal-actions">${prompt ? '<button class="btn-primary" id="copyPromptBtn">📋 复制提示词</button>' : ''}${isVideo ? `<a class="btn-secondary" href="${escHtml(primary.url)}" target="_blank" rel="noopener noreferrer">查看原视频 ↗</a>` : ''}</div>` : ''}
+  </div>`;
+  const copyButton = document.getElementById('copyPromptBtn');
+  if (copyButton) copyButton.addEventListener('click', () => copyPrompt(prompt));
+  els.modalOverlay.classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+
+document.getElementById('tomGallery')?.addEventListener('click', event => {
+  const card = event.target.closest('[data-tom-index]');
+  if (card) openTomWork(Number(card.dataset.tomIndex));
+});
+
 els.closeModal.addEventListener('click', closeModalFn);
 els.modalOverlay.addEventListener('click', e => {
   if (e.target === els.modalOverlay) closeModalFn();
@@ -615,3 +674,4 @@ document.querySelectorAll('.lang-btn').forEach(b => b.classList.toggle('active',
 translateUI();
 showSkeleton();
 loadData();
+loadTomWorks();
